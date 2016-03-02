@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Ariadna & Sandra">
 
-    <title>Registro - Cosmetología Guadalajara</title>
+    <title>Registro - Cosmetología GDL</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">

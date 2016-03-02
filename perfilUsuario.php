@@ -53,7 +53,7 @@
             <div class="col-md-8">
                 <h3>Mi Perfil</h3>
                 
-                <form class="formulario" action="niIdea.html" method="post">
+                <form class="formulario" action="" method="post">
                     <div class="form-group">
                         <label for="nombre">Nombre:</label>
                         <input class="form-control" id="nombre" type="text" name="nombre" />

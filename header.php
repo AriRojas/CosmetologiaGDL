@@ -19,14 +19,19 @@
                 <span class="icon-bar"></span>
             </button>
             
-            <a class="navbar-brand" href="#" >
+            <a class="navbar-brand" href="index.php" >
                 <img alt="Cosmetología-GDL" src="images/cosmetologia-gdl-30px.png"/>
             </a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-1">
             <ul class="nav navbar-nav ">
-                <li class="active"><a href="index.php">Inicio</a></li>
-                <li><a href="nosotros.php">Nosotros</a></li>
+                <li>
+                    <a href="index.php">Inicio</a>
+                </li>
+                <li>
+                    <a href="nosotros.php">Nosotros</a>
+                </li>
+
                 <li class="dropdown">
                     <a href="tratamientos.php" class="dropdown-toggle" data-toggle="dropdown">
                         Tratamientos<span class="caret"></span>
