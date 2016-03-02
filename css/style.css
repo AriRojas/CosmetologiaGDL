@@ -1,34 +1,40 @@
 *{
- 	margin: 0;
+    margin: 0;
+    padding: 0;
 }
 body{
-	padding-top:10px 0;
-	
+    padding-top:10px 0;
+    padding-bottom:0;
 }
 header{
-	background-color: #73C6B6;
-	color: #000;
+    background-color: #E1A4CC;
+    color: #000;
 }
 nav{
- background-color: #129793;
+ background-color: #E1A4CC;
  
 }
 nav ul li a{
-	color: #fff;
+    color: #fff;
 }
 #container{
-	background-color: #F2F4F4;
-	color: #000;
+    background-color: #F2F4F4;
+    color: #000;
 }
 footer{
-	background-color: #E57373;
-	color: #fff;
+    padding: 1em;
+    background-color: #E57373;
+    color: #ccc;
 }
 article{
-	background-color: blue;
-	color: #fff;
+    background-color: blue;
+    color: #fff;
 }
 aside{
-	background-color: green;
-	color: #fff;
+    background-color: green;
+    color: #fff;
+}
+.text-footer{
+    padding: 2em;
+    color: #ccc;
 }

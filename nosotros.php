@@ -113,9 +113,14 @@
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
                         <ul class="list-inline">
-                             <li><a href="#"><img class="fa fa-2x fa-facebook-square" src="images/face.png"/></a></li>
-                            <li><a href="#"><img class="fa fa-2x fa-linkedin-square" src="images/twitter.png"/></a></li>
-                       		 <li><a href="#"><img class="fa fa-2x fa-linkedin-square" src="images/email.png"/></a></li>
+                            <li>
+                                <a href="#"><img class="fa fa-2x fa-facebook-square" src="images/face.png"/></a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="fa fa-2x fa-linkedin-square" src="images/twitter.png"/></a>
+                            </li>
+                       		<li>
+                                <a href="#"><img class="fa fa-2x fa-linkedin-square" src="images/email.png"/></a>
                             </li>
                         </ul>
                     </div>
