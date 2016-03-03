@@ -7,12 +7,13 @@ body{
     padding-bottom:0;
 }
 header{
-    background-color: #E1A4CC;
     color: #000;
 }
 nav{
  background-color: #E1A4CC;
  
+}
+article{
 }
 nav ul li a{
     color: #fff;
@@ -24,14 +25,8 @@ nav ul li a{
 footer{
 	text-align: center;
 }
-article{
-    background-color: blue;
-    color: #fff;
-}
-aside{
-    background-color: green;
-    color: #fff;
-}
+
+
 .text-footer{
     padding: 2em;
     color: #000;

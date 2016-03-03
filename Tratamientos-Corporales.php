@@ -13,7 +13,8 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+ 	<link rel="shortcut icon" href="images/favicon.png">
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
 
@@ -112,7 +113,7 @@
         <hr>
 
         <!-- Footer -->
-        <footer>
+        <footer class="container-fluid">
             <?php include("footer.php"); ?>
         </footer>
 

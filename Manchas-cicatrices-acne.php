@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Limpieza Facial</title>
+    <title>Manchas & Cicatrices por acne</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -43,13 +43,13 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Limpieza Facial
+                <h1 class="page-header">Manchas y cicatrices por acne
                     <small>Tratamieto Facial</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">Inicio</a>
                     </li>
-                    <li class="active">LimpiezaFacial</li>
+                    <li class="active">Manchas&Cicatrices</li>
                 </ol>
             </div>
         </div>

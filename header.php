@@ -30,19 +30,19 @@
                         <li><a href="Tratamientos-Faciales.php"><b>TRATAMIENTOS FACIALES</b></a></li>
                         <li class="divider"><h3>otros</h3></li>
                         <li><a href="limpieza-facial.php">Limpieza Facial</a></li>
-                        <li><a href="#">Tratamiento para acne</a></li>
-                        <li><a href="#">Control de grasa</a></li>
-                        <li><a href="#">Tratamiento anti-arrugas</a></li>
-                        <li><a href="#">Manchas y cicatrices por acne</a></li>
-                        <li><a href="#">Tratamiento desensibilizante</a></li>
+                        <li><a href="tratamiento-para-acne.php">Tratamiento para acne</a></li>
+                        <li><a href="control-de-grasa.php">Control de grasa</a></li>
+                        <li><a href="tratamiento-anti-arrugas.php">Tratamiento anti-arrugas</a></li>
+                        <li><a href="Manchas-cicatrices-acne.php">Manchas y cicatrices por acne</a></li>
+                        <li><a href="tratamiento-desensibilizante.php">Tratamiento desensibilizante</a></li>
                         <li class="divider"><h3>otros</h3></li>
                         <li><a href="Tratamientos-Corporales.php"><b>TRATAMIENTOS CORPORALES</b></a></li>
                    <!--uni tratamientos-->
-                        <li><a href="#">Remodelado de silueta</a></li>
-                        <li><a href="#">Anti-Celulitis</a></li>
-                        <li><a href="#">Anti-Estrías</a></li>
-                        <li><a href="#">Reafirmante de senos</a></li>
-                        <li><a href="#">Reductivo y Reafirmante Corporal</a></li>
+                        <li><a href="remodelado-de-silueta.php">Remodelado de silueta</a></li>
+                        <li><a href="anti-celulitis.php">Anti-Celulitis</a></li>
+                        <li><a href="anti-estrias.php">Anti-Estrías</a></li>
+                        <li><a href="reafirmante-de-senos.php">Reafirmante de senos</a></li>
+                        <li><a href="reductivo-reafirmante-corporal.php">Reductivo y Reafirmante Corporal</a></li>
                     </ul>
                 </li>
                 <li><a href="promociones.php">Promociones</a></li>
