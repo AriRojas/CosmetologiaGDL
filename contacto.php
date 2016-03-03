@@ -107,12 +107,12 @@
                     <div class="control-group form-group">
                         <div class="controls">
                             <label for="mensaje">Mensaje:</label>
-                            <textarea rows="10" cols="100" class="form-control" id="mensaje" required data-validation-required-message="Please enter your message" maxlength="999"></textarea>
+                            <textarea class="form-control" id="mensaje" required data-validation-required-message="Please enter your message" maxlength="999"></textarea>
                         </div>
                     </div>
                     <div id="success"></div>
                     <!-- For success/fail messages -->
-                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    <button type="submit" class="btn btn-default">Enviar Mensaje</button>
                 </form>
             </div>
 

@@ -20,11 +20,11 @@
 <div class="form-group">
 
     <label for="f" class="radio-inline">
-        <input name="sexo" id="f" type="radio" />Femenino:
+        <input name="sexo" id="f" type="radio" />Femenino
     </label>
 
     <label for="m" class="radio-inline">
-        <input name="sexo" id="m" type="radio" />Masculino:
+        <input name="sexo" id="m" type="radio" />Masculino
     </label>
 
 </div>

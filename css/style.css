@@ -30,11 +30,28 @@ article{
     background-color: blue;
     color: #fff;
 }
-aside{
-    background-color: green;
-    color: #fff;
-}
+
 .text-footer{
     padding: 2em;
     color: #ccc;
+}
+
+.btn-default{
+    background-color: #E57373;
+    color:white;
+}
+
+div textarea{
+    /*rows="10" cols="100"*/
+    
+}
+
+.page-header, label, li a, .btn, h3{
+    font-family: bold;
+
+}
+
+.form-control, .form-group{
+    width: 20em;
+
 }
