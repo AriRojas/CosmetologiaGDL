@@ -32,7 +32,9 @@
 <body>
 
     <!-- Navigation -->
+    <header>
     <?php include("header.php"); ?>
+    </header>
     <!-- Page Content -->
     <div class="container">
 	
@@ -69,11 +71,11 @@
 
         <hr>
 
-        <!-- Pelling Frutal -->
+        <!-- Tratamiento para acne -->
         <article class="row">
             
             <div class="col-md-6">
-                <h3>Pelling Frutal</h3>
+                <h3>Tratamiento para acne</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
                 <a class="btn btn-primary" href="portfolio-item.html">Ver más</i></a>
@@ -88,16 +90,16 @@
 
         <hr>
 
-        <!-- Pelling para Acne -->
+        <!-- Tratamiento anti-arrugas -->
         <article class="row">
             <div class="col-md-6">
                 <a href="portfolio-item.html">
                     <img class="img-responsive img-hover" src="images/LimpiezaProfunda.jpg" alt="">
-                </a>" alt="">
+                </a>
                 </a>
             </div>
             <div class="col-md-6">
-                <h3>Pelling para Acne</h3>
+                <h3>Tratamiento anti-arrugas</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
                 <a class="btn btn-primary" href="portfolio-item.html">Ver más</i></a>
@@ -111,10 +113,10 @@
         <article class="row">
 
             <div class="col-md-6">
-                <h3>Pelling Quimico</h3>
+                <h3>Manchas y cicatrices por acne</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-                <a class="btn btn-primary" href="portfolio-item.html">View Project</i></a>
+                <a class="btn btn-primary" href="portfolio-item.html">Ver más</i></a>
             </div>
             <div class="col-md-6">
                 <a href="portfolio-item.html">
@@ -126,7 +128,7 @@
 
         <hr>
 
-        <!-- Lasér IPL -->
+        <!-- Tratamietno desensibilizante -->
         <article class="row">
             <div class="col-md-6">
                 <a href="#">
@@ -134,10 +136,10 @@
                 </a>
             </div>
             <div class="col-md-6">
-                <h3>Lasér IPL</h3>
+                <h3>Tratamiento desensibilizante</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
-                <a class="btn btn-primary" href="#">View Project</i></a>
+                <a class="btn btn-primary" href="#">Ver más</i></a>
             </div>
         </article>
         </section>
@@ -146,11 +148,7 @@
 
         <!-- Footer -->
         <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
+            <?php include("footer.php"); ?>
         </footer>
 
     </div>
