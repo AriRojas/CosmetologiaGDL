@@ -40,19 +40,19 @@
                         <li><a href="Tratamientos-Faciales.php"><b>TRATAMIENTOS FACIALES</b></a></li>
                         <li class="divider"><h3>otros</h3></li>
                         <li><a href="limpieza-facial.php">Limpieza Facial</a></li>
-                        <li><a href="#">Pelling Frutal</a></li>
-                        <li><a href="#">Pelling para Acné</a></li>
-                        <li><a href="#">Pelling Químico</a></li>
-                        <li><a href="#">Láser IPL</a></li>
-                        <li><a href="#">Led's Dermatológicos</a></li>
-                        <li><a href="#">Hidrafacial</a></li>
-                        <li><a href="#">Altafrecuencia</a></li>
-                        <li><a href="Tratamientos-Corporales.php"><b>TRATAMIENTOS CORPORALES</b></a></li>
+                        <li><a href="#">Tratamiento para acne</a></li>
+                        <li><a href="#">Control de grasa</a></li>
+                        <li><a href="#">Tratamiento anti-arrugas</a></li>
+                        <li><a href="#">Manchas y cicatrices por acne</a></li>
+                        <li><a href="#">Tratamiento desensibilizante</a></li>
                         <li class="divider"><h3>otros</h3></li>
-                    <!--uni tratamientos-->
-                        <li><a href="#">Masaje Sueco de Relajación</a></li>
-                        <li><a href="#">Masaje Prenatal</a></li>
-                        <li><a href="#">Masaje Tejido Profundo</a></li>
+                        <li><a href="Tratamientos-Corporales.php"><b>TRATAMIENTOS CORPORALES</b></a></li>
+                   <!--uni tratamientos-->
+                        <li><a href="#">Remodelado de silueta</a></li>
+                        <li><a href="#">Anti-Celulitis</a></li>
+                        <li><a href="#">Anti-Estrías</a></li>
+                        <li><a href="#">Reafirmante de senos</a></li>
+                        <li><a href="#">Reductivo y Reafirmante Corporal</a></li>
                     </ul>
                 </li>
                 <li><a href="promociones.php">Promociones</a></li>
