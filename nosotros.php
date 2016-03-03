@@ -106,7 +106,7 @@
             </div>
             <div class="col-md-4 text-center">
                 <div class="thumbnail">
-                    <img class="img-responsive" src="images/equipo2.jpg" alt="">
+                    <img class="img-responsive" src="images/DianaRojas.jpg" alt="">
                     <div class="caption">
                         <h3>Ariadna Rojas<br>
                             <small>Co-Administradora del Sitio Web</small>
@@ -128,7 +128,7 @@
             </div>
             <div class="col-md-4 text-center">
                 <div class="thumbnail">
-                    <img class="img-responsive" src="images/equipo1.jpg" alt="">
+                    <img class="img-responsive" src="images/DianaRojas.jpg" alt="">
                     <div class="caption">
                         <h3>Sandra Machuca<br>
                             <small>Co-Administradora del Sitio Web</small>

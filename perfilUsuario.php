@@ -33,24 +33,41 @@
     </header>
 
     <div class="container">
+    	<div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Perfil Usuario
+                    <small>Sutanito Perez </small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Inicio</a>
+                    </li>
+                    <li class="active">PerfilUsuario</li>
+                </ol>
+            </div>
+        </div>
         <div class="main row">
             <aside class="col-md-4">
                 <figure>
-                    <img src="" title="Imagen del usuario">
-                    <h4>Nombre del usuario</h4>
+                    <img class="left" src="images/cosmetologia-gdl-30px.png" alt="Imagen del usuario"/>
+                    <h4 class="left">Nombre del usuario</h4>
                 </figure>
-                
-                <div class="row">
-                    <aside col >
-                    
-                    </aside>
+                <hr class="clear">
+                <div class="wel">
+                    <nav>
+                    	<ul class="nav">
+                        <li><a href="#">Editar Pefil</a></li>
+                        <li><a href="#">Editar Ficha Clinica</a></li>
+                        <li><a href="#">Ver Citas</a></li>
+                        <li><a href="#">Agendar Cita</a></li>
+                    </ul>
+                    </nav>
     
                 </div>
                 
             </aside>
 
         
-            <div class="col-md-8">
+            <div class="col-md-5">
                 <h3>Mi Perfil</h3>
                 
                 <form class="formulario" action="" method="post">
@@ -84,13 +101,7 @@
 
         </div>
         
-        <!--
-        <aside class="">
-            <article>
-            
-            </article>  
-
-        </aside>-->
+        
     </div>
 
     <footer>

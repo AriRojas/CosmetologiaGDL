@@ -10,7 +10,7 @@ header{
     color: #000;
 }
 nav{
- background-color: #E1A4CC;
+ background-color: #2E9AFE;
  
 }
 article{
@@ -24,6 +24,12 @@ nav ul li a{
 }
 footer{
 	text-align: center;
+}
+.left{
+	float: left;
+}
+.clear{
+	clear: both;
 }
 
 

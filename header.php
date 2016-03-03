@@ -23,7 +23,7 @@
                 </li>
 
                 <li class="dropdown">
-                    <a href="tratamientos.php" class="dropdown-toggle" data-toggle="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         Tratamientos<span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
