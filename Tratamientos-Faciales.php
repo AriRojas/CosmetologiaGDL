@@ -65,7 +65,7 @@
                 <h3>Limpieza Facial</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                <a class="btn btn-primary" href="portfolio-item.html">Ver más</i></a>
+                <a class="btn btn-primary" href="limpieza-facial.php">Ver más</i></a>
             </div>
         </article>
         <!-- /.row -->
@@ -79,7 +79,7 @@
                 <h3>Tratamiento para acne</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-                <a class="btn btn-primary" href="portfolio-item.html">Ver más</i></a>
+                <a class="btn btn-primary" href="tratamiento-para-acne.php">Ver más</i></a>
             </div>
             <div class="col-md-6">
                 <a href="portfolio-item.html">
@@ -103,7 +103,7 @@
                 <h3>Tratamiento anti-arrugas</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-                <a class="btn btn-primary" href="portfolio-item.html">Ver más</i></a>
+                <a class="btn btn-primary" href="tratamiento-anti-arrugas.php">Ver más</i></a>
             </div>
         </article>
         <!-- /.row -->
@@ -117,7 +117,7 @@
                 <h3>Manchas y cicatrices por acne</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-                <a class="btn btn-primary" href="portfolio-item.html">Ver más</i></a>
+                <a class="btn btn-primary" href="Manchas-cicatrices-acne.php">Ver más</i></a>
             </div>
             <div class="col-md-6">
                 <a href="portfolio-item.html">
@@ -140,7 +140,7 @@
                 <h3>Tratamiento desensibilizante</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
-                <a class="btn btn-primary" href="#">Ver más</i></a>
+                <a class="btn btn-primary" href="tratamiento-desensibilizante.php">Ver más</i></a>
             </div>
         </article>
         </section>
