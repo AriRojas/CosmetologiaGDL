@@ -22,9 +22,7 @@ nav ul li a{
     color: #000;
 }
 footer{
-    padding: 1em;
-    background-color: #E57373;
-    color: #ccc;
+	text-align: center;
 }
 article{
     background-color: blue;
@@ -36,5 +34,5 @@ aside{
 }
 .text-footer{
     padding: 2em;
-    color: #ccc;
+    color: #000;
 }
