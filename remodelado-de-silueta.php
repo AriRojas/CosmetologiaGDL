@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Limpieza Facial</title>
+    <title>Remodelado de Sillueta</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -36,20 +36,19 @@
     <header>
     <?php include("header.php") ?>
 	</header>
-
     <!-- Page Content -->
     <div class="container">
 
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Limpieza Facial
-                    <small>Tratamieto Facial</small>
+                <h1 class="page-header">Remodelado de Silueta
+                    <small>Tratamieto Corporal</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">Inicio</a>
                     </li>
-                    <li class="active">LimpiezaFacial</li>
+                    <li class="active">RemodeladoSilueta</li>
                 </ol>
             </div>
         </div>

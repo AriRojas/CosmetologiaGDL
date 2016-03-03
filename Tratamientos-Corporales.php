@@ -13,7 +13,8 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+ 	<link rel="shortcut icon" href="images/favicon.png">
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
 
@@ -32,11 +33,13 @@
 <body>
 
     <!-- Navigation -->
+    <header>
     <?php include("header.php"); ?>
+    </header>
     <!-- Page Content -->
     <div class="container">
 	
-        <!-- Titulo de la Pagina-->
+        <!-- Tratamientos Corporales-->
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Tratamientos Corporales
@@ -51,7 +54,7 @@
         </div>
         <!-- /.row -->
       <section>
-        <!-- Limpieza Facial-->
+        <!-- Remodelado de Silueta-->
         <article class="row">
             <div class="col-md-6">
                 <a href="portfolio-item.html">
@@ -59,24 +62,24 @@
                 </a>
             </div>
             <div class="col-md-6">
-                <h3>Masaje Sueco de Relajacion</h3>
+                <h3>Remodelado de silueta</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                <a class="btn btn-primary" href="images/Obsidiana.jpg">Ver más</i></a>
+                <a class="btn btn-primary" href="remodelado-de-silueta.php">Ver más</i></a>
             </div>
         </article>
         <!-- /.row -->
 
         <hr>
 
-        <!-- Pelling Frutal -->
+        <!-- Anti-Celulitis-->
         <article class="row">
             
             <div class="col-md-6">
-                <h3>Masaje Prenatal</h3>
+                <h3>Anti-Celulitis</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-                <a class="btn btn-primary" href="images/masajeFacialjpg.jpg">Ver más</i></a>
+                <a class="btn btn-primary" href="anti-celulitis.php">Ver más</i></a>
             </div>
             <div class="col-md-6">
                 <a href="portfolio-item.html">
@@ -88,7 +91,7 @@
 
         <hr>
 
-        <!-- Pelling para Acne -->
+        <!-- Anti-estrias -->
         <article class="row">
             <div class="col-md-6">
                 <a href="portfolio-item.html">
@@ -96,26 +99,52 @@
                 </a>
             </div>
             <div class="col-md-6">
-                <h3>Masaje Tejido Profunto</h3>
+                <h3>Anti-Estrías</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-                <a class="btn btn-primary" href="portfolio-item.html">Ver más</i></a>
+                <a class="btn btn-primary" href="anti-estrias.php">Ver más</i></a>
             </div>
         </article>
         <!-- /.row -->
         <hr>
-
+		<article class="row">
+            
+            <div class="col-md-6">
+                <h3>Reafirmante de Senos</h3>
+                <h4>Lorem ipsum</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                <a class="btn btn-primary" href="reafirmante-de-senos.php">Ver más</i></a>
+            </div>
+            <div class="col-md-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover" src="images/masajeFacialjpg.jpg" alt="">
+                </a>
+            </div>
+            <hr>
+           <!-- reductivo y reafirmante -->
+        <article class="row">
+            <div class="col-md-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover" src="images/Obsidiana.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h3>Reductivo & Reafirmante Corporal</h3>
+                <h4>Lorem ipsum</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+                <a class="btn btn-primary" href="reductivo-reafirmante-corporal.php">Ver más</i></a>
+            </div>
+        </article>
+        <!-- /.row -->
+        </article>
+		
         </section>
         <!-- /.row -->
         <hr>
 
         <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
+        <footer class="container-fluid">
+            <?php include("footer.php"); ?>
         </footer>
 
     </div>

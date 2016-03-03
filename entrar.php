@@ -34,7 +34,10 @@
     </header>
 
     <div class="container">
-        <h1 class="page-header">Entrar</h1>
+    	<section class="row">
+    		<div class="col-lg-4"></div>
+    		<div class="col-lg-4">
+        <h1 class="page-header">Ingresar</h1>
         <div class="well">
             <form class="form-horizontal" method="post" action="index.php">
                 <div class="form-group">
@@ -48,7 +51,9 @@
                 </div>
                 
                 <div class="form-group">
-                    <button type="button" class="btn btn-default">Entrar</button>
+                    <button type="button" class="btn btn-default">Entrar</button><br/>
+                    <a href="perfilUsuario.php">prueba entrar como usuario</a><br/>
+                    <a href="perfilAdministrador.php">prueba entrar como admon</a>
                 </div>
 
                 <div class="form-group">
@@ -66,7 +71,8 @@
                 </div>
             </form>
         </div>
-
+        </div>
+		</section>
     </div>
 
 

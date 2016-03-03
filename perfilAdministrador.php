@@ -54,7 +54,7 @@
 
         </div>
 
-        <div class="container well">
+        <div class="container well col-lg-6">
             <form class="form-horizontal" method="post" action="index.php">
                 <?php include("formDatosUsuario.php"); ?>  
 
