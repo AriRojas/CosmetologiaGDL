@@ -32,11 +32,13 @@
 <body>
 
     <!-- Navigation -->
+    <header>
     <?php include("header.php"); ?>
+    </header>
     <!-- Page Content -->
     <div class="container">
 	
-        <!-- Titulo de la Pagina-->
+        <!-- Tratamientos Corporales-->
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Tratamientos Corporales
@@ -51,7 +53,7 @@
         </div>
         <!-- /.row -->
       <section>
-        <!-- Limpieza Facial-->
+        <!-- Masaje Sueco-->
         <article class="row">
             <div class="col-md-6">
                 <a href="portfolio-item.html">
@@ -69,7 +71,7 @@
 
         <hr>
 
-        <!-- Pelling Frutal -->
+        <!-- Masaje Prenatal-->
         <article class="row">
             
             <div class="col-md-6">
@@ -111,11 +113,7 @@
 
         <!-- Footer -->
         <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
+            <?php include("footer.php"); ?>
         </footer>
 
     </div>

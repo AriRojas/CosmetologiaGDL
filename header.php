@@ -1,14 +1,4 @@
 <div class="container">
-<!--<span class="glyphicon glyphicon-music" aria-hidden="true"></span>
-    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-<nav id="registro">
-    <h2>Cosmetología</h2>
-    <ul>
-        <li><a href="#">Registrarse</a></li>
-        <li><a href="#">Ingresar</a></li>
-    </ul>
-</nav>
-<img src="images/tratamientosFaciales.jpg"/>-->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
