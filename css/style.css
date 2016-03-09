@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding-top:10px 0;
+    padding-bottom:0;
+}
+header{
+    color: #000;
+}
+nav{
+ background-color: #2E9AFE;
+ 
+}
+article{
+}
+nav ul li a{
+    color: #fff;
+}
+#container{
+    background-color: #F2F4F4;
+    color: #000;
+}
+footer{
+	text-align: center;
+}
+.left{
+	float: left;
+}
+.clear{
+	clear: both;
+}
+
+
+.text-footer{
+    padding: 2em;
+    color: #000;
+}

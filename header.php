@@ -1,71 +1,104 @@
-<div class="container">
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
-                <span class="sr-only">Menu</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            
-            <a class="navbar-brand" href="index.php" >
-                <img alt="Cosmetología-GDL" src="images/cosmetologia-gdl-30px.png"/>
-            </a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-1">
-            <ul class="nav navbar-nav ">
-                <li>
-                    <a href="index.php">Inicio</a>
-                </li>
-                <li>
-                    <a href="nosotros.php">Nosotros</a>
-                </li>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Ariadna & Sandra">
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Tratamientos<span class="caret"></span>
+    <title>Editar Usuarios - Cosmetología Guadalajara</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+
+        <div class="container">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+                        <span class="sr-only">Menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <a class="navbar-brand" href="index.php" >
+                        <img alt="Cosmetología-GDL" src="images/cosmetologia-gdl-30px.png"/>
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="Tratamientos-Faciales.php"><b>TRATAMIENTOS FACIALES</b></a></li>
-                        <li class="divider"><h3>otros</h3></li>
-                        <li><a href="limpieza-facial.php">Limpieza Facial</a></li>
-                        <li><a href="tratamiento-para-acne.php">Tratamiento para acne</a></li>
-                        <li><a href="control-de-grasa.php">Control de grasa</a></li>
-                        <li><a href="tratamiento-anti-arrugas.php">Tratamiento anti-arrugas</a></li>
-                        <li><a href="Manchas-cicatrices-acne.php">Manchas y cicatrices por acne</a></li>
-                        <li><a href="tratamiento-desensibilizante.php">Tratamiento desensibilizante</a></li>
-                        <li class="divider"><h3>otros</h3></li>
-                        <li><a href="Tratamientos-Corporales.php"><b>TRATAMIENTOS CORPORALES</b></a></li>
-                   <!--uni tratamientos-->
-                        <li><a href="remodelado-de-silueta.php">Remodelado de silueta</a></li>
-                        <li><a href="anti-celulitis.php">Anti-Celulitis</a></li>
-                        <li><a href="anti-estrias.php">Anti-Estrías</a></li>
-                        <li><a href="reafirmante-de-senos.php">Reafirmante de senos</a></li>
-                        <li><a href="reductivo-reafirmante-corporal.php">Reductivo y Reafirmante Corporal</a></li>
-                    </ul>
-                </li>
-                <li><a href="promociones.php">Promociones</a></li>
-                <li><a href="contacto.php">Contacto</a></li>
-            </ul>
-            
-            <form action="" class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Buscar" />
-                    <button class="btn btn-default" type="button">
-                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                </button>
                 </div>
-            </form>
-            <div class="btn-group navbar-form navbar-right">
-                <a href="registro.php" class="btn btn-default"  aria-haspopup="true" aria-expanded="false">
-                    Registrarte 
-                </a>
-                <a href="entrar.php" class="btn btn-default"  aria-haspopup="true" aria-expanded="false">
-                    Ingresar 
-                </a> 
+                <div class="collapse navbar-collapse" id="navbar-1">
+                    <ul class="nav navbar-nav ">
+                        <li>
+                            <a href="index.php">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="nosotros.php">Nosotros</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Tratamientos<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Tratamientos-Faciales.php"><b>TRATAMIENTOS FACIALES</b></a></li>
+                                <li class="divider"><h3>otros</h3></li>
+                                <li><a href="limpieza-facial.php">Limpieza Facial</a></li>
+                                <li><a href="tratamiento-para-acne.php">Tratamiento para acne</a></li>
+                                <li><a href="control-de-grasa.php">Control de grasa</a></li>
+                                <li><a href="tratamiento-anti-arrugas.php">Tratamiento anti-arrugas</a></li>
+                                <li><a href="Manchas-cicatrices-acne.php">Manchas y cicatrices por acne</a></li>
+                                <li><a href="tratamiento-desensibilizante.php">Tratamiento desensibilizante</a></li>
+                                <li class="divider"><h3>otros</h3></li>
+                                <li><a href="Tratamientos-Corporales.php"><b>TRATAMIENTOS CORPORALES</b></a></li>
+                           <!--uni tratamientos-->
+                                <li><a href="remodelado-de-silueta.php">Remodelado de silueta</a></li>
+                                <li><a href="anti-celulitis.php">Anti-Celulitis</a></li>
+                                <li><a href="anti-estrias.php">Anti-Estrías</a></li>
+                                <li><a href="reafirmante-de-senos.php">Reafirmante de senos</a></li>
+                                <li><a href="reductivo-reafirmante-corporal.php">Reductivo y Reafirmante Corporal</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="promociones.php">Promociones</a></li>
+                        <li><a href="contacto.php">Contacto</a></li>
+                    </ul>
+                    
+                    <form action="" class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Buscar" />
+                            <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                        </div>
+                    </form>
+                    <div class="btn-group navbar-form navbar-right">
+                        <a href="registro.php" class="btn btn-default"  aria-haspopup="true" aria-expanded="false">
+                            Registrarte 
+                        </a>
+                        <a href="entrar.php" class="btn btn-default"  aria-haspopup="true" aria-expanded="false">
+                            Ingresar 
+                        </a> 
+                    </div>
+                </div>
             </div>
+        </nav>
         </div>
-    </div>
-</nav>
-</div>
+    </header>
+    
