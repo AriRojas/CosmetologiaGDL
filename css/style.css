@@ -1,8 +1,9 @@
-*{
+/**{
     margin: 0;
     padding: 0;
-}
+}*/
 body{
+    margin-top: 5em;
     padding-top:10px 0;
     padding-bottom:0;
 }
@@ -23,7 +24,12 @@ nav ul li a{
     color: #000;
 }
 footer{
-	text-align: center;
+    margin-top: 3em;
+	text-align: left;
+    background-color: #A5539E;
+    height: 8em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 .left{
 	float: left;
