@@ -125,7 +125,7 @@
         </div>
         <!-- /.row -->
 
-        <hr>
+    </div>
 
     <!-- Footer -->
     <?php include("footer.php"); ?>

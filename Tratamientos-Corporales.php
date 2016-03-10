@@ -17,7 +17,7 @@
             </div>
         </div>
         <!-- /.row -->
-      <section>
+
         <!-- Remodelado de Silueta-->
         <article class="row">
             <div class="col-md-6">
@@ -33,8 +33,6 @@
             </div>
         </article>
         <!-- /.row -->
-
-        <hr>
 
         <!-- Anti-Celulitis-->
         <article class="row">
@@ -53,8 +51,6 @@
         </article>
         <!-- /.row -->
 
-        <hr>
-
         <!-- Anti-estrias -->
         <article class="row">
             <div class="col-md-6">
@@ -70,7 +66,7 @@
             </div>
         </article>
         <!-- /.row -->
-        <hr>
+
 		<article class="row">
             
             <div class="col-md-6">
@@ -84,7 +80,7 @@
                     <img class="img-responsive img-hover" src="images/masajeFacialjpg.jpg" alt="">
                 </a>
             </div>
-            <hr>
+
            <!-- reductivo y reafirmante -->
         <article class="row">
             <div class="col-md-6">
@@ -101,10 +97,7 @@
         </article>
         <!-- /.row -->
         </article>
-		
-        </section>
-        <!-- /.row -->
-        <hr>
 
+    </div>
     <!-- Footer -->
     <?php include("footer.php"); ?>

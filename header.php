@@ -12,9 +12,9 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png">
-    <!-- Custom CSS -->
+    <!-- Custom CSS 
     <link href="css/modern-business.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">

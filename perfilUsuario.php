@@ -20,7 +20,7 @@
                     <h4 class="left">Nombre del usuario</h4>
                 </figure>
                 <hr class="clear">
-                <div class="wel">
+                <div>
                     <nav>
                     	<ul class="nav">
                         <li><a href="#">Editar Pefil</a></li>

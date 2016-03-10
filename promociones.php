@@ -108,9 +108,6 @@
         </div>
         <!-- /.row -->
 
-        <hr>
-
-
         <div class="well">
             <div class="row">
                 <div class="col-md-8">
@@ -122,7 +119,7 @@
             </div>
         </div>
 
-        <hr>
+    </div>
 
 
     <?php include("footer.php"); ?>

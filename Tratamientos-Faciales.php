@@ -34,8 +34,7 @@
         </article>
         <!-- /.row -->
 
-        <hr>
-
+    
         <!-- Tratamiento para acne -->
         <article class="row">
             
@@ -53,8 +52,7 @@
         </article>
         <!-- /.row -->
 
-        <hr>
-
+    
         <!-- Tratamiento anti-arrugas -->
         <article class="row">
             <div class="col-md-6">
@@ -72,8 +70,7 @@
         </article>
         <!-- /.row -->
 
-        <hr>
-
+    
         <!-- Pelling Quimico -->
         <article class="row">
 
@@ -91,8 +88,7 @@
         </article>
         <!-- /.row -->
 
-        <hr>
-
+    
         <!-- Tratamietno desensibilizante -->
         <article class="row">
             <div class="col-md-6">
@@ -109,7 +105,7 @@
         </article>
         </section>
         <!-- /.row -->
-        <hr>
-
+    </div>
+    
     <!-- Footer -->
     <?php include("footer.php"); ?>

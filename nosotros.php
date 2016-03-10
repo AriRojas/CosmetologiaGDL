@@ -114,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            
+        </div>    
         <!-- /.row -->
 
         <!-- Our Customers -->
@@ -143,7 +143,7 @@
         </div>
         <!-- /.row -->
 
-        <hr>
+    </div>
 
     <!-- Footer -->
     <?php include("footer.php"); ?>
