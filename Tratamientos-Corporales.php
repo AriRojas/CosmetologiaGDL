@@ -29,7 +29,7 @@
                 <h3>Remodelado de silueta</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                <a class="btn btn-primary" href="remodelado-de-silueta.php">Ver más</i></a>
+                <a class="btn btn-default" href="remodelado-de-silueta.php">Ver más</i></a>
             </div>
         </article>
         <!-- /.row -->
@@ -41,7 +41,7 @@
                 <h3>Anti-Celulitis</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-                <a class="btn btn-primary" href="anti-celulitis.php">Ver más</i></a>
+                <a class="btn btn-default" href="anti-celulitis.php">Ver más</i></a>
             </div>
             <div class="col-md-6">
                 <a href="portfolio-item.html">
@@ -62,7 +62,7 @@
                 <h3>Anti-Estrías</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-                <a class="btn btn-primary" href="anti-estrias.php">Ver más</i></a>
+                <a class="btn btn-default" href="anti-estrias.php">Ver más</i></a>
             </div>
         </article>
         <!-- /.row -->
@@ -73,7 +73,7 @@
                 <h3>Reafirmante de Senos</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-                <a class="btn btn-primary" href="reafirmante-de-senos.php">Ver más</i></a>
+                <a class="btn btn-default" href="reafirmante-de-senos.php">Ver más</i></a>
             </div>
             <div class="col-md-6">
                 <a href="portfolio-item.html">
@@ -92,7 +92,7 @@
                 <h3>Reductivo & Reafirmante Corporal</h3>
                 <h4>Lorem ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-                <a class="btn btn-primary" href="reductivo-reafirmante-corporal.php">Ver más</i></a>
+                <a class="btn btn-default" href="reductivo-reafirmante-corporal.php">Ver más</i></a>
             </div>
         </article>
         <!-- /.row -->
