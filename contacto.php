@@ -38,17 +38,15 @@
                     <abbr title="Hours">H</abbr>: Lunes - Sábado: 9:00 AM a 5:00 PM</p>
                 <ul class="list-unstyled list-inline list-social-icons">
                     <li>
-                        <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                        <a href="#"><img class="fa fa-facebook-square fa-2x" src="images/face.png"/></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                        <a href="#"><img class="fa fa-linkedin-square fa-2x" src="images/twitter.png"/></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+                        <a href="#"><img class="fa fa-twitter-square fa-2x" src="images/email.png"/></a>
                     </li>
-                    <li>
-                        <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
