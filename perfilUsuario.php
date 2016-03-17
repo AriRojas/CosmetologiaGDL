@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="main row">
-            <aside class="col-md-4">
+            <aside class="col-md-3 col-lg-4">
                 <figure>
                     <img class="left" src="images/cosmetologia-gdl-30px.png" alt="Imagen del usuario"/>
                     <h4 class="left">Nombre del usuario</h4>
@@ -35,36 +35,17 @@
             </aside>
 
         
-            <div class="col-md-5">
+            <div class="col-md-9 col-lg-8">
                 <h3>Mi Perfil</h3>
                 
-                <form class="formulario" action="" method="post">
-                    <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input class="form-control" id="nombre" type="text" name="nombre" />
-                    </div>
-                    <div class="form-group">
-                        <label for="mail">E-mail:</label>
-                        <input class="form-control" id="mail" type="email" name="mail" />
-                    </div>
-                    <div class="form-group">
-                        <label for="domicilio">Domicilio:</label>
-                        <input class="form-control" id="domicilio" type="text" name="domicilio" />
-                    </div>
-                    <div class="form-group">
-                        <label for="telefono">Teléfono:</label>
-                        <input class="form-control" id="telefono" type="tel" name="telefono" />
-                    </div>
-                    <div class="form-group">
-                        <label for="edad">Edad:</label>
-                        <input class="form-control" id="edad" type="number" name="edad" min="1" max="99" />
-                    </div>
+                <form class="form-horizontal activos" action="" method="post">
+                    <?php include("formDatosUsuario.php"); ?>
                 </form>
 
             </div>
         </div>
 
-        <div class="container row">
+        <div class="container row col-md-12">
             <?php include("tablaHistorialUsuario.php"); ?>
 
         </div>
