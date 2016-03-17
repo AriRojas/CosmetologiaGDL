@@ -92,32 +92,32 @@
                 <h2 class="page-header">Tratamientos de Faciales & Corporales</h2>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
+                <a href="#">
                     <img class="img-responsive img-portfolio img-hover" src="images/Obsidiana700.jpg" alt=""/>
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
+                <a href="#">
                     <img class="img-responsive img-portfolio img-hover" src="images/Obsidiana700.jpg" alt=""/>
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
+                <a href="#">
                     <img class="img-responsive img-portfolio img-hover" src="images/Obsidiana700.jpg" alt=""/>
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
+                <a href="#">
                     <img class="img-responsive img-portfolio img-hover" src="images/pielhombres700.jpg" alt=""/>
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
+                <a href="#">
                     <img class="img-responsive img-portfolio img-hover" src="images/pielhombres700.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
+                <a href="#">
                     <img class="img-responsive img-portfolio img-hover" src="images/pielhombres700.jpg" alt="">
                 </a>
             </div>
@@ -147,9 +147,6 @@
             </div>
         </div>
         <!-- /.row -->
-
-        <hr>
-
 
         <div class="well">
             <div class="row">
