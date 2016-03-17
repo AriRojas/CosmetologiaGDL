@@ -10,7 +10,7 @@
     <title>Editar Usuarios - Cosmetología Guadalajara</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png">
     <!-- Custom CSS 
     <link href="css/modern-business.css" rel="stylesheet">
