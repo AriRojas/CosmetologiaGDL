@@ -56,7 +56,7 @@
             </div>
             
 
-            <div class="col-md-4"><a class="btn btn-default" href="portfolio-item.html">AGENDA TU CITA</i></a>
+            <div class="col-md-4"><a class="btn btn-default" href="portfolio-item.html">AGENDA TU CITA</a>
                 <h3>Limpieza Facial</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
                 <h3>Beneficios</h3>
