@@ -21,7 +21,7 @@
     <script type="js/jquery.js"></script>
     <script type="js/bootstrap.min.js"></script>
     <script>
-        $('.carousel').carousel({
+        $('.myCarousel').carousel({
             interval: 5000 
         })
     </script>
