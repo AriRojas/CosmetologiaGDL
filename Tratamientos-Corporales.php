@@ -16,7 +16,6 @@
                 </ol>
             </div>
         </div>
-        <!-- /.row -->
 
         <!-- Remodelado de Silueta-->
         <article class="row">
@@ -96,7 +95,6 @@
                 <a class="btn btn-primary" href="reductivo-reafirmante-corporal.php">Ver más</a>
             </div>
         </article>
-        <!-- /.row -->
 
 
     </div>

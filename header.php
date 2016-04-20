@@ -9,15 +9,13 @@
 
     <title>Editar Usuarios - Cosmetología Guadalajara</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.png">
-    <!-- Custom CSS 
-    <link href="css/modern-business.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />-->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet"> <!--Framework Bootstrap para un diseño responsivo-->
+    <link rel="shortcut icon" href="images/favicon.png"> <!--Íconos usados-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> <!--Hoja de estilos css-->
+    <link rel="script" type="js/script" href="js/jquery.js">
+    <!--Necesario para el carousel-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </head>
 <body>
