@@ -9,17 +9,28 @@ body{
     padding-top:10px 0;
     padding-bottom:0;
 }
+/*Header*/
 header{
     color: #000;
 }
 nav{
- background-color: #2E9AFE;
- 
+    background-color: #2E9AFE;
+}
+
+ul.dropdown-menu li a:hover{
+    background-color: #A5539E;
+    color: #fff;
+}
+
+ul.nav li:hover{
+    background-color: #33A5D0;
+    color: #fff;
 }
 
 nav ul li a{
     color: #fff;
 }
+/*Footer*/
 #container{
     background-color: #F2F4F4;
     color: #000;
@@ -56,12 +67,13 @@ footer{
     color:#E7D8E5;
 
 }
-
+/*
 .glyphicon-search{
-    background: url("images/glyphicons-28-search.png");
+    background: url("/images/glyphicons-28-search.png") no-repeat -1px -1;
+
 }
 
-/*Enlaces*/
+Enlaces*/
 a:hover{
     color:#A5539E;
 }
@@ -69,8 +81,8 @@ a:hover{
 .fa:hover{
     color:#A5539E;
 }
-
+/*
 #chicaFlor{
     background-image: url('images/chica_flor.jpg');
 }
-
+*/

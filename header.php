@@ -9,10 +9,10 @@
 
     <title>Editar Usuarios - Cosmetología Guadalajara</title>
 
-    <link href="css/vendor/bootstrap.min.css" rel="stylesheet"> <!--Framework Bootstrap para un diseño responsivo-->
-    <link rel="shortcut icon" href="images/favicon.png"> <!--Íconos usados-->
-    <link rel="stylesheet" type="text/css" href="css/style.css" /> <!--Hoja de estilos css-->
-    <link rel="script" type="js/script" href="js/jquery.js">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />     <!--Framework Bootstrap para un diseño responsivo-->
+    <link rel="shortcut icon" href="images/favicon.png" />            <!--Íconos usados-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />    <!--Hoja de estilos css-->
+    <link rel="script" type="js/script" href="js/jquery.js" />
     <!--Necesario para el carousel-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -58,9 +58,9 @@
                                 <li><a href="tratamiento-anti-arrugas.php">Tratamiento anti-arrugas</a></li>
                                 <li><a href="Manchas-cicatrices-acne.php">Manchas y cicatrices por acne</a></li>
                                 <li><a href="tratamiento-desensibilizante.php">Tratamiento desensibilizante</a></li>
+                                
                                 <li class="divider"><h3>otros</h3></li>
                                 <li><a href="Tratamientos-Corporales.php"><b>TRATAMIENTOS CORPORALES</b></a></li>
-                           <!--uni tratamientos-->
                                 <li><a href="remodelado-de-silueta.php">Remodelado de silueta</a></li>
                                 <li><a href="anti-celulitis.php">Anti-Celulitis</a></li>
                                 <li><a href="anti-estrias.php">Anti-Estrías</a></li>

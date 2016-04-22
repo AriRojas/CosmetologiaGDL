@@ -11,25 +11,25 @@
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <div class="carousel-caption">
-                    <h2>Tratamientos Faciales</h2>      <!--Elemento a cambiar dependiendo de en que pagina se encuentre, con js-->
+                    <h2 class="caption-text">Tratamientos Faciales</h2> 
                 </div>
-                <figure>                                <!--Elemento a cambiar dependiendo de en que pagina se encuentre, con js-->
+                <figure class="caption-figure">                                
                     <img src="images/chica_flor.jpg" alt="Tratamientos Faciales">
                 </figure>
             </div>
             <div class="item">
                 <div class="carousel-caption">
-                    <h2>Tratamientos Corporales</h2>    <!--Elemento a cambiar dependiendo de en que pagina se encuentre, con js-->
+                    <h2 class="caption-text">Tratamientos Corporales</h2>    
                 </div>
-                <figure>                                <!--Elemento a cambiar dependiendo de en que pagina se encuentre, con js-->
+                <figure class="caption-figure">                                
                     <img src="images/Limpieza Facial.jpg" alt="Tratamientos Corporales">
                 <figure>
             </div>
             <div class="item">
                 <div class="carousel-caption">
-                    <h2>Promociones</h2>                <!--Elemento a cambiar dependiendo de en que pagina se encuentre, con js-->
+                    <h2 class="caption-text">Promociones</h2>                
                 </div>
-                <figure>                                <!--Elemento a cambiar dependiendo de en que pagina se encuentre, con js-->
+                <figure class="caption-figure">                                
                     <img src="images/Masaje.jpg" alt="Promociones">    
                 </figure>
                 
