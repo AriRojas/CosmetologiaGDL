@@ -1,4 +1,4 @@
-    <?php include("header.php"); ?>
+    <?php include_once("header.php"); ?>
 
     <div class="container">
         <div class="main row">
@@ -24,4 +24,4 @@
 
     </div>
 
-    <?php include("footer.php"); ?>
+    <?php include_once("footer.php"); ?>

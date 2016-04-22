@@ -1,4 +1,4 @@
-    <?php include("header.php"); ?>
+    <?php include_once("header.php"); ?>
     
     <div class="container">
         <h1 class="page-header">Ficha Clínica</h1>
@@ -10,4 +10,4 @@
 
     </div>
 
-    <?php include("footer.php"); ?>
+    <?php include_once("footer.php"); ?>
