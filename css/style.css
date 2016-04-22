@@ -67,13 +67,13 @@ footer{
     color:#E7D8E5;
 
 }
-/*
+
 .glyphicon-search{
-    background: url("/images/glyphicons-28-search.png") no-repeat -1px -1;
+    background: url("/images/glyphicons-28-search.png");
 
 }
 
-Enlaces*/
+/*Enlaces*/
 a:hover{
     color:#A5539E;
 }
