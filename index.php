@@ -54,33 +54,47 @@
                 <h2 class="page-header">Tratamientos de Faciales & Corporales</h2>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="images/Obsidiana700.jpg" alt=""/>
+				<a href="#">
+				<figure class="galeria">                                
+                   <img class="img-responsive img-portfolio img-hover" src="images/Obsidiana700.jpg" alt=""/>
+					<figcaption>Descripcion imagen 1</figcaption>
+                <figure>
                 </a>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="images/Obsidiana700.jpg" alt=""/>
+				<a href="#">
+				<figure class="galeria">                                
+                   <img class="img-responsive img-portfolio img-hover" src="images/Obsidiana700.jpg" alt=""/>
+					<figcaption>Descripcion imagen 2</figcaption>
+                <figure>
                 </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="images/Obsidiana700.jpg" alt=""/>
+            </div><div class="col-md-4 col-sm-6">
+				<a href="#">
+				<figure class="galeria">                                
+                   <img class="img-responsive img-portfolio img-hover" src="images/Obsidiana700.jpg" alt=""/>
+					<figcaption>Descripcion imagen 3</figcaption>
+                <figure>
                 </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="images/pielhombres700.jpg" alt=""/>
+            </div><div class="col-md-4 col-sm-6">
+				<a href="#">
+				<figure class="galeria">                                
+                   <img class="img-responsive img-portfolio img-hover" src="images/Obsidiana700.jpg" alt=""/>
+					<figcaption>Descripcion imagen 4</figcaption>
+                <figure>
                 </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="images/pielhombres700.jpg" alt="">
+            </div><div class="col-md-4 col-sm-6">
+				<a href="#">
+				<figure class="galeria">                                
+                   <img class="img-responsive img-portfolio img-hover" src="images/Obsidiana700.jpg" alt=""/>
+					<figcaption>Descripcion imagen 5</figcaption>
+                <figure>
                 </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="#">
-                    <img class="img-responsive img-portfolio img-hover" src="images/pielhombres700.jpg" alt="">
+            </div><div class="col-md-4 col-sm-6">
+				<a href="#">
+				<figure class="galeria">                                
+                   <img class="img-responsive img-portfolio img-hover" src="images/Obsidiana700.jpg" alt=""/>
+					<figcaption>Descripcion imagen 6</figcaption>
+                <figure>
                 </a>
             </div>
         </div>
