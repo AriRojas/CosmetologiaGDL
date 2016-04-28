@@ -1,13 +1,14 @@
+
+/**Estilos Generales**/
 @media handheld {
     footer{
         
     }
 
 }
-body{
-    margin-top: 5em;
-    padding-top:10px 0;
-    padding-bottom:0;
+body, html{
+	margin:0px;
+	padding:0px;
 }
 /*Header*/
 header{
@@ -81,6 +82,8 @@ a:hover{
 .fa:hover{
     color:#A5539E;
 }
+
+/**Imagenes del Carrusel**/
 /*
 #chicaFlor{
     background-image: url('images/chica_flor.jpg');

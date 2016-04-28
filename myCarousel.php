@@ -15,6 +15,7 @@
                 </div>
                 <figure class="caption-figure">                                
                     <img src="images/chica_flor.jpg" alt="Tratamientos Faciales">
+					<figcaption>Tratamientos Faciales</figcaption>
                 </figure>
             </div>
             <div class="item">
@@ -23,6 +24,7 @@
                 </div>
                 <figure class="caption-figure">                                
                     <img src="images/Limpieza Facial.jpg" alt="Tratamientos Corporales">
+					<figcaption>Tratamientos Corporales</figcaption>
                 <figure>
             </div>
             <div class="item">
@@ -30,7 +32,8 @@
                     <h2 class="caption-text">Promociones</h2>                
                 </div>
                 <figure class="caption-figure">                                
-                    <img src="images/Masaje.jpg" alt="Promociones">    
+                    <img src="images/Masaje.jpg" alt="Promociones">  
+					<figcaption>Promociones</figcaption>					
                 </figure>
                 
             </div>
