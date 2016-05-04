@@ -5,9 +5,10 @@
     }
 
 }
-html, body{
-	margin:0px;
-	padding:0px;
+body{
+	margin-top: 5em;
+    padding-top:10px 0;
+    padding-bottom:0;
 }
 /**Imagenes del Carrusel**/
 .caption-figure img{
@@ -36,6 +37,10 @@ a figcaption:hover{
 	text-decoration: none;
 }
 /** Menu Principal **/
+/*Header*/
+header{
+    color: #000;
+}
 nav{
     background-color: #2E9AFE;
 }
@@ -98,11 +103,21 @@ footer{
 
 /*Enlaces*/
 a:hover{
-    text-decoration:none;
+    color:#A5539E;
 }
 
 .fa:hover{
     color:#A5539E;
+}
+
+.caption-figure img{
+    width: 1800px;
+    height: 400px;
+}
+
+/*Menus de perfiles*/
+a span{
+    text-indent: 20px;
 }
 
 

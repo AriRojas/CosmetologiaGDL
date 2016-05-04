@@ -23,11 +23,11 @@
                 <div>
                     <nav>
                     	<ul class="nav">
-                        <li><a href="#">Editar Pefil</a></li>
-                        <li><a href="#">Editar Ficha Clinica</a></li>
-                        <li><a href="#">Ver Citas</a></li>
-                        <li><a href="#">Agendar Cita</a></li>
-                    </ul>
+                            <li><a href="#">Editar Pefil</a></li>
+                            <li><a href="#">Editar Ficha Clinica</a></li>
+                            <li><a href="#">Ver Citas</a></li>
+                            <li><a href="#">Agendar Cita</a></li>
+                        </ul>
                     </nav>
     
                 </div>

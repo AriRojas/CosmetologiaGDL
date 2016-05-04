@@ -1,36 +1,33 @@
     <?php include_once("header.php"); ?>
 
     <div class="container">
-        <div class="main row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Perfil Administrador</h2>
+
+        <aside class="row">
+            <h1 class="page-header">Perfil Administrador</h1>
+            <div class="col-md-4">
+                <nav class="nav">
+                    <ul class="nav">
+                        <li><a>Mi Perfil</a></li>
+                        <li><a>Usuarios</a> 
+                            <ul class="nav" hidden>
+                                <li><a>Agregar Usuario</a></li> 
+                                <li><a>Editar Datos de Usuario</a></li>
+                                <li><a>Editar Ficha Clínica</a></li>
+                                <li><a>Historial del Usuario</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Mis Citas</a></li>
+                        <li><a>Agendar Citas</a></li>
+                        <li><a>Notificaciones</a></li>
+                    </ul>
+                </nav>
             </div>
-            <ul id="myTab" class="nav nav-tabs nav-justified">
-                <li class="active">
-                    <a href="perfilAdministrador.php" data-toggle="tab">Mi Perfil</a>
-                </li>
-                <li>
-                    <a href="citasAdmin.php" data-toggle="tab">Citas</a>
-                </li>
-                <li>
-                    <a href="buscarUsuario.php" data-toggle="tab">Buscar Usuario</a>
-                </li>
-                <li>
-                    <a href="notificacionesAdmin.php" data-toggle="tab">Notificaciones</a>
-                </li>
-            </ul>
-
-        </div>
-
-        <div class="container well col-lg-6">
-            <form class="form-horizontal" method="post" action="index.php">
-                <?php include("formDatosUsuario.php"); ?>  
-
-                <button type="button" class="btn btn-default">Guardar Cambios</button>
-            </form>
-        </div>
-
+            <div class="col-md-8">
+                <!--<php include_once("formDatosUsuario.php"); ?>-->
+                <?php include_once("fullcalendar/demos/external-dragging.html"); ?>
+            </div>
+        </aside>
+                
     </div>
-
 
     <?php include_once("footer.php"); ?>
