@@ -10,12 +10,28 @@
 	        <form class="form-horizontal" method="post" action="index.php">
                 <?php include("formDatosUsuario.php"); ?>  
 
-            <button type="button" class="btn btn-default">Registrarme</button>
-        </form>
-        </div>
+                <button type="button" id="registro" class="btn btn-default">Registrarme</button>
+            </form>
+            </div>
         	
         </section>
 
     </div>
 
+
     <?php include_once("footer.php"); ?>
+
+    <script>
+        
+        $(document).ready( function(){
+            $("#registro").click(function(){
+                alert("click registro bonjour");
+                //fnRegistro();
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

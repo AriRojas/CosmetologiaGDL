@@ -137,3 +137,14 @@
     </div>
 
     <?php include("footer.php"); ?>
+
+    <script>
+        $(document).ready( function(){
+            $('.myCarousel').carousel({
+                interval: 2000; 
+            });
+        });
+    </script>
+
+</body>
+</html>

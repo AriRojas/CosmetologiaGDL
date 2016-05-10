@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Cosmetologia Guadalajara" content="Tratamientos Faciales">
+    <meta name="Cosmetología Guadalajara" content="Tratamientos Faciales">
     <meta name="author" content="Ariadna & Sandra">
 
     <title>Editar Usuarios - Cosmetología Guadalajara</title>
@@ -12,8 +12,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />     <!--Framework Bootstrap para un diseño responsivo-->
     <link rel="shortcut icon" href="images/favicon.png" />            <!--Íconos usados-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />    <!--Hoja de estilos css-->
-    <link rel="script" type="js/script" href="js/jquery.js" />
-    <!--Necesario para el carousel-->
+    <sript src="js/jquery-1.12.3.min.js" type="text/javascript" ></sript>
+    <script>
+        $(document).ready(function(){
+            alert("Hola mundo");
+        });
+    </script>
+    <sript src="js/scripts.js" type="text/javascript" ></sript>
+        <!--Necesario para el carousel-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 

@@ -96,4 +96,9 @@
 
     <!-- Footer -->
     <?php include_once("footer.php"); ?>
+
+    <script></script>
+    
+</body>
+</html>
         

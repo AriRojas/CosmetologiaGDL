@@ -18,13 +18,6 @@
         </div>
     </footer>
 
-    <script type="js/jquery.js"></script>
-    <script type="js/bootstrap.min.js"></script>
-    <script>
-        $('.myCarousel').carousel({
-            interval: 5000 
-        })
-    </script>
-
-</body>
-</html>
+    <script src="js/jquery-1.12.3.min.js" type="text/javascript" ></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/scripts.j" type="text/javascript"></script>

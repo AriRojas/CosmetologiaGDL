@@ -7,27 +7,32 @@
             <div class="col-md-4">
                 <nav class="nav">
                     <ul class="nav">
-                        <li><a>Mi Perfil</a></li>
-                        <li><a>Usuarios</a> 
+                        <li><a href="#">Mi Perfil</a></li>
+                        <li><a href="#" onclick="fnMuestraHiddens()">Usuarios</a> 
                             <ul class="nav" hidden>
-                                <li><a>Agregar Usuario</a></li> 
-                                <li><a>Editar Datos de Usuario</a></li>
-                                <li><a>Editar Ficha Clínica</a></li>
-                                <li><a>Historial del Usuario</a></li>
+                                <li><a href="#">Agregar Usuario</a></li> 
+                                <li><a href="#">Editar Datos de Usuario</a></li>
+                                <li><a href="#">Editar Ficha Clínica</a></li>
+                                <li><a href="#">Historial del Usuario</a></li>
                             </ul>
                         </li>
-                        <li><a>Mis Citas</a></li>
-                        <li><a>Agendar Citas</a></li>
-                        <li><a>Notificaciones</a></li>
+                        <li><a href="#">Mis Citas</a></li>
+                        <li><a href="#">Agendar Citas</a></li>
+                        <li><a href="#">Notificaciones</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="col-md-8">
-                <!--<php include_once("formDatosUsuario.php"); ?>-->
-                <?php include_once("fullcalendar/demos/external-dragging.html"); ?>
+                <!--<php include_once("formDatosUsuario.php"); ?>
+                <php include("fullcalendar/demos/external-dragging.html"); ?>-->
             </div>
         </aside>
                 
     </div>
 
     <?php include_once("footer.php"); ?>
+
+    <script></script>
+
+</body>
+</html>
