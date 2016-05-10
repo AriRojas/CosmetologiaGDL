@@ -82,7 +82,7 @@
                     </div>
                     <div id="success"></div>
                     <!-- For success/fail messages -->
-                    <button type="submit" class="btn btn-default">Enviar Mensaje</button>
+                    <button id="btnSubmit" type="submit" class="btn btn-default">Enviar Mensaje</button>
                 </form>
             </div>
 
@@ -94,6 +94,13 @@
     <!-- Footer -->
     <?php include_once("footer.php"); ?>
 
-    <script></script>
+    <script>
+        $(document).ready( function(){
+            $("#btnSubmit").click(function(){
+                alert("Enviar correo");
+            });
+
+        });
+    </script>
 </body>
 </html>

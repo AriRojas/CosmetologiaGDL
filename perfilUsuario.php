@@ -23,10 +23,10 @@
                 <div>
                     <nav>
                     	<ul class="nav">
-                            <li><a href="#">Editar Pefil</a></li>
-                            <li><a href="#">Editar Ficha Clinica</a></li>
-                            <li><a href="#">Ver Citas</a></li>
-                            <li><a href="#">Agendar Cita</a></li>
+                            <li><a href="#" id="linkEditarPerfil">Editar Pefil</a></li>
+                            <li><a href="#" id="linkEditarFicha">Editar Ficha Clinica</a></li>
+                            <li><a href="#" id="linkVerCitas">Ver Citas</a></li>
+                            <li><a href="#"id="btnAgendarCita">Agendar Cita</a></li>
                         </ul>
                     </nav>
     
@@ -38,7 +38,7 @@
             <div class="col-md-9 col-lg-8">
                 <h3>Mi Perfil</h3>
                 
-                <form class="form-horizontal activos" action="" method="post">
+                <form id="formDatosUsuario" class="form-horizontal activos" method="post" >
                     <?php include("formDatosUsuario.php"); ?>
                 </form>
 
@@ -55,7 +55,24 @@
 
     <?php include_once("footer.php"); ?>
 
-    <script></script>
+    <script type="text/javascript" >
+        $(document).ready(function(){
+            /*foreach input inside a div change */
+            $("#linkEditarPerfil").click(function(){
+                alert("Enable todos los input y agregar botón de guardar cambios.");
+                var elemento = $("#formDatosUsuario").children();
+                fnEditarPerfilUsuario(elemento);
+            });
+
+            $("#linkEditarFicha").click(function(){
+                alert("Mostrar fichaClinica. Enable todos los input y agregar botón de guardar cambios.");
+            });
+
+            $("#linkVerCitas").click(function(){
+                alert("Mostrar el fullCalendar");
+            });
+        });
+    </script>
 
 </body>
 </html>

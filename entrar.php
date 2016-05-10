@@ -36,6 +36,7 @@
                 <div class="form-group">
                     <a href="#">Olvidé mi contraseña</a>
                 </div>
+
             </form>
         </div>
         </div>
@@ -48,7 +49,7 @@
     <script>
         $(document).ready(function(){
             $("#entrar").click(function(){
-                alert("Vous avez réussi avec votre régistre");
+                alert("Registrado exitosamente.");
             });
         });
     </script>

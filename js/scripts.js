@@ -1,10 +1,5 @@
-$(document).ready(
-	function(){
-		$('#registro').click(function(){
-			fnRegistro();
-		});
-	});
-
-fnRegistro(){
-	alert("Click registro");
+function fnEditarPerilUsuario(elemento){	
+	foreach(i in elemento){
+		print(i);
+	}
 }
