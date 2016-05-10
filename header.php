@@ -12,13 +12,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />     <!--Framework Bootstrap para un diseño responsivo-->
     <link rel="shortcut icon" href="images/favicon.png" />            <!--Íconos usados-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />    <!--Hoja de estilos css-->
-    <sript src="js/jquery-1.12.3.min.js" type="text/javascript" ></sript>
-    <script>
-        $(document).ready(function(){
-            alert("Hola mundo");
-        });
-    </script>
-    <sript src="js/scripts.js" type="text/javascript" ></sript>
+    
         <!--Necesario para el carousel-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
