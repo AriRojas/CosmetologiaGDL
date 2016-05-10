@@ -25,10 +25,7 @@
 
     </div>
 
-    <div id='calendar'></div>
-
     <?php include_once("footer.php"); ?>
-
 
     <script></script>
 </body>

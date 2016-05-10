@@ -18,7 +18,7 @@
                 </div>
                 
                 <div class="form-group">
-                    <button type="button" class="btn btn-default">Entrar</button><br/>
+                    <button type="button" id="entrar" class="btn btn-default">Entrar</button><br/>
                     <a href="perfilUsuario.php">prueba entrar como usuario</a><br/>
                     <a href="perfilAdministrador.php">prueba entrar como admon</a>
                 </div>
@@ -45,7 +45,13 @@
     <?php include_once("footer.php"); ?>
 
 
-    <script></script>
+    <script>
+        $(document).ready(function(){
+            $("#entrar").click(function(){
+                alert("Vous avez réussi avec votre régistre");
+            });
+        });
+    </script>
 
 </body>
 </html>

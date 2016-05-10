@@ -130,7 +130,7 @@
                     <p>No pierdar más tiempo!!   AGENDA una cita con nosotros HOY mismo y recibe un descuento del <strong>25%</strong>en cualquiera de los tratamientos que tenemos para TI.</p>
                 </div> 
                 <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Agendar Cita</a>
+                    <button id="btnAgendarCita" class="btn btn-lg btn-default btn-block">Agendar Cita</button>
                 </div>
             </div>
         </div>
@@ -140,9 +140,11 @@
 
     <script>
         $(document).ready( function(){
+            
             $('.myCarousel').carousel({
                 interval: 2000; 
             });
+
         });
     </script>
 

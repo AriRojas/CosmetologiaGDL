@@ -12,11 +12,12 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />     <!--Framework Bootstrap para un diseño responsivo-->
     <link rel="shortcut icon" href="images/favicon.png" />            <!--Íconos usados-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />    <!--Hoja de estilos css-->
-    
-        <!--Necesario para el carousel-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="script" type="js/script" href="js/jquery.js" />
+    <!--Necesario para el carousel
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+    
 </head>
 <body>
     <header>
@@ -75,9 +76,9 @@
                     <form action="" class="navbar-form navbar-left" role="search">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Buscar" />
-                            <button class="btn btn-default" type="button">
-                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                        </button>
+                            <button id="btnBuscar" class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
                         </div>
                     </form>
                     <div class="btn-group navbar-form navbar-right">

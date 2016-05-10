@@ -9,7 +9,7 @@
                     <small>Tratamieto Corporal</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Inicio</a>
+                    <li><a href="index.php">Inicio</a>
                     </li>
                     <li class="active">RearfirmanteSenos</li>
                 </ol>
@@ -24,7 +24,7 @@
             </div>
             
 
-            <div class="col-md-4"><a class="btn btn-default" href="portfolio-item.html">AGENDA TU CITA</i></a>
+            <div class="col-md-4"><button id="btnAgendarCita" class="btn btn-default">AGENDA TU CITA</button>
                 <h3>Limpieza Facial</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
                 <h3>Beneficios</h3>
@@ -96,7 +96,15 @@
     <!-- Footer -->
     <?php include_once("footer.php"); ?>
 
-    <script></script>
+    <script>
+        $(document).ready( function(){
+            
+            $('.myCarousel').carousel({
+                interval: 2000; 
+            });
+
+        });
+    </script>
 
 </body>
 </html>

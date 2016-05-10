@@ -10,7 +10,7 @@
                     <small>Cuidados en tu piel</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Inicio</a>
+                    <li><a href="index.php">Inicio</a>
                     </li>
                     <li class="active">TratamientosFaciales</li>
                 </ol>
@@ -21,7 +21,7 @@
         <!-- Limpieza Facial-->
         <article class="row">
             <div class="col-md-6">
-                <a href="portfolio-item.html">
+                <a>
                     <img class="img-responsive img-hover" src="images/LimpiezaProfunda.jpg" alt="">
                 </a>
             </div>
