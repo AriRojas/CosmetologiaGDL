@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Cosmetología Guadalajara" content="Tratamientos Faciales">
     <meta name="author" content="Ariadna & Sandra">
@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="images/favicon.png" />            <!--Íconos usados-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />    <!--Hoja de estilos css-->
     <link rel="script" type="js/script" href="js/jquery.js" />
+    <script src="js/scripts.js" type="text/javascript"></script>
     <!--Necesario para el carousel
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>

@@ -7,7 +7,7 @@
                     <small>Sutanito Perez </small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Inicio</a>
+                    <li><a href="index.php">Inicio</a>
                     </li>
                     <li class="active">PerfilUsuario</li>
                 </ol>
@@ -55,11 +55,12 @@
 
     <?php include_once("footer.php"); ?>
 
+    
     <script type="text/javascript" >
         $(document).ready(function(){
             /*foreach input inside a div change */
             $("#linkEditarPerfil").click(function(){
-                alert("Enable todos los input y agregar botón de guardar cambios.");
+                //alert("Enable todos los input y agregar botón de guardar cambios.");
                 var elemento = $("#formDatosUsuario").children();
                 fnEditarPerfilUsuario(elemento);
             });
