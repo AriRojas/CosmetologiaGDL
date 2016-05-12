@@ -7,17 +7,11 @@
     <meta name="Cosmetología Guadalajara" content="Tratamientos Faciales">
     <meta name="author" content="Ariadna & Sandra">
 
-    <title>Editar Usuarios - Cosmetología Guadalajara</title>
+    <title>Cosmetología Guadalajara</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" />     <!--Framework Bootstrap para un diseño responsivo-->
-    <link rel="shortcut icon" href="images/favicon.png" />            <!--Íconos usados-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>     <!--Framework Bootstrap para un diseño responsivo-->
+    <link rel="shortcut icon" type="text/css" href="images/favicon.png" />            <!--Íconos usados-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />    <!--Hoja de estilos css-->
-    <link rel="script" type="js/script" href="js/jquery.js" />
-    <script src="js/scripts.js" type="text/javascript"></script>
-    <!--Necesario para el carousel
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
     
 </head>
 <body>
