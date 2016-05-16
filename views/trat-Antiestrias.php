@@ -1,6 +1,3 @@
-
-    <?php include_once("header.php") ?>
-	
     <!-- Page Content -->
     <div class="container">
 
@@ -94,9 +91,6 @@
 
     </div>
 
-    <!-- Footer -->
-    <?php include_once("footer.php"); ?>
-
 
     <script>
         $(document).ready( function(){
@@ -107,5 +101,3 @@
 
         });
     </script>
-</body>
-</html>

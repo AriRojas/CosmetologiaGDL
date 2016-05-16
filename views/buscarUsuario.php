@@ -1,6 +1,3 @@
-
-    <?php include_once("header.php"); ?>
-    
     <div class="container">
         <div class="main row">
             <div class="col-lg-12">
@@ -75,10 +72,3 @@
         </div>
         <!--Container well-->
     </div>
-
-    <?php include_once("footer.php"); ?>
-
-
-    <script></script>
-</body>
-</html>

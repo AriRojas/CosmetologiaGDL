@@ -1,4 +1,3 @@
-    <?php include_once("header.php") ?>
     
     <!-- Page Content -->
     <div class="container">
@@ -106,11 +105,3 @@
         </section>
         <!-- /.row -->
     </div>
-    
-    <!-- Footer -->
-    <?php include_once("footer.php"); ?>
-
-    <script></script>
-
-</body>
-</html>

@@ -1,4 +1,3 @@
-    <?php include_once("header.php"); ?>
 
     <div class="container">
 
@@ -29,10 +28,3 @@
         </aside>
                 
     </div>
-
-    <?php include_once("footer.php"); ?>
-
-    <script></script>
-
-</body>
-</html>

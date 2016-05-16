@@ -42,8 +42,6 @@
 		</section>
     </div>
 
-    <?php include_once("footer.php"); ?>
-
 
     <script>
         $(document).ready(function(){
@@ -52,6 +50,3 @@
             });
         });
     </script>
-
-</body>
-</html>

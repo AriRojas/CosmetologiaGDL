@@ -9,10 +9,15 @@
 
     <title>Cosmetología Guadalajara</title>
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>     <!--Framework Bootstrap para un diseño responsivo-->
-    <link rel="shortcut icon" type="text/css" href="images/favicon.png" />            <!--Íconos usados-->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />    <!--Hoja de estilos css-->
+    <link rel="stylesheet" type="text/css" href="../www/css/bootstrap.min.css"/>     <!--Framework Bootstrap para un diseño responsivo-->
+    <link rel="shortcut icon" type="text/css" href="../www/images/favicon.png" />    <!--Íconos usados-->
+    <link rel="stylesheet" type="text/css" href="../www/css/style.css" />            <!--Hoja de estilos css-->
+
+    <script src="js/jquery-1.12.3.min.js" type="text/javascript" ></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
     
+
 </head>
 <body>
     <header>
@@ -46,22 +51,22 @@
                                 Tratamientos<span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="Tratamientos-Faciales.php"><b>TRATAMIENTOS FACIALES</b></a></li>
+                                <li><a href=""><b>TRATAMIENTOS FACIALES</b></a></li>
                                 <li class="divider"><h3>otros</h3></li>
-                                <li><a href="limpieza-facial.php">Limpieza Facial</a></li>
-                                <li><a href="tratamiento-para-acne.php">Tratamiento para acne</a></li>
-                                <li><a href="control-de-grasa.php">Control de grasa</a></li>
-                                <li><a href="tratamiento-anti-arrugas.php">Tratamiento anti-arrugas</a></li>
-                                <li><a href="Manchas-cicatrices-acne.php">Manchas y cicatrices por acne</a></li>
-                                <li><a href="tratamiento-desensibilizante.php">Tratamiento desensibilizante</a></li>
+                                <li><a href="">Limpieza Facial</a></li>
+                                <li><a href="">Antiacné</a></li>
+                                <li><a href="">Control de grasa</a></li>
+                                <li><a href="">Antiarrugas</a></li>
+                                <li><a href="">Manchas y cicatrices</a></li>
+                                <li><a href="">Desensibilizante</a></li>
                                 
                                 <li class="divider"><h3>otros</h3></li>
-                                <li><a href="Tratamientos-Corporales.php"><b>TRATAMIENTOS CORPORALES</b></a></li>
-                                <li><a href="remodelado-de-silueta.php">Remodelado de silueta</a></li>
-                                <li><a href="anti-celulitis.php">Anti-Celulitis</a></li>
-                                <li><a href="anti-estrias.php">Anti-Estrías</a></li>
-                                <li><a href="reafirmante-de-senos.php">Reafirmante de senos</a></li>
-                                <li><a href="reductivo-reafirmante-corporal.php">Reductivo y Reafirmante Corporal</a></li>
+                                <li><a href=""><b>TRATAMIENTOS CORPORALES</b></a></li>
+                                <li><a href="">Remodelado de silueta</a></li>
+                                <li><a href="">Anticelulitis</a></li>
+                                <li><a href="">Antiestrías</a></li>
+                                <li><a href="">Reafirmante de senos</a></li>
+                                <li><a href="">Reductivo y Reafirmante</a></li>
                             </ul>
                         </li>
                         <li><a href="promociones.php">Promociones</a></li>

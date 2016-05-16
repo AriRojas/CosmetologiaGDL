@@ -1,5 +1,3 @@
-    <?php include_once("header.php"); ?>
-	
     <?php include_once("myCarousel.php"); ?>
 
     <!-- Page Content -->
@@ -136,8 +134,6 @@
         </div>
     </div>
 
-    <?php include("footer.php"); ?>
-
     <script>
         $(document).ready( function(){
             
@@ -147,6 +143,3 @@
 
         });
     </script>
-
-</body>
-</html>

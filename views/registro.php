@@ -1,4 +1,3 @@
-    <?php include_once("header.php"); ?>
     
     <div class="container">
     	<section class="row">
@@ -18,9 +17,6 @@
 
     </div>
 
-
-    <?php include_once("footer.php"); ?>
-
     <script>
         
         $(document).ready( function(){
@@ -32,6 +28,3 @@
         });
 
     </script>
-
-</body>
-</html>
