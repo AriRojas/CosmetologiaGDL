@@ -127,4 +127,14 @@ a span{
     text-indent: 20px;
 }
 
+/*navs*/
+.row{
+    margin-top: 20px;
+}
+
+.menuAdmin .btn-default{
+    position: relative;
+    left: 900px;
+}
+
 
