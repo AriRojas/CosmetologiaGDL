@@ -52,30 +52,30 @@
        <div class="row">
             <div class="col-md-8">
                 <h3>Contáctanos</h3>
-                <form name="sentMessage" id="contactForm" novalidate method="post">
+                <form name="sentMessage" id="contactForm" novalidate onsubmit="return validaContacto()" method="post" action="?ctl=contacto&msj=true">
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label for="nombre">Nombre Completo:</label>
-                            <input type="text" class="form-control" id="nombre" required data-validation-required-message="Favor de ingresar su nombre.">
+                            <label for="nombre">Nombre Completo:<span class="requerido">*</span></label>
+                            <input type="text" onfocus="quitarErrorClass(1)" name="nombre" class="form-control" id="nombre" required data-validation-required-message="Favor de ingresar su nombre.">
                             <p class="help-block"></p>
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label for="telefono">Número de Teléfono:</label>
-                            <input type="tel" class="form-control" id="telefono" required data-validation-required-message="Favor de ingresar su número de teléfono.">
+                            <input type="tel" name="telefono" class="form-control" id="telefono" required data-validation-required-message="Favor de ingresar su número de teléfono.">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label for="email">E-mail:</label>
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Favor de ingresar su e-mail.">
+                            <label for="email">E-mail:<span class="requerido">*</span></label>
+                            <input type="email" onfocus="quitarErrorClass(2)" name="email" class="form-control" id="email" required data-validation-required-message="Favor de ingresar su e-mail.">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label for="mensaje">Mensaje:</label>
-                            <textarea class="form-control" id="mensaje" required data-validation-required-message="Please enter your message" maxlength="999"></textarea>
+                            <label for="mensaje">Mensaje:<span class="requerido">*</span></label>
+                            <textarea class="form-control" onfocus="quitarErrorClass(3)"id="mensaje" name="mensaje" required data-validation-required-message="Please enter your message" maxlength="999"></textarea>
                         </div>
                     </div>
                     <div id="success"></div>
@@ -89,11 +89,6 @@
 
     </div>
 
-    <script>
-        $(document).ready( function(){
-            $("#btnSubmit").click(function(){
-                alert("Enviar correo");
-            });
 
-        });
-    </script>
+ 
+ 

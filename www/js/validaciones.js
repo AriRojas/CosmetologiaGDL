@@ -16,7 +16,7 @@ function validaRegistro(){
 	var pass2			= document.getElementById('pass2');
 
 
-	if (nombre.selectedIndex==0)
+	if (nombre.selectedIndex==0){
 
 	
 
@@ -39,4 +39,50 @@ campo.checked
 var regex = /^\d{5}$/
 regex.test(campo.value)
 
+}
+
+
+
+function validaContacto(){
+	var enviar = true;
+	var nombre = document.getElementById("nombre").value;
+	if (!(/^\D[a-zA-Z\s]+$/.test(nombre)) || (/(select).*(from).*/.test(nombre))){
+		document.getElementById("nombre").setAttribute('class', 'form-control error');
+	  	enviar = false;
+	}else{
+		document.getElementById("nombre").setAttribute('class', 'form-control ');
+	}
+
+	var email = document.getElementById("email").value;
+    if( !(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email))){
+		document.getElementById("email").setAttribute('class', 'form-control error');
+	    enviar = false;
+	}else{
+		document.getElementById("email").setAttribute('class', 'form-control ');
+	}
+
+	var mensaje= document.getElementById("mensaje").value;
+	if(mensaje == ""){
+		document.getElementById("mensaje").setAttribute('class', 'form-control  error');
+		enviar = false;
+	}		
+	else{
+		document.getElementById("mensaje").setAttribute('class', 'form-control');
+
+	}
+	console.log(enviar);
+	return enviar;
+}
+
+function quitarErrorClass(field){
+
+	switch (field){
+		case 1: document.getElementById("nombre").setAttribute('class', 'form-control');
+			break;
+		case 2: document.getElementById("email").setAttribute('class', 'form-control');
+			break;
+		case 3: document.getElementById("mensaje").setAttribute('class', 'form-control');
+			break;
+	}
+	
 }
