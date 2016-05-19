@@ -1,19 +1,19 @@
 function validaRegistro(){
-	var nombre = document.getElementById('nombre');
-	var apellidop = document.getElementById('apellidop');
-	var apellidom= document.getElementById('apellidom');
-	var sexo = document.getElementById('sexo');
-	var direccion = document.getElementById('direccion');
-	var numeroExterior = document.getElementById('numexterior');
-	var numeroInterior= document.getElementById('numerointerior');
-	var localidad= document.getElementById('localidad');
-	var municipio= document.getElementById('municipio');
-	var estado= document.getElementById('estado');
-	var telefono= document.getElementById('telefono');
-	var fechaNacimiento= document.getElementById('fechaNacimiento');
-	var mail= document.getElementById('mail');
-	var pass1= document.getElementById('pass1');
-	var pass2= document.getElementById('pass2');
+	var nombre 			= document.getElementById('nombre');
+	var apellidop 		= document.getElementById('apellidop');
+	var apellidom		= document.getElementById('apellidom');
+	var sexo 			= document.getElementById('sexo');
+	var direccion 		= document.getElementById('direccion');
+	var numeroExterior 	= document.getElementById('numexterior');
+	var numeroInterior 	= document.getElementById('numerointerior');
+	var localidad		= document.getElementById('localidad');
+	var municipio		= document.getElementById('municipio');
+	var estado			= document.getElementById('estado');
+	var telefono		= document.getElementById('telefono');
+	var fechaNacimiento = document.getElementById('fechaNacimiento');
+	var mail			= document.getElementById('mail');
+	var pass1			= document.getElementById('pass1');
+	var pass2			= document.getElementById('pass2');
 
 
 	if (nombre.selectedIndex==0)
