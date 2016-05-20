@@ -43,6 +43,7 @@
             case 'entrar':
                 require_once 'controllers/EntrarCtrl.php';
                 $controller = new Entrar();
+                $controller->cargarEntrar();
                 break;
             
             default:
