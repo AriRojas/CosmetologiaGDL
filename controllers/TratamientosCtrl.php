@@ -27,6 +27,7 @@
                     case '1-1':
                         # Limpieza Facial
                         $tratamiento = file_get_contents('views/trat-LimpiezaFacial.html');
+                        
                         break;
 
                     case '1-2':
@@ -84,7 +85,10 @@
                         break;
                 }
 
+                $carousel = file_get_contents('views/myCarousel.html');
+                $tratamiento = str_replace('{CAROUSEL}', $carousel, $tratamiento);
                 $view = $header . $tratamiento . $footer;
+                
                 echo $view;
             }
 
