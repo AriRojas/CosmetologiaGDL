@@ -24,12 +24,7 @@
         public function Ejecutar()
         {
             session_start();
-            if(isset($_SESSION['usuario']))
-            {
-                $this->cargarInicio();
-            }
-            else
-                $this->cargarInicio();
+            $this->cargarInicio();
         }
     }
 

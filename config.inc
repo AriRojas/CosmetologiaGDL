@@ -6,10 +6,10 @@ if (!defined('PASS')) define('PASS', 'root');
 if (!defined('BD')) define('BD', 'cosmetologiaDB');
 $servidor = "localhost";
 $usuario = "root";
-$pass = "root";
-$bd = "cosmetologiaDB";
+$password = "root";
+$database = "cosmetologiaDB";
 $emailhost = "mx1.hostinger.es";
 $emailusername = "support@cosmetologiagdl.fr"; 
 $emailpassword = "lWL5VGdTZB";
-$emailpuerto = 2727;
+$emailpuerto = 2525;
 ?>
