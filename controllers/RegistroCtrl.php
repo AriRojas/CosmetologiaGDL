@@ -2,7 +2,7 @@
     /**
     * 
     */
-    class Registro extends
+    class Registro
     {
         private $model;
         private $valido;
@@ -13,9 +13,12 @@
 
         }
 
-        function Login()
+        public function Ejecutar()
         {
+            require_once('models/RegistroMdl.php');
+            $this->model = new RegistroUsuario();
 
+            
 
         }
     }

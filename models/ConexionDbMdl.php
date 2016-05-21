@@ -4,14 +4,14 @@
     */
     class ConexionDb
     {
-        public $conexion;
+        private $conexion;
         
         function __construct()
         {
             # code...
         }
 
-        function crearConexion()
+        public function crearConexion()
         {
             require('config.inc');
             $conexion = mysqli($servidor, $usuario, $password, $database);
