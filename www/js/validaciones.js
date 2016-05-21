@@ -1,44 +1,113 @@
 function validaRegistro(){
-	var nombre 			= document.getElementById('nombre');
-	var apellidop 		= document.getElementById('apellidop');
-	var apellidom		= document.getElementById('apellidom');
-	var sexo 			= document.getElementById('sexo');
-	var direccion 		= document.getElementById('direccion');
-	var numeroExterior 	= document.getElementById('numexterior');
-	var numeroInterior 	= document.getElementById('numerointerior');
-	var localidad		= document.getElementById('localidad');
-	var municipio		= document.getElementById('municipio');
-	var estado			= document.getElementById('estado');
-	var telefono		= document.getElementById('telefono');
-	var fechaNacimiento = document.getElementById('fechaNacimiento');
-	var mail			= document.getElementById('mail');
-	var pass1			= document.getElementById('pass1');
-	var pass2			= document.getElementById('pass2');
+	var enviar = true;
 
-
-	if (nombre.selectedIndex==0){
-
-	
-
-		//Creo el elemento con la clase error
-		var div = document.createElement('div');
-		div.setAttribute('class','error');
-		div.setAttribute('id','nombre_error');
-		
-		//Creo el texto9
-		var msg = document.createTextNode('Debes ingresar un nombre');
-		//Al div le agrego el mensaje
-		div.appendChild(msg);
-		
-		//Insertar el mensaje en el dom
-		form.insertBefore(div,status.nextSibling);
+	var nombre 	= document.getElementById('nombre');
+	if (!(/^\D[a-zA-Z\s]+$/.test(nombre)) || (/(select).*(from).*/.test(nombre))){
+		document.getElementById("nombre").setAttribute('class', 'form-control input-md error');
+	  	enviar =  false;
+	}else{
+		document.getElementById("nombre").setAttribute('class', 'form-control input-md');
 	}
 
-campo.checked
+	var apellidop = document.getElementById('apellidop');
+	if (!(/^\D[a-zA-Z\s]+$/.test(apellidop)) || (/(select).*(from).*/.test(apellidop))){
+		document.getElementById("apellidop").setAttribute('class', 'form-control input-md error');
+	  	enviar =  false;
+	}else{
+		document.getElementById("apellidop").setAttribute('class', 'form-control input-md');
+	}
 
-var regex = /^\d{5}$/
-regex.test(campo.value)
+	var apellidom = document.getElementById('apellidom');
+	if (!(/^\D[a-zA-Z\s]+$/.test(apellidom)) || (/(select).*(from).*/.test(apellidom))){
+		document.getElementById("apellidom").setAttribute('class', 'form-control input-md error');
+	  	enviar =  false;
+	}else{
+		document.getElementById("apellidom").setAttribute('class', 'form-control input-md');
+	}
 
+	var sexo = document.getElementById('sexo').selectedIndex;
+	if(sexo < 0 || sexo > 1) {
+		document.getElementById("sexo").setAttribute('class', 'form-control input-md error');
+	  	enviar =  false;
+	}else{
+		document.getElementById("sexo").setAttribute('class', 'form-control input-md');
+	}
+
+	var direccion 		= document.getElementById('direccion');
+	if( direccion.value ){
+		document.getElementById("direccion").setAttribute('class', 'form-control input-md');
+	} else {
+		document.getElementById("direccion").setAttribute('class', 'form-control input-md error');
+	  	enviar =  false;
+	}
+
+	//var numeroExterior 	= document.getElementById('numexterior');
+	//var numeroInterior 	= document.getElementById('numerointerior');
+
+	var localidad		= document.getElementById('localidad');
+	if( localidad.value ){
+		document.getElementById("localidad").setAttribute('class', 'form-control input-md');
+	} else {
+		document.getElementById("localidad").setAttribute('class', 'form-control input-md error');
+	  	enviar =  false;
+	}
+	var municipio		= document.getElementById('municipio');
+	if( municipio.value ){
+		document.getElementById("municipio").setAttribute('class', 'form-control input-md');
+	} else {
+		document.getElementById("municipio").setAttribute('class', 'form-control input-md error');
+	  	enviar =  false;
+	}
+	var estado			= document.getElementById('estado');
+	if( estado.value ){
+		document.getElementById("estado").setAttribute('class', 'form-control input-md');
+	} else {
+		document.getElementById("estado").setAttribute('class', 'form-control input-md error');
+	  	enviar =  false;
+	}
+	
+	var telefono		= document.getElementById('telefono');
+	if (!(/^[\d]{3}[-]*([\d]{2}[-]*){2}[\d]{2}$/.test(telefono)) || (/(select).*(from).*/.test(telefono))){
+		document.getElementById("telefono").setAttribute('class', 'form-control input-md error');
+	  	enviar =  false;
+	}else{
+		document.getElementById("telefono").setAttribute('class', 'form-control input-md');
+	}
+
+	var dateEntered = $('#fechanacimiento').val();
+	var fecha=moment(dateEntered, ["DD-MM-YYYY", "YYYY-MM-DD"]);
+	if (!moment().isAfter(fecha)  || !fecha.isValid()) {
+	  document.getElementById("fechanacimiento").setAttribute('class', 'form-control input-md error');
+      enviar = false;
+	} else {
+	  document.getElementById("fechanacimiento").setAttribute('class', 'form-control input-md');
+	}
+
+	var mail = document.getElementById('mail');
+	if( !(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(mail))){
+		document.getElementById("mail").setAttribute('class', 'form-control error');
+	    enviar = false;
+	}else{
+		document.getElementById("mail").setAttribute('class', 'form-control ');
+	}
+
+	var pass1	= document.getElementById('pass1');
+	if( pass1 == null || pass1.length < 8 || /^\s+$/.test(pass1) ) {
+		document.getElementById("pass1").setAttribute('class', 'form-control  error');
+	    enviar = false;
+	}else{
+		document.getElementById("pass1").setAttribute('class', 'form-control ');
+	}
+
+	var pass2	= document.getElementById('pass2');
+	if( pass2 == null || pass2.length < 8 || /^\s+$/.test(pass2) ) {
+		document.getElementById("pass2").setAttribute('class', 'form-control  error');
+	    enviar = false;
+	}else{
+		document.getElementById("pass2").setAttribute('class', 'form-control ');
+	}
+
+	return enviar;
 }
 
 

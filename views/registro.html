@@ -6,9 +6,9 @@
     		<div class="col-lg-4">	
 	        <h1 class="page-header">Registro</h1>
 	
-	        <form class="form-horizontal" method="post" action="index.php">
+	        <form class="form-horizontal" novalidate method="post" action="?ctl=principal&Registro=true" onsubmit="return validaRegistro()">
                 {{FORMUSUARIO}}
-                <button type="button" id="registro" class="btn btn-default">Registrarme</button>
+                <button type="submit" id="registro" class="btn btn-default">Registrarme</button>
             </form>
             </div>
         	
@@ -16,14 +16,4 @@
 
     </div>
 
-    <script>
-        
-        $(document).ready( function(){
-            $("#registro").click(function(){
-                alert("click registro bonjour");
-                //fnRegistro();
-            });
-
-        });
-
-    </script>
+   

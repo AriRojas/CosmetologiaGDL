@@ -16,8 +16,8 @@
             $form   = file_get_contents('views/formDatosUsuario.html');
             $footer = file_get_contents('views/footer.html');
 
-            $body = str_replace ( '{{FORMUSUARIO}}' , $body ,  $form);
-            $view = $header . $body . $footer;
+            $body   = str_replace ( '{{FORMUSUARIO}}' ,  $form  ,  $body);
+            $view   = $header . $body . $footer;
             echo $view;
 
         }
