@@ -7,7 +7,25 @@
         
         function __construct()
         {
-            echo "Aquí debo registrar";
+           
         }
+
+        function cargarRegistro(){
+            $header = file_get_contents('views/header.html');
+            $body   = file_get_contents('views/registro.html');
+            $form   = file_get_contents('views/formDatosUsuario.html');
+            $footer = file_get_contents('views/footer.html');
+
+            $body = str_replace ( '{{FORMUSUARIO}}' , $body ,  $form);
+            $view = $header . $body . $footer;
+            echo $view;
+
+        }
+
+
     }
+
+
+
+
 ?>

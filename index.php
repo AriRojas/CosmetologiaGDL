@@ -37,7 +37,7 @@
             case 'registro':
                 require_once 'controllers/RegistroCtrl.php';
                 $controller = new Registro();
-                //$controller->
+                $controller->cargarRegistro();
                 break;
 
             case 'entrar':
