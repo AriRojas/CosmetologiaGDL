@@ -1,7 +1,7 @@
 function validaRegistro(){
 	var enviar = true;
 
-	var nombre 	= document.getElementById('nombre');
+	var nombre 	= document.getElementById('nombre').value;
 	if (!(/^\D[a-zA-Z\s]+$/.test(nombre)) || (/(select).*(from).*/.test(nombre))){
 		document.getElementById("nombre").setAttribute('class', 'form-control input-md error');
 	  	enviar =  false;
@@ -9,7 +9,7 @@ function validaRegistro(){
 		document.getElementById("nombre").setAttribute('class', 'form-control input-md');
 	}
 
-	var apellidop = document.getElementById('apellidop');
+	var apellidop = document.getElementById('apellidop').value;	
 	if (!(/^\D[a-zA-Z\s]+$/.test(apellidop)) || (/(select).*(from).*/.test(apellidop))){
 		document.getElementById("apellidop").setAttribute('class', 'form-control input-md error');
 	  	enviar =  false;
@@ -17,7 +17,7 @@ function validaRegistro(){
 		document.getElementById("apellidop").setAttribute('class', 'form-control input-md');
 	}
 
-	var apellidom = document.getElementById('apellidom');
+	var apellidom = document.getElementById('apellidom').value;
 	if (!(/^\D[a-zA-Z\s]+$/.test(apellidom)) || (/(select).*(from).*/.test(apellidom))){
 		document.getElementById("apellidom").setAttribute('class', 'form-control input-md error');
 	  	enviar =  false;
@@ -66,8 +66,8 @@ function validaRegistro(){
 	  	enviar =  false;
 	}
 	
-	var telefono		= document.getElementById('telefono');
-	if (!(/^[\d]{3}[-]*([\d]{2}[-]*){2}[\d]{2}$/.test(telefono)) || (/(select).*(from).*/.test(telefono))){
+	var telefono		= document.getElementById('telefono').value;
+	if (!(/^[\d]{2,4}[-]*([\d]{2}[-]*){2}[\d]{2}$/.test(telefono)) || (/(select).*(from).*/.test(telefono))){
 		document.getElementById("telefono").setAttribute('class', 'form-control input-md error');
 	  	enviar =  false;
 	}else{
@@ -83,7 +83,7 @@ function validaRegistro(){
 	  document.getElementById("fechanacimiento").setAttribute('class', 'form-control input-md');
 	}
 
-	var mail = document.getElementById('mail');
+	var mail = document.getElementById('mail').value;
 	if( !(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(mail))){
 		document.getElementById("mail").setAttribute('class', 'form-control error');
 	    enviar = false;
@@ -91,7 +91,7 @@ function validaRegistro(){
 		document.getElementById("mail").setAttribute('class', 'form-control ');
 	}
 
-	var pass1	= document.getElementById('pass1');
+	var pass1	= document.getElementById('pass1').value;
 	if( pass1 == null || pass1.length < 8 || /^\s+$/.test(pass1) ) {
 		document.getElementById("pass1").setAttribute('class', 'form-control  error');
 	    enviar = false;
@@ -99,7 +99,7 @@ function validaRegistro(){
 		document.getElementById("pass1").setAttribute('class', 'form-control ');
 	}
 
-	var pass2	= document.getElementById('pass2');
+	var pass2	= document.getElementById('pass2').value;
 	if( pass2 == null || pass2.length < 8 || /^\s+$/.test(pass2) ) {
 		document.getElementById("pass2").setAttribute('class', 'form-control  error');
 	    enviar = false;
@@ -143,17 +143,7 @@ function validaContacto(){
 }
 
 function quitarErrorClass(field){
-
-	switch (field){
-		case 1: document.getElementById("nombre").setAttribute('class', 'form-control');
-			break;
-		case 2: document.getElementById("email").setAttribute('class', 'form-control');
-			break;
-		case 3: document.getElementById("mensaje").setAttribute('class', 'form-control');
-			break;
-		case 4: document.getElementById("pass").setAttribute('class', 'form-control');
-			break;
-	}
+	document.getElementById( field ).setAttribute('class', 'form-control');
 	
 }
 
