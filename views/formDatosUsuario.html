@@ -1,86 +1,88 @@
 <div class="form-group">
-    <label class="control-label" for="nombre">Nombre(s):</label>
-    <input class="form-control" id="nombre" name="nombre" type="text" />
+    <label class="control-label" for="nombre">Nombre(s):<span class="requerido">*</span></label>
+    <input  class="form-control" id="nombre" name="nombre" type="text" onfocus="quitarErrorClass('nombre')" />
 </div>
 
 <div class="form-group">
-    <label class="control-label" for="apellidop">Apellido Paterno:</label>
-    <input class="form-control" id="apellidop" name="apellidop" type="text" />
+    <label class="control-label" for="apellidop">Apellido Paterno:<span class="requerido">*</span></label>
+    <input  class="form-control" id="apellidop" name="apellidop" type="text" onfocus="quitarErrorClass('apellidop')"/>
 </div>
 
 <div class="form-group">
-    <label class="control-label" for="apellidom">Apellido Materno:</label>
-    <input class="form-control" id="apellidom" name="apellidom" type="text" />
+    <label class="control-label" for="apellidom">Apellido Materno:<span class="requerido">*</span></label>
+    <input  class="form-control" id="apellidom" name="apellidom" type="text" onfocus="quitarErrorClass('apellidom')" />
 </div>
 
 <div class="form-group">
-    <label class="control-label" id="sexo">Selecciona tu sexo:</label>
+    <label class="control-label" id="sexo">Selecciona tu sexo:<span class="requerido">*</span></label>
 </div>
 
 <div class="form-group">
 
     <label for="f" class="radio-inline">
-        <input name="sexo" id="f" type="radio" />Femenino
+        <input  name="sexo" id="f" type="radio" />Femenino
     </label>
 
     <label for="m" class="radio-inline">
-        <input name="sexo" id="m" type="radio" />Masculino
+        <input  name="sexo" id="m" type="radio" />Masculino
     </label>
 
 </div>
 
 <div class="form-group">
-    <label class="control-label" for="direccion">Dirección:</label>
-    <input class="form-control" id="direccion" name="direccion" type="text" />
+    <label class="control-label" for="direccion">Dirección:<span class="requerido">*</span></label>
+    <input  class="form-control" id="direccion" name="direccion" type="text" onfocus="quitarErrorClass('direccion')" />
 </div>
 
 <div class="form-group">
     <label class="control-label" for="numexterior">Número Exterior:</label>
-    <input class="form-control" id="numexterior" name="numexterior" type="number" max="99999" />
+    <input  class="form-control" id="numexterior" name="numexterior" type="number" max="99999" onfocus="quitarErrorClass('numexterior')" />
 </div>
 
 <div class="form-group">
     <label class="control-label" for="numerointerior">Número Interior:</label>
-    <input class="form-control" id="numerointerior" name="numerointerior" type="number" max="99999" />
+    <input  class="form-control" id="numerointerior" name="numerointerior" type="number" max="99999" onfocus="quitarErrorClass('numerointerior')" />
 </div>
 
 <div class="form-group">
-    <label class="control-label" for="localidad">Localidad:</label>
-    <input class="form-control" id="localidad" name="localidad" type="text" />
+    <label class="control-label" for="localidad">Localidad:<span class="requerido">*</span></label>
+    <input  class="form-control" id="localidad" name="localidad" type="text" onfocus="quitarErrorClass('localidad')" />
 </div>
 
 <div class="form-group">
-    <label class="control-label" for="municipio">Municipio:</label>
-    <input class="form-control" id="municipio" name="municipio" type="text" />
+    <label class="control-label" for="municipio">Municipio:<span class="requerido">*</span></label>
+    <input  class="form-control" id="municipio" name="municipio" type="text" onfocus="quitarErrorClass('municipio')" />
 </div>
 
 <div class="form-group">
-    <label class="control-label" for="estado">Estado:</label>
-    <input class="form-control" id="estado" name="estado" type="text" />
+    <label class="control-label" for="estado">Estado:<span class="requerido">*</span></label>
+    <input  class="form-control" id="estado" name="estado" type="text" onfocus="quitarErrorClass('estado')" />
 </div>
 
 <div class="form-group">
-    <label class="control-label" for="telefono">Teléfono:</label>
-    <input class="form-control" id="telefono" name="telefono" type="tel" />
+    <label class="control-label" for="telefono">Teléfono:<span class="requerido">*</span></label>
+    <input  class="form-control" id="telefono" name="telefono" type="tel" onfocus="quitarErrorClass('telefono')" />
 </div>
 
 <div class="form-group">
-    <label class="control-label" for="fechanacimiento">Fecha de nacimiento:</label>
-    <input class="form-control" id="fechanacimiento" name="fechanacimiento" type="date" min="1916-01-01" value="1999-09-09" step="1"/>
+    <label class="control-label" for="fechanacimiento">Fecha de nacimiento:<span class="requerido">*</span></label>
+    <input  class="form-control" id="fechanacimiento" name="fechanacimiento" type="date" min="1916-01-01" value="1999-09-09" step="1" onfocus="quitarErrorClass('fechanacimiento')" />
 </div>
 
 <div class="form-group">
-    <label class="control-label" for="mail">E-mail:</label>
-    <input class="form-control" id="mail" name="mail" type="email" />
+    <label class="control-label" for="mail">E-mail:<span class="requerido">*</span></label>
+    <input  class="form-control" id="mail" name="mail" type="email" onfocus="quitarErrorClass('mail')" />
 </div>
 
 <div class="form-group">
-    <label class="control-label" for="pss1">Ingresa tu contraseña:</label>
-    <input class="form-control" id="pss1" name="pss1" type="password" />
+    <label class="control-label" for="pass1">Ingresa tu contraseña:<span class="requerido">*</span></label>
+    <input  class="form-control" id="pass1" name="pass1" type="password" onfocus="quitarErrorClass('pass1')" />
 </div>
 
 <div class="form-group">
-    <label class="control-label" for="pss2">Repite tu contraseña:</label>
-    <input class="form-control" id="pss2" name="pss2" type="password" />
+    <label class="control-label" for="pass2">Repite tu contraseña:<span class="requerido">*</span></label>
+    <input  class="form-control" id="pass2" name="pass2" type="password" onfocus="quitarErrorClass('pass2')" />
 
 </div>
+<span class="requerido">*Campos Requeridos</span>
+<br>

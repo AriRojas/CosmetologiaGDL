@@ -5,15 +5,15 @@
     		<div class="col-lg-4">
         <h1 class="page-header">Ingresar</h1>
         <div class="well">
-            <form class="form-horizontal" novalidate method="post" action="?ctl=principal&login=true" onsubmit="return validaLogin()" >
+            <form class="form-horizontal" novalidate method="post" action="?ctl=principal&login=true" onsubmit="return validaRegistro()" >
                 <div class="form-group">
                     <label for="email">E-mail:</label>
-                    <input class="form-control" onfocus="quitarErrorClass(2)" id="email" name="email" type="email" />
+                    <input class="form-control" onfocus="quitarErrorClass('email')" id="email" name="email" type="email" />
                 </div>
                 
                 <div class="form-group">
                     <label for="pass">Ingresa tu contraseña:</label>
-                    <input class="form-control" onfocus="quitarErrorClass(4)" id="pass" name="pass" type="password" />
+                    <input class="form-control" onfocus="quitarErrorClass('pass')" id="pass" name="pass" type="password" />
                 </div>
                 
                 <div class="form-group">

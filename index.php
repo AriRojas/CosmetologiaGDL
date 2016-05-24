@@ -38,6 +38,7 @@
                 require_once 'controllers/RegistroCtrl.php';
                 $controller = new Registro();
                 $controller -> Ejecutar();
+
                 break;
 
             case 'entrar':

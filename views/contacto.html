@@ -56,7 +56,7 @@
                     <div class="control-group form-group">
                         <div class="controls">
                             <label for="nombre">Nombre Completo:<span class="requerido">*</span></label>
-                            <input type="text" onfocus="quitarErrorClass(1)" name="nombre" class="form-control" id="nombre" required data-validation-required-message="Favor de ingresar su nombre.">
+                            <input type="text" onfocus="quitarErrorClass('nombre')" name="nombre" class="form-control" id="nombre" required data-validation-required-message="Favor de ingresar su nombre.">
                             <p class="help-block"></p>
                         </div>
                     </div>
@@ -69,13 +69,13 @@
                     <div class="control-group form-group">
                         <div class="controls">
                             <label for="email">E-mail:<span class="requerido">*</span></label>
-                            <input type="email" onfocus="quitarErrorClass(2)" name="email" class="form-control" id="email" required data-validation-required-message="Favor de ingresar su e-mail.">
+                            <input type="email" onfocus="quitarErrorClass('email')" name="email" class="form-control" id="email" required data-validation-required-message="Favor de ingresar su e-mail.">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label for="mensaje">Mensaje:<span class="requerido">*</span></label>
-                            <textarea class="form-control" onfocus="quitarErrorClass(3)"id="mensaje" name="mensaje" required data-validation-required-message="Please enter your message" maxlength="999"></textarea>
+                            <textarea class="form-control" onfocus="quitarErrorClass('mensaje')"id="mensaje" name="mensaje" required data-validation-required-message="Please enter your message" maxlength="999"></textarea>
                         </div>
                     </div>
                     <div id="success"></div>
