@@ -14,8 +14,16 @@
 
         public function Ejecutar()
         {
+
+        }
+        
+        public function altaUsuarios($nombre, $apellidoP, $apellidoM, $sexo, $domicilio, $numExt, $numInt, $colonia, $municipio, $estado, $telefono, $fechaNacimiento, $mail, $imagenPerfil, $password)
+        {
             $conexion = parent::crearConexion();
 
+            $resultado = parent::altaUsuarios($nombre, $apellidoP, $apellidoM, $sexo, $domicilio, $numExt, $numInt, $colonia, $municipio, $estado, $telefono, $fechaNacimiento, $mail, $imagenPerfil, $password);
+
+            return $resultado;
         }
 
         public function mostrarInfoUsuarios()

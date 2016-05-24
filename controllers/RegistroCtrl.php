@@ -17,7 +17,7 @@
         {
             require_once('models/RegistroMdl.php');
             $this->model = new RegistroUsuario();
-            $this->model->Ejecutar();
+            //$this->model->Ejecutar();
 
             if(empty($_POST)){
                 $this->cargarRegistro();
@@ -25,20 +25,31 @@
             }
             else{
                 $nombre             = $_POST["nombre"];
-                $apellidoP          = $_POST["apellidoP"];
-                $apellidoM          = $_POST["apellidoM"];
+                $apellidoP          = $_POST["apellidop"];
+                $apellidoM          = $_POST["apellidom"];
                 $sexo               = $_POST["sexo"];
-                $direccion          = $_POST["direccion"];
-                $numExt             = $_POST["numExt"];
-                $numInt             = $_POST["numInt"];
-                $localidad          = $_POST["localidad"];
+                $domicilio          = $_POST["domicilio"];
+                $numExt             = $_POST["numexterior"];
+                $numInt             = $_POST["numinterior"];
+                $colonia            = $_POST["colonia"];
                 $municipio          = $_POST["municipio"];
                 $estado             = $_POST["estado"];
                 $telefono           = $_POST["telefono"];
-                $fechaNacimiento    = $_POST["fechaNacimiento"];
+                $fechaNacimiento    = $_POST["fechanacimiento"];
                 $mail               = $_POST["mail"];
                 $imagenPerfil       = $_POST["imagenPerfil"];
-                $password           = $_POST["password"];
+                $password           = $_POST["pass1"];
+
+                $resultado = $this->model->altaUsuarios($nombre, $apellidop, $apellidom, $sexo, $domicilio, $numexterior, $numinterior, $colonia, $municipio, $estado, $telefono, $fechanacimiento, $mail, $imagenPerfil, $password);
+
+                if($resultado==false){
+                    header('Location: ?ctl=registro&newUser=false');        
+                }
+                else{
+                    $_SESSION['usuario']   = $nombre . $apellidoP;
+                    //$_SESSION['idUsuario'] = $this->modelo->id;
+                    header('Location: ?ctl=registro&newUser=true');
+                }
             }
 
         }
