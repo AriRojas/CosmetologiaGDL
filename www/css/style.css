@@ -67,9 +67,9 @@ nav ul li a{
 
 footer{
     margin-top: 3em;
-	text-align: left;
+	  text-align: left;
     background-color: #A5539E;
-    height: 8em;
+    height: auto;
     padding-top: 2em;
     padding-bottom: 1em;
     position: relative;
@@ -95,6 +95,11 @@ footer{
     color: #E7D8E5;
     font-weight: bold;
 }
+#terminos:hover, #privacidad:hover{
+    color: #F8F8F8;
+    font-weight: bold;
+}
+
 
 /*Botones*/
 .btn{
@@ -111,6 +116,7 @@ footer{
 /*Enlaces*/
 a:hover{
     color:#A5539E;
+    text-decoration: none;
 }
 
 .fa:hover{
@@ -145,6 +151,12 @@ a span{
 .requerido{
     color : #d9534f;
 }
+p.requerido{
+  color: #d9534f;
+  text-align: left;
+  margin-bottom: 1em;
+  margin-left: -14px;
+}
 
 /* Un bloque que ocupe toda la pantalla y contendrá nuestra modal... */
 #modalContent{
@@ -173,4 +185,8 @@ a span{
    border-radius:2px;
    background:#fff;
    padding:4px;
+}
+
+button#registro{
+  margin-left: 75%;
 }
