@@ -46,6 +46,12 @@
                 $controller = new Entrar();
                 $controller->cargarEntrar();
                 break;
+
+            case 'miPerfil':
+                require_once 'controllers/PerfilUsuarioCtrl.php';
+                $controller = new PerfilUsuario();
+                $controller->cargarPerfilUsuario();
+                break;
             
             default:
                 http_response_code(404);
