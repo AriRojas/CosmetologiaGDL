@@ -33,22 +33,22 @@ function validaRegistro(){
 		document.getElementById("sexo").setAttribute('class', 'form-control input-md');
 	}
 
-	var direccion 		= document.getElementById('direccion');
-	if( direccion.value ){
-		document.getElementById("direccion").setAttribute('class', 'form-control input-md');
+	var domicilio 		= document.getElementById('domicilio');
+	if( domicilio.value ){
+		document.getElementById("domicilio").setAttribute('class', 'form-control input-md');
 	} else {
-		document.getElementById("direccion").setAttribute('class', 'form-control input-md error');
+		document.getElementById("domicilio").setAttribute('class', 'form-control input-md error');
 	  	enviar =  false;
 	}
 
 	//var numeroExterior 	= document.getElementById('numexterior');
 	//var numeroInterior 	= document.getElementById('numerointerior');
 
-	var localidad		= document.getElementById('localidad');
-	if( localidad.value ){
-		document.getElementById("localidad").setAttribute('class', 'form-control input-md');
+	var colonia		= document.getElementById('colonia');
+	if( colonia.value ){
+		document.getElementById("colonia").setAttribute('class', 'form-control input-md');
 	} else {
-		document.getElementById("localidad").setAttribute('class', 'form-control input-md error');
+		document.getElementById("colonia").setAttribute('class', 'form-control input-md error');
 	  	enviar =  false;
 	}
 	var municipio		= document.getElementById('municipio');
