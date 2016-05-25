@@ -51,13 +51,20 @@ ul.dropdown-menu li a:hover{
 }
 
 ul.nav li:hover{
-    background-color: #33A5D0;
+    background-color: #A5539E;
     color: #fff;
 }
 
 nav ul li a{
     color: #fff;
 }
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #E7D8E5;
+    background-color: transparent;
+}
+
+
 /** Footer **/
 #container{
     background-color: #F2F4F4;
@@ -96,7 +103,7 @@ footer{
     font-weight: bold;
 }
 #terminos:hover, #privacidad:hover{
-    color: #F8F8F8;
+    color: #FFF;
     font-weight: bold;
 }
 
@@ -113,6 +120,9 @@ footer{
 
 }
 
+a{
+  color: black;
+}
 /*Enlaces*/
 a:hover{
     color:#A5539E;
