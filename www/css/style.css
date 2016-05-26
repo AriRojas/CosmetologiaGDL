@@ -115,11 +115,6 @@ footer{
 
 }
 
-.glyphicon-search{
-    background: url("/images/glyphicons-28-search.png");
-
-}
-
 a{
   color: black;
 }
@@ -199,4 +194,9 @@ p.requerido{
 
 button#registro{
   margin-left: 75%;
+}
+
+/*Estilos para los menus de perfil*/
+#calendario{
+  overflow:hidden;
 }
