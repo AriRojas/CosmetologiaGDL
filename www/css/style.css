@@ -81,7 +81,7 @@ footer{
     padding-bottom: 1em;
     position: relative;
     z-index: auto;
-    overflow: scroll;
+    width: 100%;
 }
 .left{
 	float: left;

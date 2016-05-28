@@ -1,50 +1,24 @@
-
-    <div class="container">
-    	<div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Perfil Usuario
-                    <small>Sutanito Perez </small>
-                </h1>
-                <ol class="breadcrumb">
-                    <li><a href="index.php">Inicio</a></li>
-                    <li class="active">PerfilUsuario</li>
-                </ol>
-            </div>
-        </div>
-        <div class="main row">
-            <aside class="col-md-3 col-lg-4">
-                <figure>
-                    <img class="left" src="www/images/cosmetologia-gdl-30px.png" alt="Imagen del usuario"/>
-                    <h4 class="left">Nombre del usuario</h4>
-                </figure>
-                <hr class="clear">
-                <div>
-                    <nav>
-                    	<ul class="nav">
-                            <li><a href="#" id="linkEditarPerfil">Editar Pefil</a></li>
-                            <li><a href="#" id="linkEditarFicha">Editar Ficha Clinica</a></li>
-                            <li><a href="#" id="linkVerCitas">Ver Citas</a></li>
-                            <li><a href="#"id="btnAgendarCita">Agendar Cita</a></li>
-                        </ul>
-                    </nav>
+<div class="container">
+    <nav class="row navbar container-fluid">
+        <ul class="nav navbar-nav">
+            <li><a href="?ctl=miPerfil&nav=principal">Mi Perfil</a></li>
+            <li><a href="?ctl=miPerfil&nav=historial">Mi Historial</a></li>
+            <li><a href="?ctl=miPerfil&nav=citasUsuario">Mis Citas</a></li>
+            <li><a href="?ctl=miPerfil&nav=calendarioUsuario">Agendar Citas</a></li>
+        </ul>
+    </nav>
     
-                </div>
-                
-            </aside>
-
-        
-            <div class="col-md-9 col-lg-8">
-                <h3>Mi Perfil</h3>
-                
-                <form id="formDatosUsuario" class="form-horizontal activos" method="post" >
-                </form>
-
-            </div>
+    <div class="row">
+        <div class="col-md-4">
+            <figure><img src="www/images/cosmetologia-gdl-30px.png" /></figure>
         </div>
-
-        <div class="container row col-md-12">
-
+        <div class="col-md-6">
+            <h3>{{USERNAME}}</h3>
         </div>
-        
-        
     </div>
+    <div class="row">
+        <div class="col-md-12">
+            {{CONTENT}}
+        </div>
+    </div>
+</div>
