@@ -200,3 +200,7 @@ button#registro{
 #calendario{
   overflow:hidden;
 }
+
+nav#perfilAdmin{
+    background-color: #A5539E;
+}
