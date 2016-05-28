@@ -52,6 +52,16 @@
                 $controller = new PerfilUsuario();
                 $controller->cargarPerfilUsuario();
                 break;
+
+            case 'perfilAdmin':
+                require_once 'controllers/PerfilAdminCtrl.php';
+                $controller = new PerfilAdmin();
+                $controller->cargarPerfilAdmin();
+                break;
+
+            case 'agendarCita':
+                echo "agendarCita";
+                break;
             
             default:
                 http_response_code(404);
