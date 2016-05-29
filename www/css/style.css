@@ -32,8 +32,12 @@ body{
 .galeria img:hover{
 	opacity:0.5;
 }
+.galeria a figcaption{
+  color: #000;
+}
+
 a figcaption:hover{
-	color:#27AE60;
+	color:#A5539E;
 	text-decoration: none;
 }
 /** Menu Principal **/

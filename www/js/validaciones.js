@@ -107,6 +107,7 @@ function validaRegistro(){
 		document.getElementById("pass2").setAttribute('class', 'form-control ');
 	}
 
+	
 	return enviar;
 }
 

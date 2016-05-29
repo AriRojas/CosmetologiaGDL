@@ -11,12 +11,11 @@ moment.locale('es', {
 });
 
 $(function () {
-    $('#datetimepicker12').datetimepicker({
-        inline: true,
-        sideBySide: true,
-    });
-
-});
+            $('#datetimepicker12').datetimepicker({
+                inline: true,
+                sideBySide: true
+            });
+        });
 
 
 $(function(){
