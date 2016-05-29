@@ -171,7 +171,7 @@ function validaLogin(){
 
 function cifrar(){
 	var input_password = document.getElementById("pass1").value;
-	var hash = CryptoJS.SHA1(input_password);
+	var hash = sha1(input_password);
 	document.getElementById("pass1").value = hash ;
 	document.getElementById("pass2").value = hash ;
 }
