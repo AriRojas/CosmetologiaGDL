@@ -36,17 +36,20 @@
                 $resultado = $conexion->query($sql);
                 $resultado = $resultado->fetch_row();
 
-                if (!is_null($resultado)) {
-
-                    echo "Error! Usuario con e-mail: " . $mail . " ya registrado.";
-                    return $this->ERR_DB;
+                if ( !is_null($resultado) ) {
+                    return -1;
                 }
                 else
                 {
+                    $imagenUsuario = "cosmetologia-gdl.png";
+
                     $extensionesPermitidas = array("jpg", "jpeg", "gif", "png" , "JPG" ,"JPEG" ,"PNG","GIF" );
 
                     $extension = substr( $_FILES["imgperfil"]["type"] ,6);
-                    if ((($_FILES["imgperfil"]["type"] == "image/gif")
+
+                    if( isset($_FILES["imgperfil"])){
+
+                        if ((($_FILES["imgperfil"]["type"] == "image/gif")
                           || ($_FILES["imgperfil"]["type"] == "image/jpeg")
                           || ($_FILES["imgperfil"]["type"] == "image/png")
                           || ($_FILES["imgperfil"]["type"] == "image/pjpeg"))
@@ -54,7 +57,7 @@
                           && in_array($extension, $extensionesPermitidas)){
                                   //Si no hubo un error al subir el archivo temporalmente
                                   if ($_FILES["imgperfil"]["error"] > 0){
-                                         //echo "Return Code: " . $_FILES["imgperfil"]["error"] . "<br />";
+                                        $resultado = NULL;
                                   }
                                   else{
                                         $ext = substr( $_FILES["imgperfil"]["type"] ,6);
@@ -63,14 +66,19 @@
                                     
                                         move_uploaded_file($_FILES["imgperfil"]["tmp_name"],
                                                        "www/images/Usuarios/" . $rename  );
+                                        $imagenUsuario  =  $rename ;
+                                        $resultado = true;
                                   }
-                    }
-                    else{
-                         echo "Archivo inválido";
-                         $resultado = "Archivo invalido";
-                    }
+                        }
+                        else{
+                             $resultado = NULL;
+                        }
 
-                    $imagenUsuario  =  $rename ;
+                    }  
+                    
+                    
+
+                   
                     $sql = "INSERT INTO Usuario (tipoUsuario, nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, domicilio, numExterior, numInterior, colonia, municipio, estado, telefono, correoElectronico, password, imagenUsuario)
                         VALUES(
                             2,
@@ -90,10 +98,7 @@
                             \"$imagenUsuario\"
                         )";
 
-                    //echo "simon si paso";
                     $resultado = $conexion->query($sql);
-                    //var_dump($resultado = $conexion->query($sql));
-                    //var_dump($resultado);
                     return $resultado;
                 }
                    
@@ -105,3 +110,4 @@
     }
 
 ?>
+

@@ -19,6 +19,7 @@
             $this->model = new RegistroUsuario();
             //$this->model->Ejecutar();
 
+
             if(empty($_POST) ){
                 $this->cargarRegistro();
 
@@ -41,18 +42,18 @@
                 $mail               = $_POST["mail"];
                 $password           = $_POST["pass1"];
                 
-                //echo $nombre . " " . $apellidoP . " " . $apellidoM;
-                //var_dump($_FILES);
+            
                 $resultado = $this->model->altaUsuarios($nombre, $apellidoP, $apellidoM, $sexo, $domicilio, $numExt, $numInt, $colonia, $municipio, $estado, $telefono, $fechaNacimiento, $mail, $password);
 
-                echo "<br />Isnull?" . $resultado;
-                if(!is_null($resultado)){
+                if( $resultado == 1){
                     $_SESSION['usuario']   = $nombre . $apellidoP;
                     //$_SESSION['idUsuario'] = $this->modelo->id;
                     header('Location: ?ctl=miPerfil');
-                }
-                else{
-                    header('Location: ?ctl=registro&Registro=false');        
+                    
+                }elseif ( $resultado == -1) {
+                    header('Location: ?ctl=registro&Registro=false&mail=false');     
+                } else {
+                    header('Location: ?ctl=registro&Registro=false');      
                 }
 
             }
@@ -68,6 +69,24 @@
             $body   = str_replace ( '{{FORMUSUARIO}}' ,  $form  ,  $body);
             $view   = $header . $body . $footer;
             echo $view;
+            if( isset($_GET['Registro']) &&  $_GET['Registro']  == "false"){
+                if($_GET['mail']  == "false"){
+                    echo  '
+                    <div class="alert alert-dismissible" id="modalContent">
+                      <button type="button" class="close" data-dismiss="alert">×</button>
+                      <strong>ERROR AL ENVIAR EL REGISTRO!</strong><p>Correo ya Registrado</p> 
+                    </div>
+                    ';
+                } else {
+                    echo  '
+                    <div class="alert alert-dismissible" id="modalContent">
+                      <button type="button" class="close" data-dismiss="alert">×</button>
+                      <strong>ERROR AL ENVIAR EL REGISTRO!</strong><p>Por favor vuelve a intentarlo</p> 
+                    </div>
+                    ';
+                }
+                
+            }
 
         }
 
