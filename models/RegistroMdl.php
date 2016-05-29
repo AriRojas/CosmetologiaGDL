@@ -36,18 +36,20 @@
                 $resultado = $resultado->fetch_row();
 
                 if (!is_null($resultado)) {
+
                     echo "Error! Usuario con e-mail: " . $mail . " ya registrado.";
                     return $this->ERR_DB;
                 }
                 else
                 {
                     $extensionesPermitidas = array("jpg", "jpeg", "gif", "png" , "JPG" ,"JPEG" ,"PNG","GIF" );
-                    
+
                     $extension = substr( $_FILES["imgperfil"]["type"] ,6);
                     if ((($_FILES["imgperfil"]["type"] == "image/gif")
                           || ($_FILES["imgperfil"]["type"] == "image/jpeg")
                           || ($_FILES["imgperfil"]["type"] == "image/png")
                           || ($_FILES["imgperfil"]["type"] == "image/pjpeg"))
+
                           && in_array($extension, $extensionesPermitidas)){
                                   //Si no hubo un error al subir el archivo temporalmente
                                   if ($_FILES["imgperfil"]["error"] > 0){
@@ -56,7 +58,7 @@
                                   else{
                                         $ext = substr( $_FILES["imgperfil"]["type"] ,6);
                                         //$rename="imgPerfilUsuario". $this->id . "." . $ext ;
-                                        $rename="imgPerfilUsuario"."." . $mail . $ext ;
+                                        $rename="imgPerfilUsuario"."." . $mail . "." . $ext ;
                                     
                                         move_uploaded_file($_FILES["imgperfil"]["tmp_name"],
                                                        "www/images/Usuarios/" . $rename  );
@@ -65,33 +67,40 @@
                     else{
                          echo "Archivo inválido";
                     }
+
+                    $imagenUsuario  =  $rename ;
+                    $sql = "INSERT INTO Usuario (tipoUsuario, nombre, apellidoPaterno, apellidoMaterno, fechaNacimiento, domicilio, numExterior, numInterior, colonia, municipio, estado, telefono, correoElectronico, password, imagenUsuario)
+                        VALUES(
+                            2,
+                            \"$nombre\",
+                            \"$apellidoP\",
+                            \"$apellidoM\",
+                            \"$fechaNacimiento\",
+                            \"$domicilio\",
+                            \"$numExt\",
+                            \"$numInt\",
+                            \"$colonia\",
+                            \"$municipio\",
+                            \"$estado\",
+                            \"$telefono\",
+                            \"$mail\",
+                            \"$passwordUsuario\",
+                            \"$imagenUsuario\"
+                        )";
+
+                    //echo "simon si paso";
+                    $resultado = $conexion->query($sql);
+                    //var_dump($resultado = $conexion->query($sql));
+                    var_dump($resultado);
                 }
                    
             }
-            //$resultado = $conexion->query($sql);
+            
             $conexion->close();
-            var_dump($resultado);
+            //var_dump($resultado);
             return $resultado;
         }
 
-        public function mostrarInfoUsuarios()
-        {
-            //$conexion = parent::crearConexion();
-            
-            $result = parent::consultasAll("Usuario");
-            if(!$result == $this->ERR_DB)
-            {
-                while($row = $result->fetch_assoc()){
-                    echo 'Hola ' . $row['nombre'] . ' ' . $row['apellidoPaterno'] .' mucho gusto!' . '<br />';
-                }
-            }
-
-            if(!parent::cerrarConexion())
-            {
-                echo "Error. Conexion no cerrada";
-            }
-
-        }
     }
 
 ?>

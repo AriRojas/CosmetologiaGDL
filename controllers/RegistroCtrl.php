@@ -42,17 +42,17 @@
                 $password           = $_POST["pass1"];
                 
                 //echo $nombre . " " . $apellidoP . " " . $apellidoM;
-
+                //var_dump($_FILES);
                 $resultado = $this->model->altaUsuarios($nombre, $apellidoP, $apellidoM, $sexo, $domicilio, $numExt, $numInt, $colonia, $municipio, $estado, $telefono, $fechaNacimiento, $mail, $password);
 
-                /*if($resultado==false){
-                    header('Location: ?ctl=registro&newUser=false');        
-                }
-                else{
+                if(!is_null($resultado)){
                     $_SESSION['usuario']   = $nombre . $apellidoP;
                     //$_SESSION['idUsuario'] = $this->modelo->id;
-                    header('Location: ?ctl=registro&newUser=true');
-                }*/
+                    header('Location: ?ctl=registro&Registro=true');
+                }
+                else{
+                    header('Location: ?ctl=registro&Registro=false');        
+                }
 
             }
 

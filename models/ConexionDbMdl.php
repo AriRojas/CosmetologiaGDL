@@ -49,16 +49,25 @@
 
         public function altaUsuarios($nombre, $apellidoP, $apellidoM, $sexo, $domicilio, $numExt, $numInt, $colonia, $municipio, $estado, $telefono, $fechaNacimiento, $mail, $imagenUsuario, $password)
         {
+            //$this->conexion = $this->crearConexion();
 
-            $resultado = consultasWhere("Usuarios", "correoElectronico", "=", $mail);
-            if($resultado != NULL)
+            $resultado = $this->consultasWhere("Usuario", "correoElectronico", "=", $mail);
+            //$sql = "SELECT * FROM Usuarios WHERE correoElectronico = \"$mail\"";
+            //$resultado = $this->conexion->query($sql);
+            if($resultado == NULL)
             {
-                return false;
+                return $ERR_DB;
+                //echo "error ConexionDBMdl";
             }
             else
             {
-                /*
-                Validar las extensiones de las imágenes
+                while($row = $resultado->fetch_assoc()){
+                    echo 'Hola ' . $row['nombre'] . ' ' . $row['fechaNacimiento'] .' mucho gusto!' . '<br />';
+                }
+            }
+            /*    //echo $nombre . " " . $apellidoP . " " . $apellidoM;
+                echo $resultado;
+                //Validar las extensiones de las imágenes
                 */
                 $extensionesPermitidas = array("jpg", "jpeg", "gif", "png" , "JPG" ,"JPEG" ,"PNG","GIF" );
                 $extension = substr( $_FILES["imagenUsuario"]["type"] ,6);
@@ -75,7 +84,7 @@
                               else{
                                     $ext = substr( $_FILES["imagenUsuario"]["type"] ,6);
                                     //$rename="imgPerfilUsuario". $this->id . "." . $ext ;
-                                    $rename="imgPerfilUsuario"."." . $ext ;
+                                    $rename="imgPerfilUsuario"."." $ . $ext ;
                                     move_uploaded_file($_FILES["imagenUsuario"]["tmp_name"],
                                                    "www/images/Usuarios/" . $rename  );
                               }
@@ -104,12 +113,18 @@
                         \"$imagenUsuario\",
                         \"$password\"
                     )";
-            }
+            
 
-            $resultado = $this->conexion->query($sql);
-
-            return $resultado;
-
+            $resultado = $conexion->query($sql);
+            //echo "exito";
+            //return $resultado;
+            /*$resultado = $this->consultasAll("pruebas");
+            if ($resultado != NULL) {
+                # code...
+                while($row = $resultado->fetch_assoc()){
+                    echo 'Hola ' . $row['nombre'] . ' ' . $row['fecha'] .' mucho gusto!' . '<br />';
+                }
+            }*/
         }
 
         /*
@@ -128,9 +143,9 @@
             }
             else
             {
-                while($row = $result->fetch_assoc()){
+                /*while($row = $result->fetch_assoc()){
                     echo 'Hola ' . $row['nombre'] . ' ' . $row['apellidoPaterno'] .' mucho gusto!' . '<br />';
-                }
+                }*/
                 return $result;
             }
         }
@@ -138,25 +153,26 @@
         /*
             Selección de todos los rows y columnas de una tabla, usando una cláusula WHERE,
             whereClause = columna a comparar, similarity = <'LIKE' | = > y value = valor de búsqueda.
-            Sobrecarga de método. Caso 2: cuatro parámetros.
         */
         public function consultasWhere($tableName, $whereClause, $similarity, $value)
         {
-            $sql = "SELECT * FROM $tableName WHERE $whereClause $similarity $value";
 
-            if(!$result = $this->conexion->query($sql))
+            $sql = "SELECT * FROM $tableName WHERE $whereClause $similarity \"$value\"";
+            //echo $sql;
+            
+            if(!$resultado = $this->conexion->query($sql))
             {
-                echo "<br /> Oh no! Ha ocurrido un error.";
-                echo "<br /> $this->conexion->connect_errno";
+                echo "<br /> Oh no! Ha ocurrido un error con la base de datos.";
+                //echo "<br /> $this->conexion->connect_errno";
 
-                return $ERR_DB;
+                return $this->ERR_DB;
             }
             else
             {
-                /*while($row = $result->fetch_assoc()){
-                    echo 'Hola ' . $row['nombre'] . ' ' . $row['apellidoPaterno'] .' mucho gusto!' . '<br />';
+                /*while($row = $resultado->fetch_assoc()){
+                    echo 'Hola ' . $row['nombre'] . '<br/>'; //. ' ' . $row['apellidoPaterno'] .' mucho gusto!' . '<br />';
                 }*/
-                return $result;
+                return $resultado;
             }
         }
 
