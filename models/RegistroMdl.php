@@ -33,36 +33,38 @@
                 $sql = "SELECT * FROM Usuario WHERE correoElectronico = \"$mail\"";
 
                 $resultado = $conexion->query($sql);
-                if ($resultado != NULL) {
+                $resultado = $resultado->fetch_row();
+
+                if (!is_null($resultado)) {
                     echo "Error! Usuario con e-mail: " . $mail . " ya registrado.";
                     return $this->ERR_DB;
                 }
                 else
                 {
                     $extensionesPermitidas = array("jpg", "jpeg", "gif", "png" , "JPG" ,"JPEG" ,"PNG","GIF" );
-                    var_dump($_FILES["imgperfil"]["type"]);
-                    //$extension = substr( $_FILES["imgperfil"]["type"] ,6);
-
-                    /*if ((($_FILES["imagenUsuario"]["type"] == "image/gif")
-                          || ($_FILES["imagenUsuario"]["type"] == "image/jpeg")
-                          || ($_FILES["imagenUsuario"]["type"] == "image/png")
-                          || ($_FILES["imagenUsuario"]["type"] == "image/pjpeg"))
+                    
+                    $extension = substr( $_FILES["imgperfil"]["type"] ,6);
+                    if ((($_FILES["imgperfil"]["type"] == "image/gif")
+                          || ($_FILES["imgperfil"]["type"] == "image/jpeg")
+                          || ($_FILES["imgperfil"]["type"] == "image/png")
+                          || ($_FILES["imgperfil"]["type"] == "image/pjpeg"))
                           && in_array($extension, $extensionesPermitidas)){
                                   //Si no hubo un error al subir el archivo temporalmente
-                                  if ($_FILES["imagenUsuario"]["error"] > 0){
-                                         //echo "Return Code: " . $_FILES["imagenUsuario"]["error"] . "<br />";
+                                  if ($_FILES["imgperfil"]["error"] > 0){
+                                         //echo "Return Code: " . $_FILES["imgperfil"]["error"] . "<br />";
                                   }
                                   else{
-                                        $ext = substr( $_FILES["imagenUsuario"]["type"] ,6);
+                                        $ext = substr( $_FILES["imgperfil"]["type"] ,6);
                                         //$rename="imgPerfilUsuario". $this->id . "." . $ext ;
                                         $rename="imgPerfilUsuario"."." . $mail . $ext ;
-                                        move_uploaded_file($_FILES["imagenUsuario"]["tmp_name"],
+                                    
+                                        move_uploaded_file($_FILES["imgperfil"]["tmp_name"],
                                                        "www/images/Usuarios/" . $rename  );
                                   }
                     }
                     else{
                          echo "Archivo inválido";
-                    }*/
+                    }
                 }
                    
             }
