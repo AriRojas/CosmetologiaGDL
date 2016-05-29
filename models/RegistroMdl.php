@@ -27,6 +27,7 @@
                 # code...
                 echo "Oh no! Ha ocurrido un error con la base de datos!";
                 echo "<br>$conexion->connect_errno";
+                return $this->ERR_DB;
             }
             else
             {
@@ -66,6 +67,7 @@
                     }
                     else{
                          echo "Archivo inválido";
+                         $resultado = "Archivo invalido";
                     }
 
                     $imagenUsuario  =  $rename ;
@@ -91,14 +93,13 @@
                     //echo "simon si paso";
                     $resultado = $conexion->query($sql);
                     //var_dump($resultado = $conexion->query($sql));
-                    var_dump($resultado);
+                    //var_dump($resultado);
+                    return $resultado;
                 }
                    
             }
             
             $conexion->close();
-            //var_dump($resultado);
-            return $resultado;
         }
 
     }

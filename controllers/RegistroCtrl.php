@@ -45,10 +45,11 @@
                 //var_dump($_FILES);
                 $resultado = $this->model->altaUsuarios($nombre, $apellidoP, $apellidoM, $sexo, $domicilio, $numExt, $numInt, $colonia, $municipio, $estado, $telefono, $fechaNacimiento, $mail, $password);
 
+                echo "<br />Isnull?" . $resultado;
                 if(!is_null($resultado)){
                     $_SESSION['usuario']   = $nombre . $apellidoP;
                     //$_SESSION['idUsuario'] = $this->modelo->id;
-                    header('Location: ?ctl=registro&Registro=true');
+                    header('Location: ?ctl=miPerfil');
                 }
                 else{
                     header('Location: ?ctl=registro&Registro=false');        
