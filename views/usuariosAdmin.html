@@ -12,10 +12,12 @@
                 
                 <div class="form-group">
                     <label class="control-label" for="busqueda">Buscar:</label>
-                    <input class="form-control" type="search" id="busqueda" name="busqueda" />
-                    <button type="button" class="btn btn-default">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                    </button>
+                    <form action="post" class="form-horizontal" action="?ctl=?ctl=perfilAdmin&nav=usuarios&busqueda=true" >
+                        <input class="form-control" type="search" id="busqueda" name="busqueda" />
+                        <button type="submit" class="btn btn-default" >
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
                 </div>
             </form>
         </div>
@@ -24,10 +26,9 @@
     <div class="row">
         <div class="table-responsive col-md-12">
             <table class="table table-striped table-bordered- table-hover">
-                <caption>Listado de Usuarios</caption>
+                <caption><h3>Listado de Usuarios</h3></caption>
                 <thead>
                     <th>Editar Datos</th>
-                    <th>Editar Ficha</th>
                     <th>ID Usuario</th>
                     <th>Nombre</th>
                     <th>Historial Citas</th>
@@ -43,7 +44,7 @@
     <div class="row">
         <div class="table-responsive col-md-12">
             <table class="table table-striped table-bordered- table-hover">
-                <caption>Historial de citas del Usuario</caption>
+                <caption><h3>Historial de citas del Usuario</h3></caption>
                 <thead>
                     <th>Nombre del tratamiento</th>
                     <th>Fecha de aplicación</th>

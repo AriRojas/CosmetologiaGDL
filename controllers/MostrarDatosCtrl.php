@@ -10,7 +10,7 @@
             # code...
         }
 
-        public function obtenerUsuarios()
+        public function todosUsuario()
         {
             if (empty($_POST)) {
                 
