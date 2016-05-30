@@ -4,7 +4,8 @@
     */
     class Login
     {
-        private $ERR_DB = -100;
+        private $ERR_DB = -1;
+        private $model;
         function __construct()
         {
             # code...
@@ -72,7 +73,7 @@
         public function Entrar()
         {
             require_once("models/LoginMdl.php");
-            $model = new Login();
+            $this->model = new Login();
 
             if (empty($_POST)) {
                 $this->cargarLogin();
@@ -84,10 +85,10 @@
 
                 //var_dump($correo);
                 //var_dump($_POST);
-                //echo "<br/>" . $correo . "  " . $pass;
+                echo "<br/>" . $correo . "  " . $pass;
 
                 //header("Location: ?ctl=entrar&login=false");
-                $resultado = $model->Entrar($correo, $pass);
+                $resultado = $this->model->Entrar($correo, $pass);
 
                 if($resultado == 1)
                 {
@@ -96,7 +97,7 @@
                 
                 }elseif ( $resultado == -1) {
                     header('Location: ?ctl=entrar&login=false');     
-                } 
+                }
             }
         }
     }

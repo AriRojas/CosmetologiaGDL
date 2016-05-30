@@ -20,7 +20,7 @@
         public function altaUsuarios($nombre, $apellidoP, $apellidoM, $sexo, $domicilio, $numExt, $numInt, $colonia, $municipio, $estado, $telefono, $fechaNacimiento, $mail, $passwordUsuario)
         {
             require('config.inc');
-            $conexion = new mysqli($servidor, $usuario, $password, $database);
+            $conexion = new mysqli($servidor, $usuarioDB, $passwordDB, $database);
             //$conexion = parent::crearConexion();
             
             if ($conexion -> connect_errno) {

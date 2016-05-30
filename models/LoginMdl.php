@@ -37,7 +37,14 @@
                 else
                 {
                     //var_dump($resultado);
+
                     echo "Valida que haga match";
+                    if ($mail == $resultado["correoElectronico"] && $pass == $resultado["password"]) {
+                        return 1;
+                    }
+                    else{
+                        return -1;
+                    }
                 }
             }
 
