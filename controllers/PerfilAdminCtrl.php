@@ -12,7 +12,11 @@
 
         public function cargarPerfilAdmin()
         {
-            $header = file_get_contents('views/header.html');
+            //$header = file_get_contents('views/header.html');
+            require_once('controllers/LoginCtrl.php');
+            $login = new Login();
+
+            $header = $login->cargarHeader();
             $navAdmin = file_get_contents('views/navbarPerfilAdmin.html');
 
             switch ($_GET['nav']) {

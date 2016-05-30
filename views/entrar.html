@@ -4,31 +4,32 @@
     		<div class="col-lg-4"></div>
     		<div class="col-lg-4">
         <h1 class="page-header">Ingresar</h1>
-        <div class="well">
-            <form class="form-horizontal" novalidate method="post" action="?ctl=principal&login=true" onsubmit="return validaRegistro()" >
+        <div class="well" style="text-align:center;">
+        <!--action="?ctl=miPerfil&login=true"-->
+            <form class="form-horizontal" enctype="multipart/form-data" novalidate method="post" action="?ctl=entrar" onsubmit="return validaLogin()" >
                 <div class="form-group">
                     <label for="email">E-mail:</label>
-                    <input class="form-control" onfocus="quitarErrorClass('email')" id="email" name="email" type="email" />
+                    <input class="form-control" onfocus="quitarErrorClass('email')" id="email" name="email" type="email" value="dianis_pepito@hotmail.com" />
                 </div>
                 
                 <div class="form-group">
                     <label for="pass">Ingresa tu contraseña:</label>
-                    <input class="form-control" onfocus="quitarErrorClass('pass')" id="pass" name="pass" type="password" />
+                    <input class="form-control" onfocus="quitarErrorClass('pass')" id="pass1" name="pass" type="password" value="dianisdianis" />
                 </div>
                 
                 <div class="form-group">
-                    <button type="submit" id="entrar" class="btn btn-default">Entrar</button><br/>
-                    <a href="perfilUsuario.php">prueba entrar como usuario</a><br/>
-                    <a href="perfilAdministrador.php">prueba entrar como admon</a>
+                    <button type="submit" id="entrar" class="btn btn-default" onclick="cifrarLogin()">Entrar</button><br/>
+                    <!--<a href="perfilUsuario.php">prueba entrar como usuario</a><br/>-->
+                    <!--<a href="perfilAdministrador.php">prueba entrar como admon</a>-->
                 </div>
 
                 <div class="form-group">
-                    <ul class="list-inline">
+                    <ul class="list-inline"">
                         <li>
-                            <a href="#"><img class="fa fa-2x fa-facebook-square" src="images/face.png"/></a>
+                            <a href="#"><img class="fa fa-2x fa-facebook-square" src="www/images/face.png"/></a>
                         </li>
                         <li>
-                            <a href="#"><img class="fa fa-2x fa-linkedin-square" src="images/twitter.png"/></a>
+                            <a href="#"><img class="fa fa-2x fa-linkedin-square" src="www/images/twitter.png"/></a>
                         </li>
                     </ul>
                 </div>

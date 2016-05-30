@@ -14,7 +14,11 @@
             $this->enviarCorreo();
 
 
-            $header = file_get_contents('views/header.html');
+            //$header = file_get_contents('views/header.html');
+            require_once('controllers/LoginCtrl.php');
+            $login = new Login();
+
+            $header = $login->cargarHeader();
             $contacto = file_get_contents('views/contacto.html');
             $footer = file_get_contents('views/footer.html');
 

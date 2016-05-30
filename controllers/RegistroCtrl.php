@@ -46,7 +46,7 @@
                 $resultado = $this->model->altaUsuarios($nombre, $apellidoP, $apellidoM, $sexo, $domicilio, $numExt, $numInt, $colonia, $municipio, $estado, $telefono, $fechaNacimiento, $mail, $password);
 
                 if( $resultado == 1){
-                    $_SESSION['usuario']   = $nombre . $apellidoP;
+                    $_SESSION['usuario'] = $nombre . " " . $apellidoP;
                     //$_SESSION['idUsuario'] = $this->modelo->id;
                     header('Location: ?ctl=miPerfil');
                     
@@ -61,7 +61,11 @@
         }
 
         function cargarRegistro(){
-            $header = file_get_contents('views/header.html');
+            //$header = file_get_contents('views/header.html');
+            require_once('controllers/LoginCtrl.php');
+            $login = new Login();
+
+            $header = $login->cargarHeader();
             $body   = file_get_contents('views/registro.html');
             $form   = file_get_contents('views/formDatosUsuario.html');
             $footer = file_get_contents('views/footer.html');

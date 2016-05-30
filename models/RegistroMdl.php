@@ -3,7 +3,7 @@
     //require_once('models/ConexionDbMdl.php');
     class RegistroUsuario// extends ConexionDb
     {
-        private $ERR_DB;
+        private $ERR_DB = -1;
 
         
         function __construct()

@@ -1,5 +1,5 @@
 <?php 
-    //session_start();
+    session_start();
 
     if(isset($_GET['ctl']))
     {
@@ -42,9 +42,9 @@
                 break;
 
             case 'entrar':
-                require_once 'controllers/EntrarCtrl.php';
-                $controller = new Entrar();
-                $controller->cargarEntrar();
+                require_once 'controllers/LoginCtrl.php';
+                $controller = new Login();
+                $controller -> Entrar();
                 break;
 
             case 'miPerfil':

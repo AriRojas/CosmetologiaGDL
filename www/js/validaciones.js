@@ -175,3 +175,10 @@ function cifrar(){
 	document.getElementById("pass1").value = hash ;
 	document.getElementById("pass2").value = hash ;
 }
+
+function cifrarLogin()
+{
+	var input_password = document.getElementById("pass").value;
+	var hash = sha1(input_password);
+	document.getElementById("pass").value = hash ;
+}
