@@ -25,7 +25,7 @@
             }
             else
             {
-                $sql = "SELECT correoElectronico , password , nombre , apellidoPaterno FROM Usuario WHERE correoElectronico = \"$mail\"";
+                $sql = "SELECT correoElectronico , password , nombre , apellidoPaterno, tipoUsuario FROM Usuario WHERE correoElectronico = \"$mail\"";
                 $resultado = $conexion->query($sql);
                 $resultado = $resultado->fetch_row();
                 if(is_null($resultado))
@@ -37,6 +37,7 @@
                     if ($mail == $resultado[0] && $pass == $resultado[1]) {
                         $this->nombre=$resultado[2];
                         $this->apellidoP=$resultado[3];
+                        $_SESSION['tipoUsuario'] = $resultado[4];
                         return 1;
                     }
                     else{

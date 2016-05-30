@@ -48,14 +48,14 @@
                 break;
 
             case 'miPerfil':
-                require_once 'controllers/PerfilUsuarioCtrl.php';
-                $controller = new PerfilUsuario();
+                require_once 'controllers/LoginCtrl.php';
+                $controller = new Login();
                 $controller->cargarPerfilUsuario();
                 break;
 
             case 'perfilAdmin':
-                require_once 'controllers/PerfilAdminCtrl.php';
-                $controller = new PerfilAdmin();
+                require_once 'controllers/LoginCtrl.php';
+                $controller = new Login();
                 $controller->cargarPerfilAdmin();
                 break;
 

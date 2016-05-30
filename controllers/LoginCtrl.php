@@ -94,16 +94,18 @@
                 $correo  = $_POST["email"];
                 $pass    = $_POST["pass"];
                 $resultado = $this->model->Entrar($correo, $pass);
+                //$resultado
                 if($resultado == 1)
                 {
                     $_SESSION['usuario'] = $this->model->nombre . " " . $this->model->apellidoP;
-                    if($resultado["tipoUsuario"] == 2)
+                    var_dump($resultado);
+                    if($_SESSION['tipoUsuario'] == 1)
                     {
-                        header('Location: ?ctl=miPerfil&login=true&nav=principal');
+                        header('Location: ?ctl=perfilAdmin&login=true&nav=principal');
                     }
                     else
                     {
-                        header('Location: ?ctl=perfilAdmin&login=true&nav=principal');
+                        header('Location: ?ctl=miPerfil&login=true&nav=principal');
                     }
                 
                 }elseif ( $resultado == -1) {
@@ -134,6 +136,9 @@
                 case 'usuarios':
                     $content = file_get_contents('views/usuariosAdmin.html');
                     //$this->model->todoUsuario();
+                    if (isset($_GET['busqueda']) && ($_GET['busqueda'] == 'true')) {
+                        $this->model->obtenerUsuarios();
+                    }
                     break;
 
                 case 'citasAdmin':
