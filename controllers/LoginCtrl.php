@@ -98,7 +98,7 @@
                 if($resultado == 1)
                 {
                     $_SESSION['usuario'] = $this->model->nombre . " " . $this->model->apellidoP;
-                    var_dump($resultado);
+                    //var_dump($resultado);
                     if($_SESSION['tipoUsuario'] == 1)
                     {
                         header('Location: ?ctl=perfilAdmin&login=true&nav=principal');
@@ -196,11 +196,11 @@
                     break;
 
                 case 'citasUsuario':
-                    $content = file_get_contents('views/citasAdministrador.html');
+                    $content = file_get_contents('views/citasUsuario.html');
                     break;
 
                 case 'calendarioUsuario':
-                    $content = file_get_contents('views/calendarioCitas.html');
+                    $content = file_get_contents('views/agendarCitasUsuario.html');
                     break;
                 
                 default:
