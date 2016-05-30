@@ -107,6 +107,10 @@ function validaRegistro(){
 		document.getElementById("pass2").setAttribute('class', 'form-control ');
 	}
 
+	if(!enviar){
+		document.getElementById("pass1").value = "";
+		document.getElementById("pass2").value = "";
+	}
 	
 	return enviar;
 }
@@ -171,9 +175,16 @@ function validaLogin(){
 
 function cifrar(){
 	var input_password = document.getElementById("pass1").value;
-	var hash = sha1(input_password);
-	document.getElementById("pass1").value = hash ;
-	document.getElementById("pass2").value = hash ;
+	if( input_password ){
+		var hash = sha1(input_password);
+		document.getElementById("pass1").value = hash ;
+	}
+	var input_password = document.getElementById("pass2").value;
+	if( input_password ){
+		var hash = sha1(input_password);
+		document.getElementById("pass2").value = hash ;
+	}
+	
 }
 
 function cifrarLogin()
