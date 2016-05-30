@@ -73,7 +73,7 @@
         public function Entrar()
         {
             require_once("models/LoginMdl.php");
-            $this->model = new Login();
+            $this->model = new LoginUsuario();
 
             if (empty($_POST)) {
                 $this->cargarLogin();
@@ -88,12 +88,13 @@
                 echo "<br/>" . $correo . "  " . $pass;
 
                 //header("Location: ?ctl=entrar&login=false");
+
                 $resultado = $this->model->Entrar($correo, $pass);
 
                 if($resultado == 1)
                 {
-                    $_SESSION['usuario'] = $nombre . " " . $apellidoP;
-                    header('Location: ?ctl=miPerfil&login=true');
+                    $_SESSION['usuario'] = $this->model->nombre . " " . $this->model->apellidoP;
+                   header('Location: ?ctl=miPerfil&login=true');
                 
                 }elseif ( $resultado == -1) {
                     header('Location: ?ctl=entrar&login=false');     

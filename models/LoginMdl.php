@@ -5,7 +5,8 @@
     class LoginUsuario
     {
         private $ERR_DB = -1;
-        
+        public $nombre;
+        public $apelidoP;
         function __construct()
         {
             # code...
@@ -24,18 +25,18 @@
             }
             else
             {
-                $sql = "SELECT * FROM Usuario WHERE correoElectronico = \"$mail\"";
-                echo $sql;
+                $sql = "SELECT correoElectronico , password , nombre , apellidoPaterno FROM Usuario WHERE correoElectronico = \"$mail\"";
                 $resultado = $conexion->query($sql);
                 $resultado = $resultado->fetch_row();
-
                 if(is_null($resultado))
                 {
                     return $this->ERR_DB;
                 }
                 else
                 {
-                    if ($mail == $resultado["correoElectronico"] && $pass == $resultado["password"]) {
+                    if ($mail == $resultado[0] && $pass == $resultado[1]) {
+                        $this->nombre=$resultado[2];
+                        $this->apellidoP=$resultado[3];
                         return 1;
                     }
                     else{
