@@ -15,15 +15,27 @@
         {
             $header = file_get_contents('views/header.html');
             if (isset($_SESSION['usuario'])) {
-                
-                $navUser = '<a href="?ctl=miPerfil" class="btn btn-default"  aria-haspopup="true" aria-expanded="false">'
-                              . $_SESSION['usuario'] .
-                             '</a>' ;   
-                $header = str_replace('{PERFIL/REGISTRO}', $navUser , $header);
-                $navLog = '<a href="?ctl=entrar&logout=true " class="btn btn-default"  aria-haspopup="true" aria-expanded="false">
-                            Salir 
-                           </a>';
-                $header = str_replace('{INGRESAR/SALIR}', $navLog, $header);
+                if($_SESSION['usuario'] == 'admin')
+                {
+                    $navUser = '<a href="?ctl=perfilAdmin&nav=principal" class="btn btn-default"  aria-haspopup="true" aria-expanded="false">'
+                                  . $_SESSION['usuario'] .
+                                 '</a>' ;   
+                    $header = str_replace('{PERFIL/REGISTRO}', $navUser , $header);
+                    $navLog = '<a href="?ctl=entrar&logout=true " class="btn btn-default"  aria-haspopup="true" aria-expanded="false">
+                                Salir 
+                               </a>';
+                    $header = str_replace('{INGRESAR/SALIR}', $navLog, $header);
+                }
+                else{
+                    $navUser = '<a href="?ctl=miPerfil&nav=principal" class="btn btn-default"  aria-haspopup="true" aria-expanded="false">'
+                                  . $_SESSION['usuario'] .
+                                 '</a>' ;   
+                    $header = str_replace('{PERFIL/REGISTRO}', $navUser , $header);
+                    $navLog = '<a href="?ctl=entrar&logout=true " class="btn btn-default"  aria-haspopup="true" aria-expanded="false">
+                                Salir 
+                               </a>';
+                    $header = str_replace('{INGRESAR/SALIR}', $navLog, $header);
+                }
             }
             else
             {
@@ -85,7 +97,14 @@
                 if($resultado == 1)
                 {
                     $_SESSION['usuario'] = $this->model->nombre . " " . $this->model->apellidoP;
-                   header('Location: ?ctl=miPerfil&login=true');
+                    if($resultado["tipoUsuario"] == 2)
+                    {
+                        header('Location: ?ctl=miPerfil&login=true&nav=principal');
+                    }
+                    else
+                    {
+                        header('Location: ?ctl=perfilAdmin&login=true&nav=principal');
+                    }
                 
                 }elseif ( $resultado == -1) {
                     header('Location: ?ctl=entrar&login=false');     
