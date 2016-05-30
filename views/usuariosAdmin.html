@@ -1,24 +1,19 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <form class="form-inline" method="post" action="">
-                <select class="form-control">
+            <form class="form-inline" method="post" action="?ctl=perfilAdmin&nav=usuarios&busqueda=true">
+                <select id="criterio" name="criterio" class="form-control">
                     <option selected value="0">Opción de Búsqueda</option>
                     <option value="id">ID de Usuario</option>
                     <option value="mail">E-mail de Usuario</option>
                     <option value="nombre">Nombre del Usuario</option>
-                    <option value="todos">Todos</option>
                 </select>
                 
-                <div class="form-group">
-                    <label class="control-label" for="busqueda">Buscar:</label>
-                    <form action="post" class="form-horizontal" action="?ctl=perfilAdmin&nav=usuarios&busqueda=true" >
-                        <input class="form-control" type="search" id="busqueda" name="busqueda" />
-                        <button type="submit" class="btn btn-default" >
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </button>
-                    </form>
-                </div>
+                <label class="control-label" for="busqueda">Buscar:</label>
+                <input class="form-control" type="search" id="busqueda" name="busqueda" />
+                <button type="submit" class="btn btn-default" >
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
             </form>
         </div>
     </div>
