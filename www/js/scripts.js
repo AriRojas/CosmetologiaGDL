@@ -11,26 +11,9 @@ moment.locale('es', {
 });
 
 $(function () {
-            $('#datetimepicker12').datetimepicker({
-                inline: true,
-                sideBySide: true
-            });
-        });
-
-
-$(function(){
-    $('#datetimepicker4').datetimepicker({
-      pickTime: false
+    $('#datetimepicker12').datetimepicker({
+        inline: true,
+        sideBySide: true
     });
-
 });
 
-/*$("#datetimepicker12").datetimepicker({
-    inline: true,
-    sideBySide: true
-    isRTL: false,
-    format: 'dd.mm.yyyy hh:ii',
-    autoclose:true,
-    language: 'es'
-});
-*/
