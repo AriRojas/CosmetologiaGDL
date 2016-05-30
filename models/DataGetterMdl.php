@@ -5,7 +5,6 @@
     class DataGetter
     {
         private $ERR_DB = -1;
-        private $resultadoFinal;
         
         function __construct()
         {
@@ -77,6 +76,24 @@
                     return $resultado;
                 }
 
+            $conexion->close();
+        }
+
+        public function obtenerTodosUsuarios()
+        {
+            require('config.inc');
+            $conexion = new mysqli($servidor, $usuarioDB, $passwordDB, $database);
+
+            $sql = "SELECT idUsuario, nombre, apellidoPaterno, apellidoMaterno, correoElectronico FROM Usuario";
+
+            $resultado = $conexion->query($sql);
+            if (is_null($resultado)) {
+                return $this->ERR_DB;
+            }
+            else
+            {
+                return $resultado;
+            }
             $conexion->close();
         }
     }

@@ -137,9 +137,13 @@
                     $content = file_get_contents('views/usuariosAdmin.html');
                     //$this->model->todoUsuario();
                     if (isset($_GET['busqueda']) && ($_GET['busqueda'] == 'true')) {
-                        $repite = $this->model->obtenerUsuarios();
+                        $repite = $this->model->obtenerUsuariosBuscados();
 
                         $content = str_replace('{REPITEUSUARIO}', $repite, $content);
+                    }
+                    else
+                    {
+                        $content = str_replace('{REPITEUSUARIO}', "", $content);
                     }
                     break;
 
@@ -149,6 +153,9 @@
 
                 case 'calendarioAdmin':
                     $content = file_get_contents('views/calendarioCitas.html');
+                    $repite = $this->model->obtenerTodosUsuarios();
+
+                    $content = str_replace('{REPITEUSUARIO}', $repite, $content);
                     break;
                 
                 default:

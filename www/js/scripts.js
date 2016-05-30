@@ -17,3 +17,24 @@ $(function () {
     });
 });
 
+$(function () { 
+    var date = new Date(); 
+    var currentMonth = date.getMonth(); 
+    var currentDate = date.getDate(); 
+    var currentYear = date.getFullYear(); 
+    $('.form_datetime').datetimepicker({
+        language:  'es',
+        weekStart: 0,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1, 
+        minDate: new Date(currentYear, currentMonth, currentDate),
+        daysOfWeekDisabled: [0],
+        disabledDates: [moment("12/25/2015"),
+                        moment("12/24/2015") ]
+    });
+});
+
+

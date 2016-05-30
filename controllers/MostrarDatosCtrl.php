@@ -11,7 +11,7 @@
         }
 
 
-        public function obtenerUsuarios()
+        public function obtenerUsuariosBuscados()
         {
             require_once('models/DataGetterMdl.php');
             $model = new DataGetter();
@@ -81,37 +81,46 @@
                 echo "<br/>";
                 var_dump($this->resultadoBusqueda);
                 */
-                return $this->llenaTablaUsuarios($resultado);
+                return $this->llenaTablaUsuariosBuscados($resultado);
             }
         }
 
-        public function llenaTablaUsuarios($resultado)
+        public function llenaTablaUsuariosBuscados($resultado)
         {
             //var_dump($resultado);
             $repite = "";
-            //foreach ($resultado as $row) {
-                /*echo $resultado[0] . "<br/>";
-                echo $resultado[1] . "<br/>";
-                echo $resultado[2] . "<br/>";
-                echo $resultado[3] . "<br/>";
-                echo $resultado[4] . "<br/>";*/
-                $repite = $repite . 
-                        "<tr>" .
-                            "<td><a href=\"#\"><span class=\"glyphicon glyphicon-pencil\"></span></a></td>".
-                            "<td>$resultado[0]</td>".
-                            "<td>$resultado[1] $resultado[2] $resultado[3]</td>".
-                            "<td>$resultado[4]</td>".
-                            "<td><a href=\"#\"><span class=\"glyphicon glyphicon-list-alt\"></span></a></td>".
-                        "</tr>";
+            $repite = $repite . 
+                    "<tr>" .
+                        "<td><a href=\"#\"><span class=\"glyphicon glyphicon-pencil\"></span></a></td>".
+                        "<td>$resultado[0]</td>".
+                        "<td>$resultado[1] $resultado[2] $resultado[3]</td>".
+                        "<td>$resultado[4]</td>".
+                        "<td><a href=\"#\"><span class=\"glyphicon glyphicon-list-alt\"></span></a></td>".
+                    "</tr>";
 
-            //}
+            return $repite;
+        }
 
-            //echo $repite;
+        public function obtenerTodosUsuarios()
+        {
+            require_once('models/DataGetterMdl.php');
+            $model = new DataGetter();
 
-            /*$tablaUsuarios = file_get_contents('views/usuariosAdmin.html');
-            $tablaUsuarios = str_replace('{REPITEUSUARIO}', $repite, $tablaUsuarios);
+            $resultado = $model->obtenerTodosUsuarios();
+            var_dump($resultado);
+            //return $this->llenaTablaTodosUsuarios($resultado);
+        }
 
-            echo $tablaUsuarios;*/
+        public function llenaTablaTodosUsuarios($resultado)
+        {
+            $repite = "";
+            $repite = $repite . 
+                    "<tr>" .
+                        "<td><input type=\"radio\" name=\"selectedUser\" value=\"$resultado[0]\"></td>".
+                        "<td>$resultado[0]</td>".
+                        "<td>$resultado[1] $resultado[2] $resultado[3]</td>".
+                        "<td>$resultado[4]</td>".
+                    "</tr>";
 
             return $repite;
         }
