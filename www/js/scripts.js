@@ -18,7 +18,7 @@ $(function () {
     var currentYear = date.getFullYear();
 
     $('#sandbox-container').datepicker({
-        format: "dd/mm/yyyy",
+        format: "yyyy/mm/dd",
         maxViewMode: 2,
         language: "es",
         daysOfWeekDisabled: "0",

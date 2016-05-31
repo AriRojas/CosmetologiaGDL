@@ -207,11 +207,19 @@
 
                 case 'calendarioUsuario':
                     $content = file_get_contents('views/agendarCitasUsuario.html');
+                    
                     break;
                 
                 default:
                     # code...
                     break;
+            }
+
+            if (isset($_GET['agendarCita']) && $_GET['agendarCita'] == 'true') {
+                require_once('controllers/AgendarCitaCtrl.php');
+                $model = new AgendarCita();
+                $model->solicitarCitaUsuarios();
+                //echo "EUREEEKAAAA!!!";
             }
 
             $perfilUsuario = str_replace('{{CONTENT}}', $content, $perfilUsuario);
