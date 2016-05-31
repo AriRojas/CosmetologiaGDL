@@ -203,6 +203,7 @@
 
                 case 'citasUsuario':
                     $content = file_get_contents('views/citasUsuario.html');
+                    $this->model->muestraCitasUsuario($_SESSION['usuario']);
                     break;
 
                 case 'calendarioUsuario':
@@ -215,108 +216,43 @@
                     break;
             }
 
-            if (isset($_GET['agendarCita']) && $_GET['agendarCita'] == 'true') {
+            
+            
+
+            if (isset($_GET['agendarCita']) && $_GET['agendarCita'] == 'true') 
+            {
+                //echo "aquiestoyyyyyy";
                 require_once('controllers/AgendarCitaCtrl.php');
                 $model = new AgendarCita();
-                $model->solicitarCitaUsuarios();
+                $resultado = $model->solicitarCitaUsuarios();
                 //echo "EUREEEKAAAA!!!";
-            }
 
+                if ($resultado == -1) {
+                    echo  '
+                    <div class="alert alert-dismissible" id="modalContent">
+                      <button type="button" class="close" data-dismiss="alert">×</button>
+                      <strong>ERROR!</strong><p>Ya hay una cita registrada para esa misma fecha a la misma hora. Favor de elgir una hora distinta o de comunicarse con nosotros al teléfono de contacto.</p> 
+                    </div>
+                    ';
+                    //header('Location: ?ctl=miPerfil&nav=calendarioUsuario&agendarCita=false');
+                }
+                elseif($resultado == 1)
+                {
+                    echo  '
+                    <div class="alert alert-dismissible" id="modalContent">
+                      <button type="button" class="close" data-dismiss="alert">×</button>
+                      <strong>CITA PROGRAMADA EXITOSAMENTE!</strong><p>Lo esperamos el día y la hora acordada. Si tiene alguna duda favor de consultar su perfil o ponerse en contacto con nosotros.</p> 
+                    </div>
+                    ';
+                    //header('Location: ?ctl=miPerfil&nav=citasUsuario');
+                }
+            }
             $perfilUsuario = str_replace('{{CONTENT}}', $content, $perfilUsuario);
 
             $view = $header . $perfilUsuario . $footer;
             echo $view;
         }
 
-        /*public function crearPrincipal($resultado)
-        {
-            $principal = 
-                "<div class=\"form-group\">".
-                    "<label class=\"control-label\" for=\"nombre\">Nombre(s):<span class=\"requerido\">*</span></label>".
-                    "<input  class=\"form-control\" id=\"nombre\" name=\"nombre\" type=\"text\" onfocus=\"quitarErrorClass('nombre')\" value=\"$resultado['nombre']\" />".
-                "</div>".
-
-                "<div class=\"form-group\">".
-                    "<label class=\"control-label\" for=\"apellidop\">Apellido Paterno:<span class=\"requerido\">*</span></label>".
-                    "<input  class=\"form-control\" id=\"apellidop\" name=\"apellidop\" type=\"text\" onfocus=\"quitarErrorClass('apellidop')\" value=\"$resultado['apellidoPaterno']/>".
-                "</div>".
-
-                "<div class=\"form-group\">".
-                    "<label class=\"control-label\" for=\"apellidom\">Apellido Materno:<span class=\"requerido\">*</span></label>".
-                    "<input  class=\"form-control\" id=\"apellidom\" name=\"apellidom\" type=\"text\" onfocus=\"quitarErrorClass('apellidom')\" value=\"$resultado['apellidoMaterno'] />".
-                "</div>".
-
-                "<div class=\"form-group\">".
-                    "<label class=\"control-label\" id=\"sexo\">Selecciona tu sexo:<span class=\"requerido\">*</span></label>".
-                "</div>".
-                //VALIDAR CUAL ES SU GENERO
-                "<div class=\"form-group\">".
-                        "<select id=\"sexo\" name=\"sexo\" class=\"form-control\">".
-                          "<option value=\"Masculino\">Masculino</option>".
-                          "<option value=\"Femenino\">Femenino</option>".
-                        "</select>".
-                "</div>".
-
-                "<div class=\"form-group\">".
-                    "<label class=\"control-label\" for=\"domicilio\">Dirección:<span class=\"requerido\">*</span></label>".
-                    "<input  class=\"form-control\" id=\"domicilio\" name=\"domicilio\" type=\"text\" onfocus=\"quitarErrorClass('domicilio')\" value=\"$resultado['domicilio'] />".
-                "</div>".
-
-                "<div class=\"form-group\">".
-                    "<label class=\"control-label\" for=\"numexterior\">Número Exterior:</label>".
-                    "<input  class=\"form-control\" id=\"numexterior\" name=\"numexterior\" type=\"number\" max=\"99999\" onfocus=\"quitarErrorClass('numexterior')\" value=\"$resultado['numExterior']/>".
-                "</div>".
-
-                "<div class=\"form-group\">".
-                    "<label class=\"control-label\" for=\"numerointerior\">Número Interior:</label>".
-                    " <input  class=\"form-control\" id=\"numerointerior\" name=\"numerointerior\" type=\"number\" max=\"99999\" onfocus=\"quitarErrorClass('numerointerior')\" value=\"$resultado['numInterior']/>".
-                "</div>".
-
-                "<div class=\"form-group\">".
-                    "<label class=\"control-label\" for=\"colonia\">Colonia:<span class=\"requerido\">*</span></label>".
-                    "<input  class=\"form-control\" id=\"colonia\" name=\"colonia\" type=\"text\" onfocus=\"quitarErrorClass('colonia')\" value=\"$resultado['colonia']/>".
-                "</div>".
-
-                "<div class=\"form-group\">".
-                    "<label class=\"control-label\" for=\"municipio\">Municipio:<span class=\"requerido\">*</span></label>".
-                    "<input  class=\"form-control\" id=\"municipio\" name=\"municipio\" type=\"text\" onfocus=\"quitarErrorClass('municipio')\" value=\"$resultado['municipio']/>".
-                "</div>".
-
-                <div class="form-group">
-                    <label class="control-label" for="estado">Estado:<span class="requerido">*</span></label>
-                    <input  class="form-control" id="estado" name="estado" type="text" onfocus="quitarErrorClass('estado')" />
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label" for="telefono">Teléfono:<span class="requerido">*</span></label>
-                    <input  class="form-control" id="telefono" name="telefono" type="tel" onfocus="quitarErrorClass('telefono')" />
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label" for="fechanacimiento">Fecha de nacimiento:<span class="requerido">*</span></label>
-                    <input id="fechanacimiento" class="form-control"  name="fechanacimiento" type="date" min="1916-01-01" step="1" onfocus="quitarErrorClass('fechanacimiento')" />
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label" for="mail">E-mail:<span class="requerido">*</span></label>
-                    <input  class="form-control" id="mail" name="mail" type="email" onfocus="quitarErrorClass('mail')" />
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label" for="pass1">Ingresa tu contraseña:<span class="requerido">*</span></label>
-                    <input  class="form-control" id="pass1" name="pass1" type="password" onfocus="quitarErrorClass('pass1')"/>
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label" for="imgperfil">Imagen de perfil </label>
-                    <input id="imgperfil" name="imgperfil" class="input-file" type="file" accept="image/*" >
-                </div>
-
-                <p class="requerido">*Campos Requeridos</p>
-
-
-            ";
-        }*/
     }
 
 
