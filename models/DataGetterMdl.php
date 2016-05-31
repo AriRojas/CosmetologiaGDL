@@ -96,5 +96,26 @@
             }
             $conexion->close();
         }
+
+        public function obtenerUsuarioLoggeado($busqueda)
+        {
+            require('config.inc');
+            $conexion = new mysqli($servidor, $usuarioDB, $passwordDB, $database);
+
+            $sql = "SELECT * FROM Usuario WHERE idUsuario = $busqueda";
+
+            $resultado = $conexion->query($sql);
+            $resultado = $resultado->fetch_row();
+                if(is_null($resultado))
+                {
+                    return $this->ERR_DB;
+                }
+                else
+                {
+                    return $resultado;
+                }
+
+            $conexion->close();
+        }
     }
 ?>

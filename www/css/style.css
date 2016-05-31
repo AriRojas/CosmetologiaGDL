@@ -68,6 +68,9 @@ nav ul li a{
     background-color: transparent;
 }
 
+.containerFull{
+  min-height: 100%;
+}
 
 /** Footer **/
 #container{
@@ -207,4 +210,24 @@ button#registro{
 
 nav#perfilAdmin{
     background-color: #A5539E;
+}
+
+
+img#PerfilIMG {
+    border-radius: 5%;
+    border: solid #A5539E;
+    box-shadow: 1px 1px 30px 4px rgb(215, 181, 248);
+    width: 250px;
+    height: 250px;
+}
+
+#panelPerfil{
+    border-radius: 6px;
+    border: 2px solid #A5539E;
+    box-shadow: 1px 1px 30px 4px rgb(215, 181, 248);
+}
+
+#panelPerfiltitulo{
+    background-color: #A5539E;
+    color: white;
 }

@@ -182,13 +182,19 @@
             $perfilUsuario = file_get_contents('views/perfilUsuario.html');
             $footer = file_get_contents('views/footer.html');
 
-            if (isset($_SESSION['usuario'])) {
-                $perfilUsuario = str_replace('{{USERNAME}}', $_SESSION['usuario'], $perfilUsuario);
-            }
+            
 
             switch ($_GET['nav']) {
                 case 'principal':
-                    $content = file_get_contents('views/formDatosUsuario.html');
+                    $data    = $this->model->obtenerPerfil();
+                    $content = file_get_contents('views/perfilDatos.html');
+                    $content = str_replace('{imgPerfil}', $data[15], $content);
+                    $content = str_replace('{NOMBRECOMPLETO}'   , $data[2].' '.$data[3].' '.$data[4], $content);
+                    $domicilio = $data[6].' '.$data[7].' '.$data[8].' Col. '. $data[9].', '.$data[10].', '.$data[11].'.';
+                    $content = str_replace('{DOMICILIO}', $domicilio , $content);
+                    $content = str_replace('{FECHA}', $data[5], $content);
+                    $content = str_replace('{TELEFONO}', $data[12], $content);
+                    $content = str_replace('{CORREO}', $data[13], $content);
                     break;
 
                 case 'historial':
