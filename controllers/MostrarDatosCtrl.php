@@ -132,13 +132,7 @@
             return $repite;
         }
 
-        public function muestraCitasUsuario($idUsuario)
-        {
-            require_once('models/DataGetterMdl.php');
-            $model = new DataGetter();
-
-            $model->obtenerCitasUsuario($idUsuario);
-        }
+        
 
     }
 
@@ -161,6 +155,14 @@
 
             $resultado = $model->obtenerUsuarioLoggeado($_SESSION['idUsuario']);
             return $resultado;
+        }
+
+        public function muestraCitasUsuario($idUsuario)
+        {
+            require_once('models/DataGetterMdl.php');
+            $model = new DataGetter();
+
+            return $model->obtenerCitasUsuario($idUsuario);
         }
     }
 

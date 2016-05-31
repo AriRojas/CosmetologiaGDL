@@ -210,7 +210,10 @@
 
                 case 'citasUsuario':
                     $content = file_get_contents('views/citasUsuario.html');
-                    $this->model->muestraCitasUsuario($_SESSION['usuario']);
+                    //var_dump($_SESSION);
+                    $repite = $this->model->muestraCitasUsuario($_SESSION['idUsuario']);
+
+                    $content = str_replace('{REPITECITA}', $repite, $content);
                     break;
 
                 case 'calendarioUsuario':

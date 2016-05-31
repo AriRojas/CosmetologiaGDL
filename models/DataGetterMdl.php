@@ -20,7 +20,7 @@
 
             $resultado = $conexion->query($sql);
             $resultado = $resultado->fetch_row();
-                if(is_null($resultado))
+                if(empty($resultado))
                 {
                     return $this->ERR_DB;
                 }
@@ -45,7 +45,7 @@
                 var_dump($row);
             }*/
             $resultado = $resultado->fetch_row();
-                if(is_null($resultado))
+                if(empty($resultado))
                 {
                     return $this->ERR_DB;
                 }
@@ -67,7 +67,7 @@
 
             $resultado = $conexion->query($sql);
             //$resultado = $resultado->fetch_row();
-                if(is_null($resultado))
+                if(empty($resultado))
                 {
                     return $this->ERR_DB;
                 }
@@ -87,7 +87,7 @@
             $sql = "SELECT idUsuario, nombre, apellidoPaterno, apellidoMaterno, correoElectronico FROM Usuario";
 
             $resultado = $conexion->query($sql);
-            if (is_null($resultado)) {
+            if (empty($resultado)) {
                 return $this->ERR_DB;
             }
             else
@@ -106,7 +106,7 @@
 
             $resultado = $conexion->query($sql);
             $resultado = $resultado->fetch_row();
-                if(is_null($resultado))
+                if(empty($resultado))
                 {
                     return $this->ERR_DB;
                 }
@@ -118,14 +118,47 @@
             $conexion->close();
         }
 
-        public function obtenerCitasUsuario()
+        public function obtenerCitasUsuario($idUsuario)
         {
             require('config.inc');
             $conexion = new mysqli($servidor, $usuarioDB, $passwordDB, $database);
 
-            $sql = "SELECT * FROM Citas WHERE idUsuario";
+            $sql = "SELECT (C.idCita, T.nombreTratamiento, C.fechaAsignacion, C.horaAsignacion, E.nombreEstado)".
+                    "FROM Citas AS C".
+                    "JOIN Tratamiento AS T".
+                    "ON C.idTratamiento = T.idTratamiento".
+                    "JOIN EstadosCitas AS E".
+                    "ON C.idEstadoCita = E.idEstado WHERE NOT(E.idEstado = 3)";
+
+            $resultado = $conexion->query($sql);
+            var_dump($resultado);
+            //$resultado = $resultado->fetch_row();
+
+            //var_dump($resultado);
+            /*$repite = "";
+            
+            while ($row = $resultado->fetch_assoc()) {
+                $id = $row['idTratamiento'];
+                $sql = "SELECT nombreTratamiento FROM Tratamiento WHERE idTratamiento = $id";
+                
+                $tratamiento = $conexion->query($sql);
+                $tratamiento = $tratamiento->fetch_row();
+                //echo "<br/>" . $tratamiento[0];
+                //var_dump($tratamiento);
+
+                $repite = $repite . 
+                        "<tr>" .
+                            "<td>$row['idCita']</td>".
+                            "<td>$tratamiento[0]</td>".
+                            "<td>$row['fechaAsignada'] $row['horaAsignada']</td>".
+                            "<td>$row['idEstado']</td>".
+                        "</tr>";
+                //var_dump($row);
+
+            }*/
 
             $conexion->close();
+            return $repite;
         }
     }
 ?>
