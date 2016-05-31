@@ -10,12 +10,14 @@
             # code...
         }
 
-        public function agendarCitaUsuarios()
+        public function solicitarCitaUsuarios()
         {
+            //echo "aaaaaaaaaaaaaaaaaaaaaaaaaaaaah";
             require_once('models/AgendarCitasMdl.php');
             $model = new AgendarCitas();
 
-            if (empty($_POST['agendarCita'])) {
+            //var_dump($_POST);
+            /*if (empty($_POST)) {
                 echo  '
                     <div class="alert alert-dismissible" id="modalContent">
                       <button type="button" class="close" data-dismiss="alert">×</button>
@@ -24,15 +26,17 @@
                     ';
                 header('Location: ?ctl=miPerfil&nav=calendarioUsuario');
             }
-            else
-            {
+            else//if ($_POST['agendarCita'] == 'true')
+            {*/
+                //echo "eurekaa";
                 /*idTratamiento, idEstadoCita*/
                 $idUsuario      = $_SESSION['idUsuario'];
                 $tratamiento    = $_POST['tratamiento'];
-                $fechaHora      = $_POST['fechaHora'];
+                $fecha          = $_POST['fecha'];
+                $hora           = $_POST['hora'];
 
-                
-            }
+                $resultado = $model->agendarCitaUsuarios($idUsuario, $tratamiento, $fecha, $hora);
+            //}
         }
         
     }
