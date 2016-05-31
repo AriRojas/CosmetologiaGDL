@@ -123,7 +123,7 @@
             require('config.inc');
             $conexion = new mysqli($servidor, $usuarioDB, $passwordDB, $database);
 
-            $sql = "SELECT * FROM Citas WHERE idUsuario"
+            $sql = "SELECT * FROM Citas WHERE idUsuario";
 
             $conexion->close();
         }
