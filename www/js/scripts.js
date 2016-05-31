@@ -25,6 +25,7 @@ $(function () {
 });
 
 $(function(){
-    $('#tomaFecha').value = $("#datepicker").data('datepicker').getFormattedDate('yyyy-mm-dd');
+    var fecha = $("#datepicker").data('datepicker').getFormattedDate('yyyy-mm-dd');
+    $('#tomaFecha').value = fecha;
 });
 

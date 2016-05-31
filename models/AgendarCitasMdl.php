@@ -50,6 +50,13 @@
             return 1;
             $conexion->close();
         }
+
+
+
+        public function agendarCitaAdmin()
+        {
+            
+        }
     }
 
 ?>

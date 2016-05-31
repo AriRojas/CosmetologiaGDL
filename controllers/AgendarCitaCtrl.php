@@ -25,6 +25,7 @@
             $newformat = date('Y-m-d',$time);
             //echo $newformat;
 
+            //echo $fecha;
             //return -1;
             return $model->agendarCitaUsuarios($idUsuario, $tratamiento, $newformat, $hora);
         }

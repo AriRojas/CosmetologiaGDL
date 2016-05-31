@@ -25,14 +25,6 @@ function validaRegistro(){
         document.getElementById("apellidom").setAttribute('class', 'form-control input-md');
     }
 
-    var sexo = document.getElementById('sexo').selectedIndex;
-    if(sexo < 0 || sexo > 1) {
-        document.getElementById("sexo").setAttribute('class', 'form-control input-md error');
-        enviar =  false;
-    }else{
-        document.getElementById("sexo").setAttribute('class', 'form-control input-md');
-    }
-
     var domicilio       = document.getElementById('domicilio');
     if( domicilio.value ){
         document.getElementById("domicilio").setAttribute('class', 'form-control input-md');
@@ -142,13 +134,6 @@ function validaEditar(){
         document.getElementById("apellidom").setAttribute('class', 'form-control input-md');
     }
 
-    var sexo = document.getElementById('sexo').selectedIndex;
-    if(sexo < 0 || sexo > 1) {
-        document.getElementById("sexo").setAttribute('class', 'form-control input-md error');
-        enviar =  false;
-    }else{
-        document.getElementById("sexo").setAttribute('class', 'form-control input-md');
-    }
 
     var domicilio       = document.getElementById('domicilio');
     if( domicilio.value ){
@@ -286,15 +271,17 @@ function cifrarLogin()
 function validaAgendarCitaUsuario()
 {
     //validar que el radio no esté vacío
-    var tratamiento = document.getElementsByName('tratamiento');
+    /*var tratamiento = document.getElementsByName('tratamiento');
     //var formulario = document.forms[0];
     for (var i = 0; i < tratamiento.length; i++) {
         if (tratamiento[i].checked) {
             break;
         }
         //alert("El marcado es " + tratamiento[i].value);
-    }
-
+    }*/
+    //$('#tomaFecha').value
+    var fecha = $("#datepicker").data('datepicker').getFormattedDate('yyyy-mm-dd');
+    document.getElementById("tomaFecha").value = fecha;
     
 
 

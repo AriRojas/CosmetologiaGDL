@@ -15,7 +15,7 @@
         {
             $header = file_get_contents('views/header.html');
             if (isset($_SESSION['usuario'])) {
-                if($_SESSION['usuario'] == 'admin')
+                if($_SESSION['tipoUsuario'] == 1)
                 {
                     $navUser = '<a href="?ctl=perfilAdmin&nav=principal" class="btn btn-default"  aria-haspopup="true" aria-expanded="false">'
                                   . $_SESSION['usuario'] .
@@ -156,6 +156,9 @@
 
                 case 'citasAdmin':
                     $content = file_get_contents('views/citasAdministrador.html');
+                    $repite = $this->model->muestraCitasAdmin($_SESSION['idUsuario']);
+
+                    $content = str_replace('{REPITECITAS}', $repite, $content);
                     break;
 
                 case 'calendarioAdmin':
@@ -206,6 +209,10 @@
 
                 case 'historial':
                     $content = file_get_contents('views/tablaHistorialUsuario.html');
+                    //var_dump($_SESSION);
+                    $repite = $this->model->muestraHistorialUsuario($_SESSION['idUsuario']);
+
+                    $content = str_replace('{REPITEHISTORIAL}', $repite, $content);
                     break;
 
                 case 'citasUsuario':

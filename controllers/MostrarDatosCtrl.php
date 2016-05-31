@@ -71,7 +71,8 @@
 
                     case 'nombre':
                         $resultado = $model->obtenerUsuarioByNombre($busqueda);
-                        if($resultado == -1)
+                        var_dump($resultado);
+                        /*if($resultado == -1)
                         {
                             echo  '
                                 <div class="alert alert-dismissible" id="modalContent">
@@ -79,7 +80,7 @@
                                   <strong>ERROR!</strong><p>Ningún usuario registrado con ese nombre.</p> 
                                 </div>
                                 ';
-                        }
+                        }*/
                         
                         break;
                     
@@ -88,6 +89,7 @@
                 echo "<br/>";
                 var_dump($this->resultadoBusqueda);
                 */
+                //var_dump($resultado);
                 return $this->llenaTablaUsuariosBuscados($resultado);
             }
         }
@@ -95,17 +97,19 @@
         public function llenaTablaUsuariosBuscados($resultado)
         {
             //var_dump($resultado);
-            $repite = "";
-            $repite = $repite . 
-                    "<tr>" .
-                        "<td><a href=\"#\"><span class=\"glyphicon glyphicon-pencil\"></span></a></td>".
-                        "<td>$resultado[0]</td>".
-                        "<td>$resultado[1] $resultado[2] $resultado[3]</td>".
-                        "<td>$resultado[4]</td>".
-                        "<td><a href=\"#\"><span class=\"glyphicon glyphicon-list-alt\"></span></a></td>".
-                    "</tr>";
+            if($resultado != -1){
+                $repite = "";
+                $repite = $repite . 
+                        "<tr>" .
+                            "<td><a href=\"#\"><span class=\"glyphicon glyphicon-pencil\"></span></a></td>".
+                            "<td>$resultado[0]</td>".
+                            "<td>$resultado[1] $resultado[2] $resultado[3]</td>".
+                            "<td>$resultado[4]</td>".
+                            "<td><a href=\"#\"><span class=\"glyphicon glyphicon-list-alt\"></span></a></td>".
+                        "</tr>";
 
-            return $repite;
+                return $repite;
+            }
         }
 
         public function obtenerTodosUsuarios()
@@ -114,8 +118,27 @@
             $model = new DataGetter();
 
             $resultado = $model->obtenerTodosUsuarios();
-            var_dump($resultado);
-            //return $this->llenaTablaTodosUsuarios($resultado);
+            $repite = "";
+            while ($row = $resultado->fetch_assoc()) 
+            {
+                /*echo "<br/>";
+                var_dump($row);*/
+                $usuarioID = $row['idUsuario'];
+                $nombre = $row['nombre'];
+                $apPaterno = $row['apellidoPaterno'];
+                $apMaterno = $row['apellidoMaterno'];
+                $correo = $row['correoElectronico'];
+
+                $repite = $repite . 
+                    "<tr>" .
+                        "<td><input type=\"radio\" name=\"selectedUser\" value=\"$usuarioID\"></td>".
+                        "<td>$usuarioID</td>".
+                        "<td>$nombre $apPaterno $apMaterno</td>".
+                        "<td>$correo</td>".
+                    "</tr>";
+            }
+
+            return $repite;
         }
 
         public function llenaTablaTodosUsuarios($resultado)
@@ -132,6 +155,13 @@
             return $repite;
         }
 
+        public function muestraCitasAdmin($idUsuario)
+        {
+            require_once('models/DataGetterMdl.php');
+            $model = new DataGetter();
+
+            return $model->obtenerCitasAdmin();
+        }
         
 
     }
@@ -162,7 +192,47 @@
             require_once('models/DataGetterMdl.php');
             $model = new DataGetter();
 
-            return $model->obtenerCitasUsuario($idUsuario);
+            $resultado = $model->obtenerCitasUsuario();
+            $repite = "";
+            //var_dump($resultado);
+            while ($row = $resultado->fetch_assoc()) {
+                /*echo "<br/>";
+                var_dump($row);*/
+                $idCita = $row['idCita'];
+                $tratamiento = $row['nombreTratamiento'];
+                $fecha = $row['fechaAsignacion'];
+                $hora = $row['horaAsignacion'];
+                $estado = $row['nombreEstado'];
+                $usuarioID = $row['idUsuario'];
+
+                if ($usuarioID == $idUsuario) {
+                    $repite = $repite .
+                            "<tr>" .
+                                "<td>$idCita</td>".
+                                "<td>$tratamiento</td>".
+                                "<td>$fecha / $hora hrs.</td>".
+                                "<td>$estado</td>".
+                            "</tr>";
+
+                }
+            }
+
+            return $repite;
+        }
+
+        public function muestraHistorialUsuario($idUsuario)
+        {
+            require_once('models/DataGetterMdl.php');
+            $model = new DataGetter();
+
+            $resultado = $model->obtenerHistorialUsuario();
+            $repite = "";
+
+            while ($row = $resultado->fetch_assoc()) 
+            {
+                echo "<br/>";
+                var_dump($row);
+            }
         }
     }
 

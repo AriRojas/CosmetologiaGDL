@@ -1,10 +1,11 @@
 <div class="row">
-    <div class="col-md-5">
-        <div class="form-group">
-            <label class="control-label" id="tratamiento"><h4>1.- Seleccione el tratamiento:</h4></label>
-        </div>
+    <form class="form-group" method="post" action="?ctl=miPerfil&nav=citasUsuario&agendarCita=true" style="text-align:justify;">
+        <div class="col-md-5">
+            
+            <label for="tratamiento" class="control-label" id="tratamiento">1.- Seleccione el tratamiento:</label>
+        <!--</div>
 
-        <div class="form-group">
+        <div class="form-group">-->
             <h4>Tratamientos Faciales</h4>
             <label for="facial" class="radio">
                 <input  name="tratamiento" id="facial" type="radio" />Limpieza Facial
@@ -54,27 +55,39 @@
 
         </div>
         
-    </div>
-
-    <!--<div id="calendario" class="col-md-7">
-        <div class="form-group">
-            <h4>2.- Seleccione una fecha y hora:</h4>
-            <div class="row">
-                <div id="datetimepicker12"></div>
+        <div class="col-md-7">
+            <label>2.-Elija fecha y hora:</label>
+        </div>
+        <div class="col-md-7">
+            <!--
+            <input type="text" id="datepicker" name="datepicker" data-behavior="datepicker">
+            -->
+            <div class="col-md-4" id="datepicker"></div>
+            <div class="form-group col-md-3">
+                <select id="hora" name="hora" class="form-control">
+                    <option value="9">9:00 hrs.</option>
+                    <option value="10">10:00 hrs.</option>
+                    <option value="11">11:00 hrs.</option>
+                    <option value="12">12:00 hrs.</option>
+                    <option value="13">13:00 hrs.</option>
+                    <option value="14">14:00 hrs.</option>
+                    <option value="16">16:00 hrs.</option>
+                    <option value="17">17:00 hrs.</option>
+                    <option value="18">18:00 hrs.</option>
+                </select>
             </div>
         </div>
-    </div>-->
 
-    <div class="form-group" class="col-md-7">
-        <label for="dtp_input1" class="control-label">2.- Elija fecha y hora: </label>
-        <!--<div class="input-group date form_datetime col-md-5" data-date="2016-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">-->
-        <div class="input-group date form_datetime col-md-5" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
-            <input class="form-control" size="16" type="text" value="" readonly>
-            <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+        <div class="col-md-5">
+            <br />
+            <br />
+            <br />
+            <br />
+            <input id="tomaFecha" type="hidden" name="fecha" value="">
+            <button type="submit" class="btn btn-default btn-lg btn-block" onclick="validaAgendarCitaUsuario()">Agendar Cita</button>
         </div>
-        <input type="hidden" id="dtp_input1" value="" /><br/>
-    </div>
+
+    </form>
 </div>
 <div class="row table-responsive">
     <h4 class="col-md-12">3.- Seleccione usuario:</h4>
