@@ -58,3 +58,7 @@ Es proyecto de desarrollo web cuenta con las siguientes caracteristicas.
 ###LICENCIAS
 ============
 Este proyecto está diseñado bajo la licencia GNU GPL. Los desarrolladores conservan los derechos de autor,  pero se permite la libre distribución, modificación y uso del proyecto siempre y cuando el resultado de las modificaciones quede obligatoriamente con la misma licencia.
+
+###PROYECTO HOSTED IN
+=====================
+www.cosmetologiagdl.hol.es
