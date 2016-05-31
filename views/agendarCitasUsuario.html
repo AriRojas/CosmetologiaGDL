@@ -2,56 +2,21 @@
     <form class="form-group" method="post" action="?ctl=miPerfil&nav=citasUsuario&agendarCita=true" style="text-align:justify;">
         <div class="col-md-5">
             
-            <label for="tratamiento" class="control-label" id="tratamiento">1.- Seleccione el tratamiento:</label>
-        <!--</div>
-
-        <div class="form-group">-->
-            <h4>Tratamientos Faciales</h4>
-            <label for="facial" class="radio">
-                <input  name="tratamiento" id="facial" type="radio" />Limpieza Facial
-            </label>
-
-            <label for="antiacne" class="radio">
-                <input  name="tratamiento" id="antiacne" type="radio" />Tratamiento Antiacné
-            </label>
-
-            <label for="controlGrasa" class="radio">
-                <input  name="tratamiento" id="controlGrasa" type="radio" />Control de Grasa
-            </label>
-
-            <label for="antiarrugas" class="radio">
-                <input  name="tratamiento" id="antiarrugas" type="radio" />Tratamiento Antiarrugas
-            </label>
-
-            <label for="manchasCicatrices" class="radio">
-                <input  name="tratamiento" id="manchasCicatrices" type="radio" />Manchas y Cicatrices
-            </label>
-
-            <label for="desensibilizante" class="radio">
-                <input  name="tratamiento" id="desensibilizante" type="radio" />Tratamiento Desensibilizante
-            </label>
-
-            <br />
-            <h4>Tratamientos Corporales</h4>
-            <label for="remodeladoSilueta" class="radio">
-                <input  name="tratamiento" id="remodeladoSilueta" type="radio" />Tratamiento Antiacné
-            </label>
-
-            <label for="anticelulitis" class="radio">
-                <input  name="tratamiento" id="anticelulitis" type="radio" />Tratamiento Anticelulitis
-            </label>
-
-            <label for="antiestrias" class="radio">
-                <input  name="tratamiento" id="antiestrias" type="radio" />Tratamiento Antiestrias
-            </label>
-
-            <label for="reafirmanteSenos" class="radio">
-                <input  name="tratamiento" id="reafirmanteSenos" type="radio" />Reafirmante de Senos
-            </label>
-
-            <label for="reductivoReafirmante" class="radio">
-                <input  name="tratamiento" id="reductivoReafirmante" type="radio" />Reductivo y Reafirmante
-            </label>
+            <label for="tratamiento" class="control-label">1.- Seleccione el tratamiento:</label>
+        
+            <select id="tratamiento" name="tratamiento" class="form-control">
+                <option value="1">Limpieza Facial</option>
+                <option value="2">Antiacné</option>
+                <option value="3">Control de Grasa</option>
+                <option value="4">Antiarrugas</option>
+                <option value="5">Manchas y Cicatrices</option>
+                <option value="6">Desensibilizante</option>
+                <option value="7">Remodelado de Silueta</option>
+                <option value="8">Anticelulitis</option>
+                <option value="9">Antiestrías</option>
+                <option value="10">Reafirmante de Senos</option>
+                <option value="11">Reductivo y Reafirmante</option>
+            </select>
 
         </div>
         
@@ -59,9 +24,6 @@
             <label>2.-Elija fecha y hora:</label>
         </div>
         <div class="col-md-7">
-            <!--
-            <input type="text" id="datepicker" name="datepicker" data-behavior="datepicker">
-            -->
             <div class="col-md-4" id="datepicker"></div>
             <div class="form-group col-md-3">
                 <select id="hora" name="hora" class="form-control">

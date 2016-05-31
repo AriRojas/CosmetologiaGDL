@@ -138,7 +138,7 @@
             require('config.inc');
             $conexion = new mysqli($servidor, $usuarioDB, $passwordDB, $database);
 
-            $sql = "SELECT T.nombreTratamiento, C.fechaAsignacion, C.horaAsignacion, E.nombreEstado, C.idUsuario FROM Citas AS C JOIN Tratamiento AS T ON C.idTratamiento = T.idTratamiento JOIN EstadosCitas AS E ON C.idEstadoCita = E.idEstado WHERE E.idEstado = 3";
+            $sql = "SELECT T.nombreTratamiento, C.fechaAsignacion, C.horaAsignacion, E.nombreEstado, C.idUsuario FROM Citas AS C JOIN Tratamiento AS T ON C.idTratamiento = T.idTratamiento JOIN EstadosCitas AS E ON C.idEstadoCita = E.idEstado WHERE E.idEstado = 1";
 
             $resultado = $conexion->query($sql);
 
@@ -180,7 +180,7 @@
 
                     $resultado = $resultado.
                             "<tr>" .
-                                "<td><input type=\"radio\" name=\"selectedUser\" value=\"$idCita\"></td>".
+                                "<td><input type=\"radio\" name=\"selectedRendezVous\" value=\"$idCita\"></td>".
                                 "<td>$idCita</td>".
                                 "<td>$nombre $apPaterno</td>".
                                 "<td>$tratamiento</td>".

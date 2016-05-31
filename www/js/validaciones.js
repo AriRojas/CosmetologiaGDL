@@ -286,3 +286,19 @@ function validaAgendarCitaUsuario()
 
 
 }
+
+function validaAgendarCitaAdmin()
+{
+    var fecha = $("#datepicker").data('datepicker').getFormattedDate('yyyy-mm-dd');
+    document.getElementById("tomaFecha").value = fecha;
+}
+
+function Aceptar()
+{
+    document.getElementById('tomaAccion').value = 'Aceptar';
+}
+
+function Cancelar()
+{
+    document.getElementById('tomaAccion').value = 'Cancelar';
+}

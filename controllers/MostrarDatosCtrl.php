@@ -155,7 +155,7 @@
             return $repite;
         }
 
-        public function muestraCitasAdmin($idUsuario)
+        public function muestraCitasAdmin()
         {
             require_once('models/DataGetterMdl.php');
             $model = new DataGetter();
@@ -230,9 +230,23 @@
 
             while ($row = $resultado->fetch_assoc()) 
             {
-                echo "<br/>";
-                var_dump($row);
+                /*echo "<br/>";
+                var_dump($row);*/
+                $tratamiento = $row['nombreTratamiento'];
+                $fecha = $row['fechaAsignacion'];
+                $hora = $row['horaAsignacion'];
+                $estado = $row['nombreEstado'];
+
+                $repite = $repite .
+                            "<tr>" .
+                                "<td>$tratamiento</td>".
+                                "<td>$fecha / $hora hrs.</td>".
+                                "<td>$estado</td>".
+                            "</tr>";
+
             }
+
+            return $repite;
         }
     }
 

@@ -156,7 +156,7 @@
 
                 case 'citasAdmin':
                     $content = file_get_contents('views/citasAdministrador.html');
-                    $repite = $this->model->muestraCitasAdmin($_SESSION['idUsuario']);
+                    $repite = $this->model->muestraCitasAdmin();
 
                     $content = str_replace('{REPITECITAS}', $repite, $content);
                     break;
@@ -171,6 +171,62 @@
                 default:
                     # code...
                     break;
+            }
+
+            if (isset($_GET['agendarAdmin']) && $_GET['agendarAdmin'] == 'true') 
+            {
+                //echo "aquiestoyyyyyy";
+                require_once('controllers/AgendarCitaCtrl.php');
+                $model = new AgendarCita();
+                $resultado = $model->solicitarCitaAdmin();
+                //echo "EUREEEKAAAA!!!";
+
+                if ($resultado == -1) {
+                    echo  '
+                    <div class="alert alert-dismissible" id="modalContent">
+                      <button type="button" class="close" data-dismiss="alert">×</button>
+                      <strong>ERROR!</strong><p>Ya hay una cita registrada para esa misma fecha a la misma hora. Favor de elgir una hora distinta o de comunicarse con nosotros al teléfono de contacto.</p> 
+                    </div>
+                    ';
+                    //header('Location: ?ctl=miPerfil&nav=calendarioUsuario&agendarCita=false');
+                }
+                elseif($resultado == 1)
+                {
+                    echo  '
+                    <div class="alert alert-dismissible" id="modalContent">
+                      <button type="button" class="close" data-dismiss="alert">×</button>
+                      <strong>CITA PROGRAMADA EXITOSAMENTE!</strong><p>Lo esperamos el día y la hora acordada. Si tiene alguna duda favor de consultar su perfil o ponerse en contacto con nosotros.</p> 
+                    </div>
+                    ';
+                    //header('Location: ?ctl=miPerfil&nav=citasUsuario');
+                }
+            }
+
+            if (isset($_GET['configCitas']) && $_GET['configCitas'] == 'true') {
+                require_once('controllers/AgendarCitaCtrl.php');
+                $model = new ConfiguraCitas();
+
+                $resultado = $model->modificaEstadoCita();
+
+                if ($resultado == -1) {
+                    echo  '
+                    <div class="alert alert-dismissible" id="modalContent">
+                      <button type="button" class="close" data-dismiss="alert">×</button>
+                      <strong>ERROR!</strong><p>Cambio de estado de la cita incongruente. Intente de nuevo.</p> 
+                    </div>
+                    ';
+                    //header('Location: ?ctl=miPerfil&nav=calendarioUsuario&agendarCita=false');
+                }
+                elseif($resultado == 1)
+                {
+                    echo  '
+                    <div class="alert alert-dismissible" id="modalContent">
+                      <button type="button" class="close" data-dismiss="alert">×</button>
+                      <strong>CAMBIO EXITOSO!</strong><p>Refresque la pestaña para ver los cambios.</p> 
+                    </div>
+                    ';
+                    //header('Location: ?ctl=miPerfil&nav=citasUsuario');
+                }
             }
 
             $navAdmin = str_replace ( '{{CONTENT}}' ,  $content  ,  $navAdmin);
@@ -232,9 +288,6 @@
                     # code...
                     break;
             }
-
-            
-            
 
             if (isset($_GET['agendarCita']) && $_GET['agendarCita'] == 'true') 
             {
