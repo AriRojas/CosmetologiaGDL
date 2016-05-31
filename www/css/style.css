@@ -231,3 +231,9 @@ img#PerfilIMG {
     background-color: #A5539E;
     color: white;
 }
+
+#editarPerfil{
+    margin-top: 2em;
+    margin-left: 26%;
+    font-weight: bold;
+}

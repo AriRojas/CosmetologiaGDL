@@ -101,7 +101,7 @@
         {
             require('config.inc');
             $conexion = new mysqli($servidor, $usuarioDB, $passwordDB, $database);
-
+            
             $sql = "SELECT * FROM Usuario WHERE idUsuario = $busqueda";
 
             $resultado = $conexion->query($sql);

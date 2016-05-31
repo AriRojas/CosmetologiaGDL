@@ -58,7 +58,11 @@
                 $controller = new Login();
                 $controller->cargarPerfilAdmin();
                 break;
-
+            case 'editar':
+                require_once 'controllers/EditarCtrl.php';
+                $controller = new Editar();
+                $controller->Ejecutar();
+                break;   
             case 'agendarCita':
                 echo "agendarCita";
                 break;

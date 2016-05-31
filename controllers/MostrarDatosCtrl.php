@@ -9,7 +9,14 @@
         {
             # code...
         }
+         public function obtenerPerfil()
+        {
+            require_once('models/DataGetterMdl.php');
+            $model = new DataGetter();
 
+            $resultado = $model->obtenerUsuarioLoggeado($_SESSION['idUsuario']);
+            return $resultado;
+        }
 
         public function obtenerUsuariosBuscados()
         {

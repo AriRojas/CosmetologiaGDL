@@ -46,9 +46,10 @@
                 $resultado = $this->model->altaUsuarios($nombre, $apellidoP, $apellidoM, $sexo, $domicilio, $numExt, $numInt, $colonia, $municipio, $estado, $telefono, $fechaNacimiento, $mail, $password);
 
                 if( $resultado == 1){
-                    $_SESSION['usuario'] = $nombre . " " . $apellidoP;
-                    //$_SESSION['idUsuario'] = $this->modelo->id;
-                    header('Location: ?ctl=miPerfil');
+                    $_SESSION['usuario']   = $nombre . " " . $apellidoP;
+
+                    $_SESSION['idUsuario'] = $this->model->id;
+                   header('Location: ?ctl=miPerfil&nav=principal');
                     
                 }elseif ( $resultado == -1) {
                     header('Location: ?ctl=registro&Registro=false&mail=false');     
@@ -74,7 +75,7 @@
             $view   = $header . $body . $footer;
             echo $view;
             if( isset($_GET['Registro']) &&  $_GET['Registro']  == "false"){
-                if($_GET['mail']  == "false"){
+                if(isset($_GET['mail']) && $_GET['mail']  == "false"){
                     echo  '
                     <div class="alert alert-dismissible" id="modalContent">
                       <button type="button" class="close" data-dismiss="alert">×</button>

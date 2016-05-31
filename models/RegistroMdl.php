@@ -4,7 +4,7 @@
     class RegistroUsuario// extends ConexionDb
     {
         private $ERR_DB = -1;
-
+        public $id;
         
         function __construct()
         {
@@ -99,6 +99,7 @@
                         )";
 
                     $resultado = $conexion->query($sql);
+                    $this->id  = $conexion ->insert_id;
                     return $resultado;
                 }
                    
