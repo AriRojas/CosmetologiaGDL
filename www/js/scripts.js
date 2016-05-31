@@ -12,16 +12,19 @@ moment.locale('es', {
 
 
 $(function () {
-    var date = new Date();
-    var currentDate = date.getDate();
-    var currentMonth = date.getMonth();
-    var currentYear = date.getFullYear();
 
-    $('#sandbox-container').datepicker({
+    $('#datepicker').datepicker({
         format: "yyyy/mm/dd",
         maxViewMode: 2,
+        autoclose: true,    
         language: "es",
         daysOfWeekDisabled: "0",
         todayHighlight: true,
+        startDate: '0d'
     });
 });
+
+$(function(){
+    $('#tomaFecha').value = $("#datepicker").data('datepicker').getFormattedDate('yyyy-mm-dd');
+});
+

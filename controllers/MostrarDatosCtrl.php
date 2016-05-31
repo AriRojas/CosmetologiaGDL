@@ -132,6 +132,14 @@
             return $repite;
         }
 
+        public function muestraCitasUsuario($idUsuario)
+        {
+            require_once('models/DataGetterMdl.php');
+            $model = new DataGetter();
+
+            $model->obtenerCitasUsuario($idUsuario);
+        }
+
     }
 
     /**

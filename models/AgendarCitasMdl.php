@@ -20,8 +20,6 @@
             $idTratamiento = $conexion->query($sql);
             $idTratamiento = $idTratamiento->fetch_row();
 
-            //var_dump($idTratamiento);
-            //echo $idTratamiento[0];
             /*EL ESTADO DE LA CITA SERÁ 4 -> EN ESPERA*/
             $idEstadoCita = 4;
 
@@ -29,19 +27,27 @@
             $sql = "SELECT idCita, fechaAsignacion, horaAsignacion FROM Citas WHERE idEstadoCita = 1 OR idEstadoCita = 4";
             $citas = $conexion->query($sql);
 
-            //SI CITAS ESTÁ VACÍO SIGNIFICA QUE NO HAY CITAS ACEPTADAS O EN ESPERA
+            //QUERY PARA INSERTAR
+            $sql = "INSERT INTO Citas (idUsuario, idTratamiento, idEstadoCita, fechaAsignacion, horaAsignacion) VALUES ($idUsuario, $idTratamiento[0], $idEstadoCita, \"$fecha\", $hora)";
+            
+            //SI CITAS ESTÁ VACÍO SIGNIFICA QUE NO HAY CITAS ACEPTADAS O EN ESPERA, INSERTAMOS
             if (empty($citas)) {
-                $sql = "INSERT INTO Citas (idUsuario, idTratamiento, idEstadoCita, fechaAsignacion, horaAsignacion) VALUES ($idUsuario, $idTratamiento[0], $idEstadoCita, $fecha, $hora)";
-                echo $sql;
+                $conexion->query($sql);
             }//SI HAY CITAS REGISTRADAS, VERIFICA LA FECHA Y LA HORA
             else{
-                var_dump($citas);
                 while ($row = $citas->fetch_assoc()) {
-                    echo $row['idCita'] . " " . $row['fechaAsignacion'] . " " . $row['horaAsignacion'] . "<br/>";
+                    //Si la fecha y hora de asigación coinciden con la que deseamos insertar, regresa ERROR
+                    if($row['fechaAsignacion'] == $fecha && $row['horaAsignacion'] == $hora)
+                    {
+                        return -1;
+                    }
                 }
+
+                //SI LOGRA SALIR DEL WHILE, NO HUBO COINCIDENCIAS, POR LO TANTO INSERTA
+                $conexion->query($sql);
             }
 
-
+            return 1;
             $conexion->close();
         }
     }

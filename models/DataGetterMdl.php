@@ -117,5 +117,15 @@
 
             $conexion->close();
         }
+
+        public function obtenerCitasUsuario()
+        {
+            require('config.inc');
+            $conexion = new mysqli($servidor, $usuarioDB, $passwordDB, $database);
+
+            $sql = "SELECT * FROM Citas WHERE idUsuario"
+
+            $conexion->close();
+        }
     }
 ?>
